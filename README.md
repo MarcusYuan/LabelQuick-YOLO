@@ -88,14 +88,14 @@ LabelQuick_V2.0 是一款由 AI Horizon 团队设计并开发的快速图像标�
 ### Demo
 - 自动抽帧：
 
-<div>
-<video src="docs/1.mp4" controls="controls" width="500" height="300"></video>
-
+https://github.com/user-attachments/assets/66fef93a-18bc-4c6e-a91e-d90d63c33d89
 
 - 视频物体追踪：
 
-<div>
-<video src="docs/2.mp4" controls="controls" width="500" height="300"></video>
+
+https://github.com/user-attachments/assets/59a824f8-1d48-4e73-ba34-28dea14a3bcc
+
+
 
 - 更具体的操作可以参考[哔哩哔哩]()视频教程：
 
