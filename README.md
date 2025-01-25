@@ -107,8 +107,6 @@ https://github.com/user-attachments/assets/59a824f8-1d48-4e73-ba34-28dea14a3bcc
 - **Q:** 如何切换标注模式？  
   **A:** 使用快捷键 (W键)。
 
-### 贡献者
-感谢以下贡献者对 LabelQuick 的贡献：
 
 ### 友情链接
 - [SegmentAnything](https://github.com/facebookresearch/segment-anything) :分割任何模型 （SAM）
