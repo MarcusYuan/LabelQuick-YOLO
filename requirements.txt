@@ -13,7 +13,6 @@ omegaconf==2.3.0
 onnxruntime==1.15.1
 opencv_python==4.8.0.76
 pandas==2.0.3
-Pillow==10.0.0
 Pillow==11.1.0
 pycocotools==2.0.7
 PyQt5==5.15.11
