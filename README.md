@@ -97,7 +97,7 @@ https://github.com/user-attachments/assets/59a824f8-1d48-4e73-ba34-28dea14a3bcc
 
 
 
-- 更具体的操作可以参考[哔哩哔哩]()视频教程：
+- 更具体的操作可以参考[哔哩哔哩](https://www.bilibili.com/video/BV1kufJYyEhu/?spm_id_from=333.1387.homepage.video_card.click&vd_source=d9c1011fcda5afa76e9f5504f72e577f)视频教程：
 
 ### 常见问题解答（FAQ）
 - **Q:** 如何撤销错误的标注？  
