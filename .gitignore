@@ -41,6 +41,13 @@ logs/
 *.out
 *.app
 
+# 模型文件
+sampro/checkpoints/*.pt
+sampro/checkpoints/*.pth
+sampro/checkpoints/*.onnx
+sampro/checkpoints/*.bin
+sampro/checkpoints/*.weights
+
 # 其他
 .DS_Store
 .env
