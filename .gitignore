@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 临时文件
+Temp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# 日志文件
+logs/
+*.log
+
+# 运行时生成的文件
+*.exe
+*.dll
+*.out
+*.app
+
+# 其他
+.DS_Store
+.env
+.venv
+venv/
+ENV/
+.idea/
+.vscode/ 
