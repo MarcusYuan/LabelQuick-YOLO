@@ -1,128 +1,135 @@
 # LabelQuick
-一种快速、轻松的AI辅助标注工具LabelQuick
 
-<div> <img src="docs/image1.png"></div>
+LabelQuick是一个基于SAM2（Segment Anything Model 2）的高效图像和视频标注工具，专为目标检测和实例分割任务设计。它利用先进的AI模型辅助标注过程，大幅提高标注效率。
 
-### 项目更新
-🔥 V1.0 : 2024/7/8: 
+## 主要特性
 
-- 我们更新了模型仓库的运行文件和配置文件，开源基础的UI跟标注功能，主要用于XML的数据标注。
+- **智能标注**：基于SAM2模型的点击式标注，只需点击目标即可生成精确掩码
+- **多格式支持**：支持XML和YOLO格式的标签输出
+- **图像标注**：支持单张图像的快速标注
+- **视频标注**：支持视频帧提取和自动目标跟踪标注
+- **批量处理**：支持批量图像处理和标注
+- **用户友好界面**：简洁直观的图形界面，操作简单
 
-🔥 V2.0 : 2025/1/20:
-- 打标方式新增拉框标注，打标方式可切换。
-- 新增模型仓库，模型仓库包含SAM2模型，用于快速标注。
-- 支持视频物体追踪打标，选择物体后，自动追踪物体，并完成标注。
-- 新增视频操作功能，包括开始播放，暂停，重新播放，抽帧操作。
-- 优化了项目代码，修改了以知的BUG。
+## 安装指南
 
+### 系统要求
 
-### 简介
-LabelQuick_V2.0 是一款由 AI Horizon 团队设计并开发的快速图像标注工具，该版本在上一个版本的基础上进行了优化与改进。目前提供了直观易用的界面和强大的标注与分割功能，帮助您高效完成数据集的标注工作。当前版本仅支持 Windows 系统。
+- Python 3.8+
+- CUDA支持的GPU（推荐用于SAM2模型加速）
+- 至少8GB内存
 
-<div> <img src="docs/image2.png"></div>
+### 安装步骤
 
+1. 克隆仓库：
+```bash
+git clone https://github.com/yourusername/LabelQuick.git
+cd LabelQuick
+```
 
-### 快速开始
->⚠️显存最低需要`6G`⚠️
-1. **拉取代码**
-   ```bash
-   git clone https://github.com/xaio6/LabelQuick
-   ```
+2. 安装依赖：
+```bash
+pip install -r requirements.txt
+```
 
-2. **模型下载**
-下载[模型](https://pan.baidu.com/s/1dnfxBXaCYANRGcAxx7y0vg?pwd=ax58)到 `sampro/checkpoints` 里面。
--<div> <img src="docs/image3.png"></div>
+3. 下载SAM2模型权重：
+```bash
+# 模型权重将自动下载到正确位置
+```
 
-3. **环境配置**
-   ```bash
-   # 虚拟环境创建
-    conda create -n Anything python=3.10
-    conda activate Anything
+4. 启动应用：
+```bash
+python GUI/main.py
+```
 
-    # pytorch安装方式1（没有安装CUDA）：
-    conda install cudatoolkit=11.8 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/linux-64/
+## 使用指南
 
-    conda install cudnn
+### 图像标注
 
-    pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+1. 点击"打开目录"选择包含图像的文件夹
+2. 使用左侧工具栏选择标注模式（点击或矩形框）
+3. 在图像上点击目标对象
+4. 系统自动生成掩码和边界框
+5. 按"S"键输入标签名称
+6. 点击"保存"按钮保存标注结果
 
-    # pytorch安装方式2（已经有安装CUDA，版本为CUDA=11.8）：
-    pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
-    ```
+### 视频标注
 
-    ```bash
-    # 安装项目依赖
-    pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-    ```
+1. 点击"打开视频"选择视频文件
+2. 设置输出目录
+3. 系统自动提取视频第一帧
+4. 在第一帧上点击目标对象
+5. 按"S"键输入标签名称
+6. 点击"目标跟踪标注"按钮
+7. 系统自动处理所有视频帧并生成标注
 
-4. **项目运行**
+## 新增功能
 
-- 运行 `Run.py` 打开 LabelQuick。
+### 视频目标跟踪标注
 
+最新版本增加了基于SAM2模型的视频目标跟踪标注功能，可以自动跟踪视频中的目标对象并生成标注：
 
-### 用户界面介绍
-<div> <img src="docs/image4.png"></div>
+1. **智能帧提取**：根据指定的fps参数从视频中提取关键帧
+2. **目标跟踪**：基于第一帧的标注，自动跟踪后续帧中的目标对象
+3. **批量标注生成**：自动为所有帧生成一致的标注数据
+4. **YOLO格式支持**：生成符合YOLO训练要求的目录结构和标注文件
+5. **标注可视化**：在处理过程中显示标注结果，方便用户验证
 
-- **顶部菜单栏**：包含文件、编辑、视图等常用功能。
-- **左侧工具栏**：打开文件夹、选择标注数据储存位置、视频物体追踪标注。
-- **中央工作区**：展示您的数据集，供您进行标注。
-- **右侧属性面板**：显示当前数据集的标签。
-- **进度条：** 可查看视频的播放进度，支持任意拖动播放位置。
-- **按钮功能：** 包括开始播放，暂停，重新播放，抽帧操作。
-- **自动抽帧：** 视频每秒自动抽取两帧图片。
+### YOLO训练数据生成
 
+新增了自动生成YOLO训练数据集的功能：
 
+1. **标准目录结构**：自动创建`images/train`和`labels/train`目录
+2. **类别映射**：在`labels`目录下生成`classes.txt`文件，包含所有类别名称
+3. **标准格式标签**：生成符合YOLO格式的标签文件（`类别索引 x_center y_center width height`）
+4. **数据集完整性**：确保每个图像都有对应的标签文件
 
-### 功能详解
-<div> <img src="docs/image5.png"></div>
+## 快捷键
 
-- **快速标注**：2.0 版本快速打标，只需鼠标左键单击标注对象，软件将自动识别物品最大边缘的最小矩形框并进行快速自动标注。
-- **视频物体追踪**：选择物体后，自动追踪物体，并完成标注。
-- **视频操作**：支持视频播放、暂停、重新播放、抽帧操作。
-- **自动抽帧**：视频每秒自动抽取两帧图片。
+- **S**：保存当前标注并输入标签名称
+- **左/右箭头**：在图像目录中导航
+- **Esc**：取消当前操作
 
+## 标注流程
 
-### **技术优势：**
-我们引入了最新的 sam2 模型，在自动检测打标过程中实现了更高的准确率和效率。该模型能够快速对视频帧中的目标进行精准识别，减少人工干预，提高标注的质量。
+### 单张图像标注流程
 
-### Demo
-- 自动抽帧：
+1. 打开图像
+2. 点击目标对象
+3. 系统生成掩码和边界框
+4. 按S键输入标签名称
+5. 保存标注
 
-https://github.com/user-attachments/assets/66fef93a-18bc-4c6e-a91e-d90d63c33d89
+### 视频标注流程
 
-- 视频物体追踪：
+1. 打开视频
+2. 在第一帧上点击目标对象
+3. 按S键输入标签名称
+4. 点击"目标跟踪标注"按钮
+5. 系统自动处理所有帧并生成标注
+6. 标注结果保存在指定目录的`images/train`和`labels/train`中
 
+## 常见问题
 
-https://github.com/user-attachments/assets/59a824f8-1d48-4e73-ba34-28dea14a3bcc
+**Q: 为什么某些视频帧的目标跟踪效果不理想？**  
+A: SAM2模型的跟踪能力受到目标移动速度、视频质量等因素影响。对于跟踪失败的情况，系统会使用第一帧的标注为所有帧创建一致的标签。
 
+**Q: 如何调整提取的视频帧数量？**  
+A: 可以修改代码中的fps参数（默认为5）。较低的fps值会提取更少的帧，较高的值会提取更多的帧。
 
+**Q: 支持哪些视频格式？**  
+A: 支持大多数常见视频格式，包括MP4、AVI、MOV等。
 
-- 更具体的操作可以参考[哔哩哔哩](https://www.bilibili.com/video/BV1kufJYyEhu/?spm_id_from=333.1387.homepage.video_card.click&vd_source=d9c1011fcda5afa76e9f5504f72e577f)视频教程：
+## 贡献指南
 
-### 常见问题解答（FAQ）
-- **Q:** 如何撤销错误的标注？  
-  **A:** 使用快捷键 (Q 或 Delete 键)。
-- **Q:** 有哪些快捷键？  
-  **A:** 上一张：A；下一张：D；保存标注数据：S。
-- **Q:** 如何切换标注模式？  
-  **A:** 使用快捷键 (W键)。
+欢迎贡献代码、报告问题或提出新功能建议。请遵循以下步骤：
 
+1. Fork仓库
+2. 创建功能分支
+3. 提交更改
+4. 推送到分支
+5. 创建Pull Request
 
-### 友情链接
-- [SegmentAnything](https://github.com/facebookresearch/segment-anything) :分割任何模型 （SAM）
+## 许可证
 
-- [SAM2](https://github.com/facebookresearch/sam2): SAM2:分割图像和视频中的任何内容
-
-### 许可协议
-本项目遵循 MIT Licence。在使用本工具时，请遵守相关法律，包括版权法、数据保护法和隐私法。未经原作者和/或版权所有者许可，请勿使用本工具。未经原作者和/或版权所有者许可，请勿使用本工具。此外，请确保遵守您参考的模型和组件中的所有许可协议。
-
-### 技术支持和联系方式
-如果您在使用过程中遇到任何问题，请联系我们的技术支持团队：
-- 公众号：AI Horizon
-
-![5d2d299e21c40ef9bbe17b5b1e09fda](https://github.com/xaio6/LabelQuick/assets/118904918/17e51083-3abc-4812-9d32-8819f85cb3be)
-
-
-
-
-感谢您选择 LabelQuick，我们希望这款工具能极大地提升您的工作效率。祝您标注愉快！
+本项目采用MIT许可证。详情请参阅LICENSE文件。

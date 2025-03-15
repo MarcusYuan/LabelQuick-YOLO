@@ -1,0 +1,22 @@
+<annotation>
+	<folder>D:/workspace/LabelQuick/image</folder>
+	<filename>image2.jpg</filename>
+	<path>D:/workspace/LabelQuick/image\image2.jpg</path>
+	<size>
+		<width>1300</width>
+		<height>736</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>&#31726;&#29699;</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>551</xmin>
+			<ymin>63</ymin>
+			<xmax>68</xmax>
+			<ymax>48</ymax>
+		</bndbox>
+	</object>
+</annotation>

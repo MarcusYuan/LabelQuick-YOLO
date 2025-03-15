@@ -1,0 +1,14 @@
+2025-03-16 03:16:03,310 - root - INFO - LabelQuick 应用程序启动
+2025-03-16 03:16:03,531 - hydra.core.utils - DEBUG - Setting JobRuntime:name=UNKNOWN_NAME
+2025-03-16 03:16:03,531 - hydra.core.utils - DEBUG - Setting JobRuntime:name=app
+2025-03-16 03:16:07,347 - root - INFO - 初始化主界面
+2025-03-16 03:16:08,036 - root - DEBUG - UI 设置完成
+2025-03-16 03:16:08,037 - root - DEBUG - 初始化变量完成
+2025-03-16 03:16:10,222 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 03:16:12,422 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 03:16:12,439 - root - DEBUG - 初始化 Anything_TW 和 AnythingVideo_TW 完成
+2025-03-16 03:16:12,439 - root - DEBUG - 初始化定时器完成
+2025-03-16 03:16:12,443 - root - DEBUG - 开始连接信号和槽
+2025-03-16 03:16:12,444 - root - DEBUG - 信号和槽连接完成
+2025-03-16 03:16:12,444 - root - DEBUG - 初始化标签格式: xml
+2025-03-16 03:16:12,444 - root - INFO - 主界面初始化完成

@@ -1,0 +1,178 @@
+2025-03-16 02:17:02,166 - root - INFO - LabelQuick 应用程序启动
+2025-03-16 02:17:02,408 - hydra.core.utils - DEBUG - Setting JobRuntime:name=UNKNOWN_NAME
+2025-03-16 02:17:02,408 - hydra.core.utils - DEBUG - Setting JobRuntime:name=app
+2025-03-16 02:17:06,270 - root - INFO - 初始化主界面
+2025-03-16 02:17:07,015 - root - DEBUG - UI 设置完成
+2025-03-16 02:17:07,015 - root - DEBUG - 初始化变量完成
+2025-03-16 02:17:09,113 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:17:11,264 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:17:11,283 - root - DEBUG - 初始化 Anything_TW 和 AnythingVideo_TW 完成
+2025-03-16 02:17:11,283 - root - DEBUG - 初始化定时器完成
+2025-03-16 02:17:11,284 - root - DEBUG - 开始连接信号和槽
+2025-03-16 02:17:11,284 - root - DEBUG - 信号和槽连接完成
+2025-03-16 02:17:11,284 - root - DEBUG - 初始化标签格式: xml
+2025-03-16 02:17:11,284 - root - INFO - 主界面初始化完成
+2025-03-16 02:17:18,596 - root - INFO - 标签格式已更改: xml -> yolo
+2025-03-16 02:17:18,596 - root - DEBUG - 检查 YOLO 格式的类别映射
+2025-03-16 02:17:18,596 - root - DEBUG - 类别映射为空，尝试从现有标签初始化
+2025-03-16 02:17:18,597 - root - DEBUG - 当前类别映射: {}
+2025-03-16 02:17:28,483 - root - INFO - For numpy array image, we assume (HxWxC) format
+2025-03-16 02:17:28,711 - root - INFO - Computing image embeddings for the provided image...
+2025-03-16 02:17:35,944 - root - INFO - Image embeddings computed.
+2025-03-16 02:17:35,957 - root - INFO - 检查图像 0 的已存在标签
+2025-03-16 02:17:35,958 - root - DEBUG - XML 文件存在: False, YOLO 文件存在: False, 当前格式: yolo
+2025-03-16 02:17:35,958 - root - DEBUG - 未找到标签文件或格式不匹配: XML=False, YOLO=False, 格式=yolo
+2025-03-16 02:17:35,958 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:17:35,969 - root - DEBUG - 没有标签需要显示，显示原始图像
+2025-03-16 02:17:52,624 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:17:52,636 - root - DEBUG - 没有标签需要显示，显示原始图像
+2025-03-16 02:18:01,305 - root - INFO - 对话框确认，标签文本: 篮球
+2025-03-16 02:18:01,305 - root - WARNING - 未设置保存路径
+2025-03-16 02:18:04,144 - root - DEBUG - 重置点击和绘制事件状态
+2025-03-16 02:18:04,144 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:18:04,160 - root - DEBUG - 没有标签需要显示，显示原始图像
+2025-03-16 02:18:04,161 - root - DEBUG - 显示已存在的标签
+2025-03-16 02:18:11,915 - root - INFO - 检查图像 0 的已存在标签
+2025-03-16 02:18:11,916 - root - DEBUG - XML 文件存在: False, YOLO 文件存在: False, 当前格式: yolo
+2025-03-16 02:18:11,916 - root - DEBUG - 未找到标签文件或格式不匹配: XML=False, YOLO=False, 格式=yolo
+2025-03-16 02:18:11,916 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:18:11,927 - root - DEBUG - 没有标签需要显示，显示原始图像
+2025-03-16 02:18:53,948 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:18:53,963 - root - DEBUG - 没有标签需要显示，显示原始图像
+2025-03-16 02:19:01,864 - root - INFO - 对话框确认，标签文本: 篮球
+2025-03-16 02:19:01,865 - root - DEBUG - 手动绘制模式，添加标签: 篮球
+2025-03-16 02:19:01,865 - root - DEBUG - 使用 YOLO 格式保存标签: 篮球
+2025-03-16 02:19:01,865 - root - DEBUG - 边界框坐标: x=547, y=166, w=37, h=31
+2025-03-16 02:19:01,865 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=0, 尺寸=1300x736, 文本=篮球
+2025-03-16 02:19:01,865 - util.yolofile - DEBUG - 边界框: x=547, y=166, w=37, h=31
+2025-03-16 02:19:01,866 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 02:19:01,867 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3], 边界框=[547, 166, 584, 197]
+2025-03-16 02:19:01,867 - root - DEBUG - 添加新类别到映射: 篮球 -> 0
+2025-03-16 02:19:01,867 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\0.txt, 大小: [1300, 736, 3], 类别映射: {'篮球': 0}
+2025-03-16 02:19:01,867 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video
+2025-03-16 02:19:01,867 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 02:19:01,867 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 02:19:01,868 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 02:19:01,868 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 02:19:01,868 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 02:19:01,868 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\classes.txt
+2025-03-16 02:19:01,869 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(547, 166, 584, 197)
+2025-03-16 02:19:01,869 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(547, 166, 584, 197)
+2025-03-16 02:19:01,869 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.435000, 0.246603), 尺寸=(0.028462, 0.042120)
+2025-03-16 02:19:01,869 - util.yolofile - DEBUG - 写入行: 0 0.435000 0.246603 0.028462 0.042120
+2025-03-16 02:19:01,870 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 02:19:01,870 - root - INFO - YOLO 标签已保存: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 02:19:01,870 - root - DEBUG - 重置点击和绘制事件状态
+2025-03-16 02:19:01,870 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:19:01,886 - root - DEBUG - 显示 0 个点击标签和 1 个绘制标签
+2025-03-16 02:19:01,886 - root - DEBUG - 绘制手动标签 1: (547, 166) - (584, 197)
+2025-03-16 02:19:01,888 - root - DEBUG - 标签显示完成
+2025-03-16 02:19:01,889 - root - DEBUG - 显示已存在的标签
+2025-03-16 02:20:20,869 - root - INFO - For numpy array image, we assume (HxWxC) format
+2025-03-16 02:20:20,907 - root - INFO - Computing image embeddings for the provided image...
+2025-03-16 02:20:28,174 - root - INFO - Image embeddings computed.
+2025-03-16 02:20:45,100 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:20:45,111 - root - DEBUG - 显示 0 个点击标签和 1 个绘制标签
+2025-03-16 02:20:45,111 - root - DEBUG - 绘制手动标签 1: (547, 166) - (584, 197)
+2025-03-16 02:20:45,113 - root - DEBUG - 标签显示完成
+2025-03-16 02:20:58,940 - root - INFO - 视频对话框确认，标签文本: 篮球
+2025-03-16 02:20:58,941 - root - DEBUG - 添加标签到列表: 篮球
+2025-03-16 02:20:58,941 - root - DEBUG - 使用 YOLO 格式保存标签: 篮球
+2025-03-16 02:20:58,941 - root - DEBUG - 边界框坐标: x=555, y=172, w=29, h=28
+2025-03-16 02:20:58,941 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=0, 尺寸=1300x736, 文本=篮球
+2025-03-16 02:20:58,941 - util.yolofile - DEBUG - 边界框: x=555, y=172, w=29, h=28
+2025-03-16 02:20:58,941 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 02:20:58,941 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3], 边界框=[555, 172, 584, 200]
+2025-03-16 02:20:58,941 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\0.txt, 大小: [1300, 736, 3], 类别映射: {'篮球': 0}
+2025-03-16 02:20:58,942 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video
+2025-03-16 02:20:58,942 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 02:20:58,942 - util.yolofile - DEBUG - 标签数量: 2
+2025-03-16 02:20:58,942 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 02:20:58,942 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 02:20:58,942 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 02:20:58,943 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\classes.txt
+2025-03-16 02:20:58,944 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(547, 166, 584, 197)
+2025-03-16 02:20:58,944 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(547, 166, 584, 197)
+2025-03-16 02:20:58,944 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.435000, 0.246603), 尺寸=(0.028462, 0.042120)
+2025-03-16 02:20:58,945 - util.yolofile - DEBUG - 写入行: 0 0.435000 0.246603 0.028462 0.042120
+2025-03-16 02:20:58,945 - util.yolofile - DEBUG - 标签 2: 类别=篮球(ID=0), 边界框=(555, 172, 584, 200)
+2025-03-16 02:20:58,945 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(555, 172, 584, 200)
+2025-03-16 02:20:58,945 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.438077, 0.252717), 尺寸=(0.022308, 0.038043)
+2025-03-16 02:20:58,945 - util.yolofile - DEBUG - 写入行: 0 0.438077 0.252717 0.022308 0.038043
+2025-03-16 02:20:58,945 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 02:20:58,945 - root - INFO - YOLO 标签已保存: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 02:20:58,946 - root - DEBUG - 启用开始检测打标按钮
+2025-03-16 02:20:58,946 - root - DEBUG - 重置点击和绘制事件状态
+2025-03-16 02:20:58,946 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:20:58,959 - root - DEBUG - 显示 1 个点击标签和 1 个绘制标签
+2025-03-16 02:20:58,959 - root - DEBUG - 绘制点击标签 1: (555, 172) - (584, 200)
+2025-03-16 02:20:58,959 - root - DEBUG - 绘制手动标签 1: (547, 166) - (584, 197)
+2025-03-16 02:20:58,961 - root - DEBUG - 标签显示完成
+2025-03-16 02:20:58,961 - root - DEBUG - 显示已存在的标签
+2025-03-16 02:21:02,208 - root - INFO - 开始视频检测打标
+2025-03-16 02:21:02,209 - root - DEBUG - 禁用开始检测打标按钮
+2025-03-16 02:21:02,209 - root - DEBUG - 视频路径: D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录: D:/workspace/LabelQuick/video
+2025-03-16 02:21:02,209 - root - DEBUG - 创建视频处理线程，点击坐标: (560, 105), 方法: 0, 文本: 篮球
+2025-03-16 02:21:02,209 - root - DEBUG - 保存路径: D:/workspace/LabelQuick/video, 格式: yolo, 类别映射: {'篮球': 0}
+2025-03-16 02:21:02,209 - root - INFO - 初始化视频处理线程
+2025-03-16 02:21:04,738 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:21:04,760 - root - DEBUG - 视频处理线程初始化完成: 视频路径=D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录=D:/workspace/LabelQuick/video, 格式=yolo
+2025-03-16 02:21:04,760 - root - DEBUG - 连接视频处理线程信号
+2025-03-16 02:21:04,760 - root - INFO - 启动视频处理线程
+2025-03-16 02:21:04,761 - root - DEBUG - 禁用其他按钮，防止重复处理
+2025-03-16 02:21:04,762 - root - INFO - 开始视频处理: 点击坐标=(560, 105), 方法=0
+2025-03-16 02:21:04,764 - root - DEBUG - 创建输出目录: D:/workspace/LabelQuick/video 和 mask 子目录: D:/workspace/LabelQuick/video\mask
+2025-03-16 02:21:04,764 - root - INFO - 开始从视频中提取帧
+2025-03-16 02:21:05,632 - root - INFO - 视频帧提取完成，设置视频目录: D:/workspace/LabelQuick/video
+2025-03-16 02:21:05,633 - root - ERROR - 视频处理线程出错: invalid literal for int() with base 10: 'image1'
+2025-03-16 02:21:05,636 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 95, in run
+    self.AVT.set_video(self.output_dir)
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 57, in set_video
+    frame_names.sort(key=lambda p: int(os.path.splitext(p)[0]))  # 根据文件名排序
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 57, in <lambda>
+    frame_names.sort(key=lambda p: int(os.path.splitext(p)[0]))  # 根据文件名排序
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'image1'
+
+2025-03-16 02:21:05,637 - root - INFO - 视频处理完成
+2025-03-16 02:21:05,637 - root - DEBUG - 收到 0 个标签消息
+2025-03-16 02:21:05,638 - root - DEBUG - 输出目录中有 18 个图像文件
+2025-03-16 02:21:05,638 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 02:21:05,638 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,638 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\1.jpg
+2025-03-16 02:21:05,638 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,638 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\10.jpg
+2025-03-16 02:21:05,638 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,638 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\11.jpg
+2025-03-16 02:21:05,638 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,638 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\12.jpg
+2025-03-16 02:21:05,639 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,639 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\13.jpg
+2025-03-16 02:21:05,639 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,639 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\14.jpg
+2025-03-16 02:21:05,639 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,639 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\15.jpg
+2025-03-16 02:21:05,639 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,639 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\16.jpg
+2025-03-16 02:21:05,639 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,639 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\2.jpg
+2025-03-16 02:21:05,639 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,639 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\3.jpg
+2025-03-16 02:21:05,639 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,639 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\4.jpg
+2025-03-16 02:21:05,639 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,639 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\5.jpg
+2025-03-16 02:21:05,640 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,640 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\6.jpg
+2025-03-16 02:21:05,640 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,640 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\7.jpg
+2025-03-16 02:21:05,640 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,640 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\8.jpg
+2025-03-16 02:21:05,640 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,640 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\9.jpg
+2025-03-16 02:21:05,640 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,640 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\image1.jpg
+2025-03-16 02:21:05,640 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:21:05,640 - root - INFO - 检测打标过程全部完成

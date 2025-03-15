@@ -1,0 +1,468 @@
+2025-03-16 03:52:16,092 - root - INFO - LabelQuick 应用程序启动
+2025-03-16 03:52:16,375 - hydra.core.utils - DEBUG - Setting JobRuntime:name=UNKNOWN_NAME
+2025-03-16 03:52:16,375 - hydra.core.utils - DEBUG - Setting JobRuntime:name=app
+2025-03-16 03:52:21,010 - root - INFO - 初始化主界面
+2025-03-16 03:52:21,932 - root - DEBUG - UI 设置完成
+2025-03-16 03:52:21,932 - root - DEBUG - 初始化变量完成
+2025-03-16 03:52:24,257 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 03:52:26,441 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 03:52:26,456 - root - DEBUG - 初始化 Anything_TW 和 AnythingVideo_TW 完成
+2025-03-16 03:52:26,457 - root - DEBUG - 初始化定时器完成
+2025-03-16 03:52:26,457 - root - DEBUG - 开始连接信号和槽
+2025-03-16 03:52:26,457 - root - DEBUG - 信号和槽连接完成
+2025-03-16 03:52:26,457 - root - DEBUG - 初始化标签格式: xml
+2025-03-16 03:52:26,457 - root - INFO - 主界面初始化完成
+2025-03-16 03:52:30,538 - root - INFO - 标签格式已更改: xml -> yolo
+2025-03-16 03:52:30,538 - root - DEBUG - 检查 YOLO 格式的类别映射
+2025-03-16 03:52:30,539 - root - DEBUG - 类别映射为空，尝试从现有标签初始化
+2025-03-16 03:52:30,539 - root - DEBUG - 当前类别映射: {}
+2025-03-16 03:52:59,256 - root - INFO - 选择视频: D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录: D:/workspace/LabelQuick/video
+2025-03-16 03:52:59,258 - root - INFO - 创建YOLO训练目录结构: D:/workspace/LabelQuick/video\images, D:/workspace/LabelQuick/video\labels
+2025-03-16 03:52:59,258 - root - DEBUG - 输出目录中没有图像，提取视频第一帧
+2025-03-16 03:52:59,296 - root - DEBUG - 读取视频第一帧成功
+2025-03-16 03:52:59,309 - root - INFO - 保存第一帧到: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 03:52:59,321 - root - INFO - 初始化 AVT 对象
+2025-03-16 03:53:01,762 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 03:53:01,778 - root - DEBUG - AVT 对象初始化完成
+2025-03-16 03:53:01,778 - root - DEBUG - 设置 AVT 的视频目录: D:/workspace/LabelQuick/video
+2025-03-16 03:53:01,779 - sampro.LabelVideo_TW - DEBUG - 找到 1 个帧文件
+2025-03-16 03:53:01,779 - sampro.LabelVideo_TW - DEBUG - 使用数字提取排序成功
+2025-03-16 03:53:01,779 - sampro.LabelVideo_TW - DEBUG - 排序后的前5个文件: ['0.jpg']
+2025-03-16 03:53:01,823 - root - DEBUG - AVT 视频目录设置成功
+2025-03-16 03:53:01,823 - root - DEBUG - 找到 1 个视频帧
+2025-03-16 03:53:01,823 - root - DEBUG - 初始化 AVT 的推理状态: D:/workspace/LabelQuick/video
+2025-03-16 03:53:09,538 - root - DEBUG - AVT 推理状态初始化成功
+2025-03-16 03:53:09,539 - root - DEBUG - 设置图像路径: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 03:53:09,539 - root - DEBUG - 图像名称: 0
+2025-03-16 03:53:09,564 - root - DEBUG - 调整图像大小: D:/workspace/LabelQuick/video\0.jpg, 1300x736
+2025-03-16 03:53:09,588 - root - INFO - For numpy array image, we assume (HxWxC) format
+2025-03-16 03:53:09,715 - root - INFO - Computing image embeddings for the provided image...
+2025-03-16 03:53:16,994 - root - INFO - Image embeddings computed.
+2025-03-16 03:53:16,997 - root - DEBUG - 设置 AT 的图像
+2025-03-16 03:53:17,010 - root - DEBUG - 显示图像完成
+2025-03-16 03:53:17,010 - root - DEBUG - 启用开始检测打标按钮
+2025-03-16 03:53:17,011 - root - DEBUG - 设置鼠标点击事件
+2025-03-16 03:53:22,378 - root - INFO - 鼠标点击事件: 坐标=(562, 173)
+2025-03-16 03:53:22,379 - root - DEBUG - 设置点击坐标: (562, 173), 方法: 1
+2025-03-16 03:53:22,379 - root - DEBUG - 设置 AVT 的点击坐标: (562, 173), 方法: 1
+2025-03-16 03:53:22,379 - root - DEBUG - 调用 AVT.Create_Mask
+2025-03-16 03:53:22,379 - sampro.LabelVideo_TW - INFO - 创建掩码
+2025-03-16 03:53:22,380 - sampro.LabelVideo_TW - DEBUG - 添加新点: 坐标=(562, 173), 方法=1
+2025-03-16 03:53:22,383 - sampro.LabelVideo_TW - DEBUG - 点集: [[562 173]], 标签: [1]
+2025-03-16 03:53:22,607 - sampro.LabelVideo_TW - DEBUG - 生成的掩码形状: torch.Size([1, 1, 544, 960])
+2025-03-16 03:53:22,608 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (1, 544, 960)
+2025-03-16 03:53:22,608 - sampro.LabelVideo_TW - DEBUG - 帧尺寸: 960x544
+2025-03-16 03:53:22,610 - sampro.LabelVideo_TW - WARNING - 掩码尺寸 (544x1) 与帧尺寸 (960x544) 不匹配，进行调整
+2025-03-16 03:53:22,612 - sampro.LabelVideo_TW - INFO - 绘制掩码，对象 ID: None
+2025-03-16 03:53:22,612 - sampro.LabelVideo_TW - DEBUG - 帧尺寸: 960x544
+2025-03-16 03:53:22,612 - sampro.LabelVideo_TW - DEBUG - 原始掩码尺寸: 960x544
+2025-03-16 03:53:22,620 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:53:22,623 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:53:22,629 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:53:22,630 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 11528.5
+2025-03-16 03:53:22,631 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=11528.5
+2025-03-16 03:53:22,631 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=438, y=88, w=146, h=98
+2025-03-16 03:53:22,632 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:53:22,632 - sampro.LabelVideo_TW - INFO - 掩码创建成功
+2025-03-16 03:53:22,633 - root - DEBUG - AVT.Create_Mask 调用成功
+2025-03-16 03:53:22,633 - root - DEBUG - 设置 AT 的点击坐标: (562, 173), 方法: 1
+2025-03-16 03:53:22,633 - root - DEBUG - 调用 AT.Create_Mask
+2025-03-16 03:53:22,702 - root - DEBUG - 调用 AT.Draw_Mask
+2025-03-16 03:53:22,719 - root - DEBUG - 设置点击事件状态: clicked_event=True, paint_event=False
+2025-03-16 03:53:24,005 - root - INFO - 鼠标点击事件: 坐标=(620, 216)
+2025-03-16 03:53:24,006 - root - DEBUG - 设置点击坐标: (620, 216), 方法: 1
+2025-03-16 03:53:24,006 - root - DEBUG - 设置 AVT 的点击坐标: (620, 216), 方法: 1
+2025-03-16 03:53:24,006 - root - DEBUG - 调用 AVT.Create_Mask
+2025-03-16 03:53:24,006 - sampro.LabelVideo_TW - INFO - 创建掩码
+2025-03-16 03:53:24,006 - sampro.LabelVideo_TW - DEBUG - 添加新点: 坐标=(620, 216), 方法=1
+2025-03-16 03:53:24,007 - sampro.LabelVideo_TW - DEBUG - 点集: [[562 173]
+ [620 216]], 标签: [1 1]
+2025-03-16 03:53:24,106 - sampro.LabelVideo_TW - DEBUG - 生成的掩码形状: torch.Size([1, 1, 544, 960])
+2025-03-16 03:53:24,107 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (1, 544, 960)
+2025-03-16 03:53:24,107 - sampro.LabelVideo_TW - DEBUG - 帧尺寸: 960x544
+2025-03-16 03:53:24,108 - sampro.LabelVideo_TW - WARNING - 掩码尺寸 (544x1) 与帧尺寸 (960x544) 不匹配，进行调整
+2025-03-16 03:53:24,109 - sampro.LabelVideo_TW - INFO - 绘制掩码，对象 ID: None
+2025-03-16 03:53:24,109 - sampro.LabelVideo_TW - DEBUG - 帧尺寸: 960x544
+2025-03-16 03:53:24,109 - sampro.LabelVideo_TW - DEBUG - 原始掩码尺寸: 960x544
+2025-03-16 03:53:24,113 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:53:24,113 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:53:24,116 - sampro.LabelVideo_TW - DEBUG - 找到 170 个轮廓
+2025-03-16 03:53:24,116 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 0.0
+2025-03-16 03:53:24,116 - sampro.LabelVideo_TW - DEBUG - 轮廓 2 面积: 3.0
+2025-03-16 03:53:24,116 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=2, 面积=3.0
+2025-03-16 03:53:24,116 - sampro.LabelVideo_TW - DEBUG - 轮廓 3 面积: 0.0
+2025-03-16 03:53:24,116 - sampro.LabelVideo_TW - DEBUG - 轮廓 4 面积: 4.0
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=4, 面积=4.0
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 轮廓 5 面积: 67.5
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=5, 面积=67.5
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 轮廓 6 面积: 1.0
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 轮廓 7 面积: 0.5
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 轮廓 8 面积: 186.5
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=8, 面积=186.5
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 轮廓 9 面积: 1.0
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 轮廓 10 面积: 305.5
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=10, 面积=305.5
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 轮廓 11 面积: 0.0
+2025-03-16 03:53:24,117 - sampro.LabelVideo_TW - DEBUG - 轮廓 12 面积: 87.0
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 13 面积: 10.5
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 14 面积: 3377.0
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=14, 面积=3377.0
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 15 面积: 0.0
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 16 面积: 5.5
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 17 面积: 0.5
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 18 面积: 1.0
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 19 面积: 40.5
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 20 面积: 6.0
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 21 面积: 0.0
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 22 面积: 1.0
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 23 面积: 32.5
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 24 面积: 21.5
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 25 面积: 16.0
+2025-03-16 03:53:24,118 - sampro.LabelVideo_TW - DEBUG - 轮廓 26 面积: 11.5
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 27 面积: 0.0
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 28 面积: 3.5
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 29 面积: 5.0
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 30 面积: 10.0
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 31 面积: 886.5
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 32 面积: 1.0
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 33 面积: 1.5
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 34 面积: 2.0
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 35 面积: 6.0
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 36 面积: 260.5
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 37 面积: 3.0
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 38 面积: 1.0
+2025-03-16 03:53:24,119 - sampro.LabelVideo_TW - DEBUG - 轮廓 39 面积: 0.0
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 40 面积: 0.0
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 41 面积: 5.0
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 42 面积: 1.5
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 43 面积: 11.0
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 44 面积: 5.5
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 45 面积: 1.0
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 46 面积: 8.5
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 47 面积: 14.0
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 48 面积: 4.5
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 49 面积: 4.5
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 50 面积: 1.5
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 51 面积: 1.0
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 52 面积: 1.0
+2025-03-16 03:53:24,120 - sampro.LabelVideo_TW - DEBUG - 轮廓 53 面积: 190.5
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 54 面积: 18.5
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 55 面积: 0.0
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 56 面积: 2.0
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 57 面积: 0.0
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 58 面积: 4.0
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 59 面积: 2.0
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 60 面积: 0.0
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 61 面积: 7.5
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 62 面积: 0.0
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 63 面积: 0.0
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 64 面积: 4.0
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 65 面积: 4.0
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 66 面积: 3.5
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 67 面积: 5.0
+2025-03-16 03:53:24,121 - sampro.LabelVideo_TW - DEBUG - 轮廓 68 面积: 3.5
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 69 面积: 1.0
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 70 面积: 26.0
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 71 面积: 15.5
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 72 面积: 12.0
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 73 面积: 13.0
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 74 面积: 10.5
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 75 面积: 79.0
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 76 面积: 0.0
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 77 面积: 12.5
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 78 面积: 0.0
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 79 面积: 2.5
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 80 面积: 0.5
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 81 面积: 1.0
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 82 面积: 0.0
+2025-03-16 03:53:24,122 - sampro.LabelVideo_TW - DEBUG - 轮廓 83 面积: 0.0
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 84 面积: 4.5
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 85 面积: 2.0
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 86 面积: 15.0
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 87 面积: 22.5
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 88 面积: 13.0
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 89 面积: 0.0
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 90 面积: 0.0
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 91 面积: 0.0
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 92 面积: 0.0
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 93 面积: 2.0
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 94 面积: 3.5
+2025-03-16 03:53:24,123 - sampro.LabelVideo_TW - DEBUG - 轮廓 95 面积: 10.5
+2025-03-16 03:53:24,124 - sampro.LabelVideo_TW - DEBUG - 轮廓 96 面积: 36.0
+2025-03-16 03:53:24,124 - sampro.LabelVideo_TW - DEBUG - 轮廓 97 面积: 25.0
+2025-03-16 03:53:24,124 - sampro.LabelVideo_TW - DEBUG - 轮廓 98 面积: 16.5
+2025-03-16 03:53:24,124 - sampro.LabelVideo_TW - DEBUG - 轮廓 99 面积: 43.0
+2025-03-16 03:53:24,124 - sampro.LabelVideo_TW - DEBUG - 轮廓 100 面积: 0.0
+2025-03-16 03:53:24,124 - sampro.LabelVideo_TW - DEBUG - 轮廓 101 面积: 0.5
+2025-03-16 03:53:24,124 - sampro.LabelVideo_TW - DEBUG - 轮廓 102 面积: 0.0
+2025-03-16 03:53:24,124 - sampro.LabelVideo_TW - DEBUG - 轮廓 103 面积: 2.0
+2025-03-16 03:53:24,124 - sampro.LabelVideo_TW - DEBUG - 轮廓 104 面积: 2.5
+2025-03-16 03:53:24,124 - sampro.LabelVideo_TW - DEBUG - 轮廓 105 面积: 0.0
+2025-03-16 03:53:24,124 - sampro.LabelVideo_TW - DEBUG - 轮廓 106 面积: 86.0
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 轮廓 107 面积: 9.5
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 轮廓 108 面积: 47.0
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 轮廓 109 面积: 0.0
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 轮廓 110 面积: 32.5
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 轮廓 111 面积: 15349.0
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=111, 面积=15349.0
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 轮廓 112 面积: 4.0
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 轮廓 113 面积: 24.5
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 轮廓 114 面积: 6.0
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 轮廓 115 面积: 6.0
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 轮廓 116 面积: 10.5
+2025-03-16 03:53:24,125 - sampro.LabelVideo_TW - DEBUG - 轮廓 117 面积: 186.5
+2025-03-16 03:53:24,126 - sampro.LabelVideo_TW - DEBUG - 轮廓 118 面积: 0.0
+2025-03-16 03:53:24,126 - sampro.LabelVideo_TW - DEBUG - 轮廓 119 面积: 28.0
+2025-03-16 03:53:24,126 - sampro.LabelVideo_TW - DEBUG - 轮廓 120 面积: 10.0
+2025-03-16 03:53:24,126 - sampro.LabelVideo_TW - DEBUG - 轮廓 121 面积: 24.5
+2025-03-16 03:53:24,126 - sampro.LabelVideo_TW - DEBUG - 轮廓 122 面积: 23.5
+2025-03-16 03:53:24,126 - sampro.LabelVideo_TW - DEBUG - 轮廓 123 面积: 70.0
+2025-03-16 03:53:24,126 - sampro.LabelVideo_TW - DEBUG - 轮廓 124 面积: 0.5
+2025-03-16 03:53:24,126 - sampro.LabelVideo_TW - DEBUG - 轮廓 125 面积: 0.0
+2025-03-16 03:53:24,126 - sampro.LabelVideo_TW - DEBUG - 轮廓 126 面积: 0.0
+2025-03-16 03:53:24,127 - sampro.LabelVideo_TW - DEBUG - 轮廓 127 面积: 0.5
+2025-03-16 03:53:24,127 - sampro.LabelVideo_TW - DEBUG - 轮廓 128 面积: 4.0
+2025-03-16 03:53:24,127 - sampro.LabelVideo_TW - DEBUG - 轮廓 129 面积: 3.5
+2025-03-16 03:53:24,127 - sampro.LabelVideo_TW - DEBUG - 轮廓 130 面积: 6.0
+2025-03-16 03:53:24,127 - sampro.LabelVideo_TW - DEBUG - 轮廓 131 面积: 13.5
+2025-03-16 03:53:24,127 - sampro.LabelVideo_TW - DEBUG - 轮廓 132 面积: 8.5
+2025-03-16 03:53:24,127 - sampro.LabelVideo_TW - DEBUG - 轮廓 133 面积: 5.5
+2025-03-16 03:53:24,127 - sampro.LabelVideo_TW - DEBUG - 轮廓 134 面积: 6.0
+2025-03-16 03:53:24,127 - sampro.LabelVideo_TW - DEBUG - 轮廓 135 面积: 5.5
+2025-03-16 03:53:24,127 - sampro.LabelVideo_TW - DEBUG - 轮廓 136 面积: 250.0
+2025-03-16 03:53:24,127 - sampro.LabelVideo_TW - DEBUG - 轮廓 137 面积: 0.0
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 138 面积: 2.5
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 139 面积: 14.0
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 140 面积: 9.5
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 141 面积: 16.0
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 142 面积: 156.5
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 143 面积: 17.5
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 144 面积: 12.0
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 145 面积: 5.0
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 146 面积: 13.0
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 147 面积: 8.5
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 148 面积: 38.0
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 149 面积: 18.0
+2025-03-16 03:53:24,128 - sampro.LabelVideo_TW - DEBUG - 轮廓 150 面积: 2.5
+2025-03-16 03:53:24,129 - sampro.LabelVideo_TW - DEBUG - 轮廓 151 面积: 0.0
+2025-03-16 03:53:24,129 - sampro.LabelVideo_TW - DEBUG - 轮廓 152 面积: 1.5
+2025-03-16 03:53:24,129 - sampro.LabelVideo_TW - DEBUG - 轮廓 153 面积: 3.0
+2025-03-16 03:53:24,129 - sampro.LabelVideo_TW - DEBUG - 轮廓 154 面积: 1.5
+2025-03-16 03:53:24,129 - sampro.LabelVideo_TW - DEBUG - 轮廓 155 面积: 3.5
+2025-03-16 03:53:24,129 - sampro.LabelVideo_TW - DEBUG - 轮廓 156 面积: 24.0
+2025-03-16 03:53:24,129 - sampro.LabelVideo_TW - DEBUG - 轮廓 157 面积: 12.5
+2025-03-16 03:53:24,129 - sampro.LabelVideo_TW - DEBUG - 轮廓 158 面积: 10.0
+2025-03-16 03:53:24,129 - sampro.LabelVideo_TW - DEBUG - 轮廓 159 面积: 26.0
+2025-03-16 03:53:24,129 - sampro.LabelVideo_TW - DEBUG - 轮廓 160 面积: 27.0
+2025-03-16 03:53:24,129 - sampro.LabelVideo_TW - DEBUG - 轮廓 161 面积: 72.0
+2025-03-16 03:53:24,130 - sampro.LabelVideo_TW - DEBUG - 轮廓 162 面积: 0.0
+2025-03-16 03:53:24,130 - sampro.LabelVideo_TW - DEBUG - 轮廓 163 面积: 3.5
+2025-03-16 03:53:24,130 - sampro.LabelVideo_TW - DEBUG - 轮廓 164 面积: 9.5
+2025-03-16 03:53:24,130 - sampro.LabelVideo_TW - DEBUG - 轮廓 165 面积: 3.0
+2025-03-16 03:53:24,130 - sampro.LabelVideo_TW - DEBUG - 轮廓 166 面积: 0.0
+2025-03-16 03:53:24,130 - sampro.LabelVideo_TW - DEBUG - 轮廓 167 面积: 20.5
+2025-03-16 03:53:24,130 - sampro.LabelVideo_TW - DEBUG - 轮廓 168 面积: 26.5
+2025-03-16 03:53:24,130 - sampro.LabelVideo_TW - DEBUG - 轮廓 169 面积: 12.5
+2025-03-16 03:53:24,130 - sampro.LabelVideo_TW - DEBUG - 轮廓 170 面积: 3.0
+2025-03-16 03:53:24,131 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=424, y=36, w=197, h=151
+2025-03-16 03:53:24,132 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:53:24,133 - sampro.LabelVideo_TW - INFO - 掩码创建成功
+2025-03-16 03:53:24,133 - root - DEBUG - AVT.Create_Mask 调用成功
+2025-03-16 03:53:24,133 - root - DEBUG - 设置 AT 的点击坐标: (620, 216), 方法: 1
+2025-03-16 03:53:24,133 - root - DEBUG - 调用 AT.Create_Mask
+2025-03-16 03:53:24,201 - root - DEBUG - 调用 AT.Draw_Mask
+2025-03-16 03:53:24,210 - root - DEBUG - 设置点击事件状态: clicked_event=True, paint_event=False
+2025-03-16 03:53:25,560 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 03:53:25,573 - root - DEBUG - 没有标签需要显示，显示原始图像
+2025-03-16 03:53:28,659 - root - INFO - 鼠标点击事件: 坐标=(564, 174)
+2025-03-16 03:53:28,659 - root - DEBUG - 设置点击坐标: (564, 174), 方法: 1
+2025-03-16 03:53:28,659 - root - DEBUG - 设置 AVT 的点击坐标: (564, 174), 方法: 1
+2025-03-16 03:53:28,659 - root - DEBUG - 调用 AVT.Create_Mask
+2025-03-16 03:53:28,659 - sampro.LabelVideo_TW - INFO - 创建掩码
+2025-03-16 03:53:28,660 - sampro.LabelVideo_TW - DEBUG - 添加新点: 坐标=(564, 174), 方法=1
+2025-03-16 03:53:28,660 - sampro.LabelVideo_TW - DEBUG - 点集: [[562 173]
+ [620 216]
+ [564 174]], 标签: [1 1 1]
+2025-03-16 03:53:28,771 - sampro.LabelVideo_TW - DEBUG - 生成的掩码形状: torch.Size([1, 1, 544, 960])
+2025-03-16 03:53:28,771 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (1, 544, 960)
+2025-03-16 03:53:28,771 - sampro.LabelVideo_TW - DEBUG - 帧尺寸: 960x544
+2025-03-16 03:53:28,772 - sampro.LabelVideo_TW - WARNING - 掩码尺寸 (544x1) 与帧尺寸 (960x544) 不匹配，进行调整
+2025-03-16 03:53:28,774 - sampro.LabelVideo_TW - INFO - 绘制掩码，对象 ID: None
+2025-03-16 03:53:28,774 - sampro.LabelVideo_TW - DEBUG - 帧尺寸: 960x544
+2025-03-16 03:53:28,774 - sampro.LabelVideo_TW - DEBUG - 原始掩码尺寸: 960x544
+2025-03-16 03:53:28,777 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:53:28,778 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:53:28,778 - sampro.LabelVideo_TW - DEBUG - 找到 8 个轮廓
+2025-03-16 03:53:28,779 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 0.0
+2025-03-16 03:53:28,779 - sampro.LabelVideo_TW - DEBUG - 轮廓 2 面积: 0.0
+2025-03-16 03:53:28,779 - sampro.LabelVideo_TW - DEBUG - 轮廓 3 面积: 0.0
+2025-03-16 03:53:28,779 - sampro.LabelVideo_TW - DEBUG - 轮廓 4 面积: 0.0
+2025-03-16 03:53:28,779 - sampro.LabelVideo_TW - DEBUG - 轮廓 5 面积: 4.0
+2025-03-16 03:53:28,779 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=5, 面积=4.0
+2025-03-16 03:53:28,779 - sampro.LabelVideo_TW - DEBUG - 轮廓 6 面积: 0.0
+2025-03-16 03:53:28,779 - sampro.LabelVideo_TW - DEBUG - 轮廓 7 面积: 0.5
+2025-03-16 03:53:28,780 - sampro.LabelVideo_TW - DEBUG - 轮廓 8 面积: 11901.0
+2025-03-16 03:53:28,780 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=8, 面积=11901.0
+2025-03-16 03:53:28,780 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=435, y=86, w=151, h=101
+2025-03-16 03:53:28,780 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:53:28,781 - sampro.LabelVideo_TW - INFO - 掩码创建成功
+2025-03-16 03:53:28,781 - root - DEBUG - AVT.Create_Mask 调用成功
+2025-03-16 03:53:28,781 - root - DEBUG - 设置 AT 的点击坐标: (564, 174), 方法: 1
+2025-03-16 03:53:28,781 - root - DEBUG - 调用 AT.Create_Mask
+2025-03-16 03:53:28,847 - root - DEBUG - 调用 AT.Draw_Mask
+2025-03-16 03:53:28,855 - root - DEBUG - 设置点击事件状态: clicked_event=True, paint_event=False
+2025-03-16 03:53:30,403 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 03:53:30,414 - root - DEBUG - 没有标签需要显示，显示原始图像
+2025-03-16 03:53:32,143 - root - INFO - 鼠标点击事件: 坐标=(567, 180)
+2025-03-16 03:53:32,144 - root - DEBUG - 设置点击坐标: (567, 180), 方法: 1
+2025-03-16 03:53:32,144 - root - DEBUG - 设置 AVT 的点击坐标: (567, 180), 方法: 1
+2025-03-16 03:53:32,144 - root - DEBUG - 调用 AVT.Create_Mask
+2025-03-16 03:53:32,144 - sampro.LabelVideo_TW - INFO - 创建掩码
+2025-03-16 03:53:32,145 - sampro.LabelVideo_TW - DEBUG - 添加新点: 坐标=(567, 180), 方法=1
+2025-03-16 03:53:32,145 - sampro.LabelVideo_TW - DEBUG - 点集: [[562 173]
+ [620 216]
+ [564 174]
+ [567 180]], 标签: [1 1 1 1]
+2025-03-16 03:53:32,229 - sampro.LabelVideo_TW - DEBUG - 生成的掩码形状: torch.Size([1, 1, 544, 960])
+2025-03-16 03:53:32,229 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (1, 544, 960)
+2025-03-16 03:53:32,229 - sampro.LabelVideo_TW - DEBUG - 帧尺寸: 960x544
+2025-03-16 03:53:32,230 - sampro.LabelVideo_TW - WARNING - 掩码尺寸 (544x1) 与帧尺寸 (960x544) 不匹配，进行调整
+2025-03-16 03:53:32,231 - sampro.LabelVideo_TW - INFO - 绘制掩码，对象 ID: None
+2025-03-16 03:53:32,231 - sampro.LabelVideo_TW - DEBUG - 帧尺寸: 960x544
+2025-03-16 03:53:32,232 - sampro.LabelVideo_TW - DEBUG - 原始掩码尺寸: 960x544
+2025-03-16 03:53:32,234 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:53:32,235 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:53:32,236 - sampro.LabelVideo_TW - DEBUG - 找到 10 个轮廓
+2025-03-16 03:53:32,236 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 96.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=96.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 轮廓 2 面积: 0.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 轮廓 3 面积: 0.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 轮廓 4 面积: 0.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 轮廓 5 面积: 2.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 轮廓 6 面积: 137.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=6, 面积=137.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 轮廓 7 面积: 1.5
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 轮廓 8 面积: 4.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 轮廓 9 面积: 17.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 轮廓 10 面积: 11949.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=10, 面积=11949.0
+2025-03-16 03:53:32,237 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=435, y=86, w=150, h=100
+2025-03-16 03:53:32,238 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:53:32,238 - sampro.LabelVideo_TW - INFO - 掩码创建成功
+2025-03-16 03:53:32,239 - root - DEBUG - AVT.Create_Mask 调用成功
+2025-03-16 03:53:32,239 - root - DEBUG - 设置 AT 的点击坐标: (567, 180), 方法: 1
+2025-03-16 03:53:32,239 - root - DEBUG - 调用 AT.Create_Mask
+2025-03-16 03:53:32,302 - root - DEBUG - 调用 AT.Draw_Mask
+2025-03-16 03:53:32,309 - root - DEBUG - 设置点击事件状态: clicked_event=True, paint_event=False
+2025-03-16 03:53:36,240 - root - INFO - 视频对话框确认，标签文本: 篮球
+2025-03-16 03:53:36,241 - root - DEBUG - 添加标签到列表: 篮球
+2025-03-16 03:53:36,241 - root - DEBUG - 初始化 list_labels 列表
+2025-03-16 03:53:36,242 - root - DEBUG - 确保YOLO目录结构存在: D:/workspace/LabelQuick/video\images\train, D:/workspace/LabelQuick/video\labels\train
+2025-03-16 03:53:36,244 - root - DEBUG - 复制图像到训练目录: D:/workspace/LabelQuick/video\images\train\0.jpg
+2025-03-16 03:53:36,244 - root - DEBUG - 使用 YOLO 格式保存标签: 篮球
+2025-03-16 03:53:36,244 - root - DEBUG - 边界框坐标: x=558, y=176, w=24, h=23
+2025-03-16 03:53:36,244 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=0, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:53:36,244 - util.yolofile - DEBUG - 边界框: x=558, y=176, w=24, h=23
+2025-03-16 03:53:36,244 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:53:36,244 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3], 边界框=[558, 176, 582, 199]
+2025-03-16 03:53:36,244 - root - DEBUG - 添加新类别到映射: 篮球 -> 0
+2025-03-16 03:53:36,244 - root - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\labels\classes.txt
+2025-03-16 03:53:36,245 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\labels\train\0.txt, 大小: [1300, 736, 3], 类别映射: {'篮球': 0}
+2025-03-16 03:53:36,245 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(558, 176, 582, 199)
+2025-03-16 03:53:36,245 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.438462, 0.254755), 尺寸=(0.018462, 0.031250)
+2025-03-16 03:53:36,245 - root - DEBUG - 写入行: 0 0.438462 0.254755 0.018462 0.031250
+2025-03-16 03:53:36,246 - root - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\labels\train\0.txt
+2025-03-16 03:53:36,246 - root - DEBUG - 启用开始检测打标按钮
+2025-03-16 03:53:36,246 - root - DEBUG - 重置点击和绘制事件状态
+2025-03-16 03:53:36,246 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 03:53:36,256 - root - DEBUG - 显示 1 个点击标签和 0 个绘制标签
+2025-03-16 03:53:36,256 - root - DEBUG - 绘制点击标签 1: (558, 176) - (582, 199)
+2025-03-16 03:53:36,259 - root - DEBUG - 标签显示完成
+2025-03-16 03:53:36,260 - root - DEBUG - 显示已存在的标签
+2025-03-16 03:53:39,495 - root - INFO - 开始视频检测打标
+2025-03-16 03:53:39,496 - root - DEBUG - 禁用开始检测打标按钮
+2025-03-16 03:53:39,496 - root - DEBUG - 视频路径: D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录: D:/workspace/LabelQuick/video
+2025-03-16 03:53:39,497 - root - DEBUG - 设置 AVT 的点击坐标: (567, 180), 方法: 1
+2025-03-16 03:53:39,497 - root - DEBUG - AVT 点击坐标设置成功
+2025-03-16 03:53:39,497 - root - DEBUG - 添加点击点到模型
+2025-03-16 03:53:39,497 - sampro.LabelVideo_TW - DEBUG - 添加新点: 坐标=(567, 180), 方法=1
+2025-03-16 03:53:39,497 - sampro.LabelVideo_TW - DEBUG - 点集: [[562 173]
+ [620 216]
+ [564 174]
+ [567 180]
+ [567 180]], 标签: [1 1 1 1 1]
+2025-03-16 03:53:39,566 - sampro.LabelVideo_TW - DEBUG - 生成的掩码形状: torch.Size([1, 1, 544, 960])
+2025-03-16 03:53:39,566 - root - DEBUG - 点击点添加成功
+2025-03-16 03:53:39,566 - root - DEBUG - 创建视频处理线程，点击坐标: (567, 180), 方法: 1, 文本: 篮球
+2025-03-16 03:53:39,566 - root - DEBUG - 保存路径: D:/workspace/LabelQuick/video, 格式: yolo, 类别映射: {'篮球': 0}
+2025-03-16 03:53:39,566 - root - INFO - 初始化视频处理线程
+2025-03-16 03:53:39,567 - root - DEBUG - 视频处理线程初始化完成: 视频路径=D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录=D:/workspace/LabelQuick/video, 格式=yolo
+2025-03-16 03:53:39,567 - root - DEBUG - 连接视频处理线程信号
+2025-03-16 03:53:39,568 - root - INFO - 启动视频处理线程
+2025-03-16 03:53:39,568 - root - DEBUG - 禁用其他按钮，防止重复处理
+2025-03-16 03:53:39,569 - root - INFO - 开始视频处理: 点击坐标=(567, 180), 方法=1
+2025-03-16 03:53:39,570 - root - DEBUG - 创建输出目录: D:/workspace/LabelQuick/video 和 mask 子目录: D:/workspace/LabelQuick/video\mask
+2025-03-16 03:53:39,570 - root - DEBUG - 确保YOLO目录结构存在: D:/workspace/LabelQuick/video\images\train, D:/workspace/LabelQuick/video\labels\train
+2025-03-16 03:53:39,570 - root - INFO - 开始处理视频帧，总帧数: 1
+2025-03-16 03:53:39,571 - root - DEBUG - 设置 AVT 的点击坐标: (567, 180), 方法: 1
+2025-03-16 03:53:39,571 - root - DEBUG - 添加点击点到模型
+2025-03-16 03:53:39,571 - sampro.LabelVideo_TW - DEBUG - 添加新点: 坐标=(567, 180), 方法=1
+2025-03-16 03:53:39,571 - sampro.LabelVideo_TW - DEBUG - 点集: [[562 173]
+ [620 216]
+ [564 174]
+ [567 180]
+ [567 180]
+ [567 180]], 标签: [1 1 1 1 1 1]
+2025-03-16 03:53:39,643 - sampro.LabelVideo_TW - DEBUG - 生成的掩码形状: torch.Size([1, 1, 544, 960])
+2025-03-16 03:53:39,643 - root - DEBUG - 调用 Draw_Mask_at_frame 处理所有帧，格式: yolo
+2025-03-16 03:53:39,643 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: yolo, 文本: 篮球
+2025-03-16 03:53:39,643 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 03:53:39,643 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 03:53:39,730 - sampro.LabelVideo_TW - DEBUG - 帧 0 的掩码形状: torch.Size([1, 1, 544, 960])
+2025-03-16 03:53:39,730 - sampro.LabelVideo_TW - DEBUG - 帧 0, 对象 1 的掩码形状: (1, 544, 960)
+2025-03-16 03:53:39,730 - sampro.LabelVideo_TW - DEBUG - 帧 0 的分割结果: 对象 IDs [1]
+2025-03-16 03:53:39,731 - sampro.LabelVideo_TW - DEBUG - 找到 1 个帧
+2025-03-16 03:53:39,731 - sampro.LabelVideo_TW - INFO - 开始处理 1 个帧
+2025-03-16 03:53:39,731 - sampro.LabelVideo_TW - DEBUG - 处理帧 0: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 03:53:39,745 - sampro.LabelVideo_TW - DEBUG - 帧 0 尺寸: 1300x736
+2025-03-16 03:53:39,745 - sampro.LabelVideo_TW - DEBUG - 帧 0 有 1 个分割对象
+2025-03-16 03:53:39,746 - sampro.LabelVideo_TW - DEBUG - 处理帧 0 的对象 1
+2025-03-16 03:53:39,746 - sampro.LabelVideo_TW - DEBUG - 原始掩码尺寸: (1, 544, 960)
+2025-03-16 03:53:39,746 - sampro.LabelVideo_TW - DEBUG - 转换掩码类型从 bool 到 uint8
+2025-03-16 03:53:39,747 - sampro.LabelVideo_TW - WARNING - 掩码尺寸 (544x1) 与帧尺寸 (1300x736) 不匹配，进行调整
+2025-03-16 03:53:39,748 - sampro.LabelVideo_TW - DEBUG - 调整后的掩码尺寸: (736, 1300)
+2025-03-16 03:53:39,749 - sampro.LabelVideo_TW - INFO - 绘制掩码，对象 ID: 1
+2025-03-16 03:53:39,750 - sampro.LabelVideo_TW - DEBUG - 帧尺寸: 1300x736
+2025-03-16 03:53:39,750 - sampro.LabelVideo_TW - DEBUG - 原始掩码尺寸: 1300x736
+2025-03-16 03:53:39,755 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:53:39,756 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:53:39,757 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:53:39,758 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 21941.0
+2025-03-16 03:53:39,758 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=21941.0
+2025-03-16 03:53:39,758 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=590, y=117, w=203, h=135
+2025-03-16 03:53:39,758 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:53:39,759 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=590, y=117, w=203, h=135
+2025-03-16 03:53:39,760 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:53:39,768 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/0.jpg, 大小: 1300x736.0
+2025-03-16 03:53:39,769 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:53:39,769 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=0, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:53:39,769 - util.yolofile - DEBUG - 边界框: x=590, y=117, w=203, h=135
+2025-03-16 03:53:39,769 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:53:39,769 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3], 边界框=[590, 117, 793, 252]
+2025-03-16 03:53:39,770 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3]
+2025-03-16 03:53:39,770 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 1 个消息
+2025-03-16 03:53:39,770 - sampro.LabelVideo_TW - INFO - 帧处理完成，返回 1 个标签消息
+2025-03-16 03:53:39,771 - root - DEBUG - 收到 1 个标签消息
+2025-03-16 03:53:39,771 - root - INFO - 保存所有 YOLO 格式标签，共 1 个帧
+2025-03-16 03:53:39,772 - root - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\labels\classes.txt
+2025-03-16 03:53:39,772 - root - DEBUG - 为帧 0 保存 YOLO 标签到 D:/workspace/LabelQuick/video\labels\train\0.txt
+2025-03-16 03:53:39,773 - root - ERROR - 视频处理线程出错: too many values to unpack (expected 2)
+2025-03-16 03:53:39,774 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 219, in run
+    img_width, img_height = size
+    ^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+
+2025-03-16 03:53:39,774 - root - INFO - 视频处理完成
+2025-03-16 03:53:39,774 - root - DEBUG - 收到 1 个标签消息
+2025-03-16 03:53:39,774 - root - INFO - 检测打标过程全部完成

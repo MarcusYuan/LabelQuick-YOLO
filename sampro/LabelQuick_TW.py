@@ -3,6 +3,7 @@ import cv2
 from sampro.sam2.build_sam import build_sam2
 from sampro.sam2.sam2_image_predictor import SAM2ImagePredictor
 import sys
+import torch
 
 #设置当前文件夹
 sys.path.append(r'sampro')
@@ -11,7 +12,9 @@ class Anything_TW():
     def __init__(self):
         self.sam2_checkpoint = "sampro\checkpoints\sam2.1_hiera_large.pt"
         self.model_cfg = "configs/sam2.1/sam2.1_hiera_l.yaml"
-        self.device = "cuda"
+        # 检查 CUDA 是否可用，如果可用则使用 CUDA，否则使用 CPU
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        print(f"使用设备: {self.device}")
         #全局变量
         self.coords = []
         self.methods = []

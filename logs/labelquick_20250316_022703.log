@@ -1,0 +1,32 @@
+2025-03-16 02:27:03,635 - root - INFO - LabelQuick 应用程序启动
+2025-03-16 02:27:03,914 - hydra.core.utils - DEBUG - Setting JobRuntime:name=UNKNOWN_NAME
+2025-03-16 02:27:03,914 - hydra.core.utils - DEBUG - Setting JobRuntime:name=app
+2025-03-16 02:27:08,392 - root - INFO - 初始化主界面
+2025-03-16 02:27:09,374 - root - DEBUG - UI 设置完成
+2025-03-16 02:27:09,374 - root - DEBUG - 初始化变量完成
+2025-03-16 02:27:11,505 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:27:13,617 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:27:13,630 - root - DEBUG - 初始化 Anything_TW 和 AnythingVideo_TW 完成
+2025-03-16 02:27:13,631 - root - DEBUG - 初始化定时器完成
+2025-03-16 02:27:13,632 - root - DEBUG - 开始连接信号和槽
+2025-03-16 02:27:13,632 - root - DEBUG - 信号和槽连接完成
+2025-03-16 02:27:13,632 - root - DEBUG - 初始化标签格式: xml
+2025-03-16 02:27:13,632 - root - INFO - 主界面初始化完成
+2025-03-16 02:27:17,525 - root - INFO - 标签格式已更改: xml -> yolo
+2025-03-16 02:27:17,526 - root - DEBUG - 检查 YOLO 格式的类别映射
+2025-03-16 02:27:17,526 - root - DEBUG - 类别映射为空，尝试从现有标签初始化
+2025-03-16 02:27:17,526 - root - DEBUG - 当前类别映射: {}
+2025-03-16 02:27:34,526 - root - INFO - For numpy array image, we assume (HxWxC) format
+2025-03-16 02:27:34,747 - root - INFO - Computing image embeddings for the provided image...
+2025-03-16 02:27:42,126 - root - INFO - Image embeddings computed.
+2025-03-16 02:27:52,223 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:27:52,236 - root - DEBUG - 没有标签需要显示，显示原始图像
+2025-03-16 02:27:58,134 - root - INFO - 视频对话框确认，标签文本: 篮球
+2025-03-16 02:27:58,135 - root - DEBUG - 添加标签到列表: 篮球
+2025-03-16 02:27:58,135 - root - DEBUG - 使用 YOLO 格式保存标签: 篮球
+2025-03-16 02:27:58,135 - root - DEBUG - 边界框坐标: x=558, y=175, w=21, h=24
+2025-03-16 02:27:58,135 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=0, 尺寸=1300x736, 文本=篮球
+2025-03-16 02:27:58,135 - util.yolofile - DEBUG - 边界框: x=558, y=175, w=21, h=24
+2025-03-16 02:27:58,136 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 02:27:58,136 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3], 边界框=[558, 175, 579, 199]
+2025-03-16 02:27:58,136 - root - DEBUG - 添加新类别到映射: 篮球 -> 0

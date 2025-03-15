@@ -1,0 +1,33 @@
+2025-03-16 02:33:28,274 - root - INFO - LabelQuick 应用程序启动
+2025-03-16 02:33:28,524 - hydra.core.utils - DEBUG - Setting JobRuntime:name=UNKNOWN_NAME
+2025-03-16 02:33:28,525 - hydra.core.utils - DEBUG - Setting JobRuntime:name=app
+2025-03-16 02:33:32,694 - root - INFO - 初始化主界面
+2025-03-16 02:33:33,413 - root - DEBUG - UI 设置完成
+2025-03-16 02:33:33,413 - root - DEBUG - 初始化变量完成
+2025-03-16 02:33:35,464 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:33:37,486 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:33:37,501 - root - DEBUG - 初始化 Anything_TW 和 AnythingVideo_TW 完成
+2025-03-16 02:33:37,502 - root - DEBUG - 初始化定时器完成
+2025-03-16 02:33:37,502 - root - DEBUG - 开始连接信号和槽
+2025-03-16 02:33:37,502 - root - DEBUG - 信号和槽连接完成
+2025-03-16 02:33:37,502 - root - DEBUG - 初始化标签格式: xml
+2025-03-16 02:33:37,502 - root - INFO - 主界面初始化完成
+2025-03-16 02:33:51,233 - root - INFO - 标签格式已更改: xml -> yolo
+2025-03-16 02:33:51,233 - root - DEBUG - 检查 YOLO 格式的类别映射
+2025-03-16 02:33:51,233 - root - DEBUG - 类别映射为空，尝试从现有标签初始化
+2025-03-16 02:33:51,234 - root - DEBUG - 当前类别映射: {}
+2025-03-16 02:35:14,279 - root - INFO - 选择视频: D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录: D:/workspace/LabelQuick/video
+2025-03-16 02:35:14,316 - root - DEBUG - 读取视频第一帧成功
+2025-03-16 02:35:14,342 - root - DEBUG - 设置图像路径: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 02:35:14,343 - root - DEBUG - 图像名称: 0
+2025-03-16 02:35:14,389 - root - DEBUG - 调整图像大小: D:/workspace/LabelQuick/video\0.jpg, 1300x736
+2025-03-16 02:35:14,409 - root - INFO - For numpy array image, we assume (HxWxC) format
+2025-03-16 02:35:14,627 - root - INFO - Computing image embeddings for the provided image...
+2025-03-16 02:35:21,941 - root - INFO - Image embeddings computed.
+2025-03-16 02:35:21,943 - root - DEBUG - 设置 AT 的图像
+2025-03-16 02:35:21,955 - root - DEBUG - 显示图像完成
+2025-03-16 02:35:21,955 - root - DEBUG - 设置鼠标点击事件
+2025-03-16 02:35:28,160 - root - INFO - 鼠标点击事件: 坐标=(564, 175)
+2025-03-16 02:35:28,161 - root - DEBUG - 设置点击坐标: (564, 175), 方法: 1
+2025-03-16 02:35:28,161 - root - DEBUG - 设置 AVT 的点击坐标: (564, 175), 方法: 1
+2025-03-16 02:35:28,161 - root - DEBUG - 设置 AT 的点击坐标: (564, 175), 方法: 1

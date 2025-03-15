@@ -1,0 +1,27 @@
+2025-03-16 02:02:48,620 - root - INFO - LabelQuick 应用程序启动
+2025-03-16 02:02:48,847 - hydra.core.utils - DEBUG - Setting JobRuntime:name=UNKNOWN_NAME
+2025-03-16 02:02:48,847 - hydra.core.utils - DEBUG - Setting JobRuntime:name=app
+2025-03-16 02:02:52,770 - root - INFO - 初始化主界面
+2025-03-16 02:02:53,779 - root - DEBUG - UI 设置完成
+2025-03-16 02:02:53,779 - root - DEBUG - 初始化变量完成
+2025-03-16 02:02:56,328 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:02:58,713 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:02:58,727 - root - DEBUG - 初始化 Anything_TW 和 AnythingVideo_TW 完成
+2025-03-16 02:02:58,727 - root - DEBUG - 初始化定时器完成
+2025-03-16 02:02:58,727 - root - DEBUG - 开始连接信号和槽
+2025-03-16 02:02:58,728 - root - DEBUG - 信号和槽连接完成
+2025-03-16 02:02:58,728 - root - DEBUG - 初始化标签格式: xml
+2025-03-16 02:02:58,728 - root - INFO - 主界面初始化完成
+2025-03-16 02:03:12,908 - root - INFO - 标签格式已更改: xml -> yolo
+2025-03-16 02:03:12,909 - root - DEBUG - 检查 YOLO 格式的类别映射
+2025-03-16 02:03:12,909 - root - DEBUG - 类别映射为空，尝试从现有标签初始化
+2025-03-16 02:03:12,909 - root - DEBUG - 当前类别映射: {}
+2025-03-16 02:03:58,636 - root - INFO - For numpy array image, we assume (HxWxC) format
+2025-03-16 02:03:58,834 - root - INFO - Computing image embeddings for the provided image...
+2025-03-16 02:04:06,251 - root - INFO - Image embeddings computed.
+2025-03-16 02:04:06,268 - root - INFO - 检查图像 0 的已存在标签
+2025-03-16 02:04:06,269 - root - DEBUG - XML 文件存在: False, YOLO 文件存在: False, 当前格式: yolo
+2025-03-16 02:04:06,269 - root - DEBUG - 未找到标签文件或格式不匹配: XML=False, YOLO=False, 格式=yolo
+2025-03-16 02:04:27,638 - root - INFO - 视频对话框确认，标签文本: 篮球
+2025-03-16 02:04:27,639 - root - DEBUG - 重置点击和绘制事件状态
+2025-03-16 02:04:27,650 - root - DEBUG - 显示已存在的标签

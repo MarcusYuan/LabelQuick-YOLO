@@ -1,0 +1,98 @@
+2025-03-16 02:59:34,442 - root - INFO - LabelQuick 应用程序启动
+2025-03-16 02:59:34,675 - hydra.core.utils - DEBUG - Setting JobRuntime:name=UNKNOWN_NAME
+2025-03-16 02:59:34,675 - hydra.core.utils - DEBUG - Setting JobRuntime:name=app
+2025-03-16 02:59:38,569 - root - INFO - 初始化主界面
+2025-03-16 02:59:39,262 - root - DEBUG - UI 设置完成
+2025-03-16 02:59:39,262 - root - DEBUG - 初始化变量完成
+2025-03-16 02:59:41,418 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:59:43,523 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:59:43,539 - root - DEBUG - 初始化 Anything_TW 和 AnythingVideo_TW 完成
+2025-03-16 02:59:43,539 - root - DEBUG - 初始化定时器完成
+2025-03-16 02:59:43,540 - root - DEBUG - 开始连接信号和槽
+2025-03-16 02:59:43,540 - root - DEBUG - 信号和槽连接完成
+2025-03-16 02:59:43,540 - root - DEBUG - 初始化标签格式: xml
+2025-03-16 02:59:43,541 - root - INFO - 主界面初始化完成
+2025-03-16 02:59:47,200 - root - INFO - 标签格式已更改: xml -> yolo
+2025-03-16 02:59:47,201 - root - DEBUG - 检查 YOLO 格式的类别映射
+2025-03-16 02:59:47,201 - root - DEBUG - 类别映射为空，尝试从现有标签初始化
+2025-03-16 02:59:47,201 - root - DEBUG - 当前类别映射: {}
+2025-03-16 03:00:21,875 - root - INFO - 选择视频: D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录: D:/workspace/LabelQuick/video
+2025-03-16 03:00:21,925 - root - DEBUG - 读取视频第一帧成功
+2025-03-16 03:00:21,950 - root - INFO - 初始化 AVT 对象
+2025-03-16 03:00:24,177 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 03:00:24,197 - root - DEBUG - AVT 对象初始化完成
+2025-03-16 03:00:24,197 - root - INFO - 开始从视频中提取帧
+2025-03-16 03:00:25,094 - root - INFO - 视频帧提取完成，设置视频目录: D:/workspace/LabelQuick/video
+2025-03-16 03:00:25,095 - root - DEBUG - 设置 AVT 的视频目录: D:/workspace/LabelQuick/video
+2025-03-16 03:00:25,095 - sampro.LabelVideo_TW - DEBUG - 找到 17 个帧文件
+2025-03-16 03:00:25,095 - sampro.LabelVideo_TW - DEBUG - 使用数字提取排序成功
+2025-03-16 03:00:25,095 - sampro.LabelVideo_TW - DEBUG - 排序后的前5个文件: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg']
+2025-03-16 03:00:25,116 - root - DEBUG - AVT 视频目录设置成功
+2025-03-16 03:00:25,117 - root - DEBUG - 初始化 AVT 的推理状态: D:/workspace/LabelQuick/video
+2025-03-16 03:00:33,704 - root - DEBUG - AVT 推理状态初始化成功
+2025-03-16 03:00:33,705 - root - DEBUG - 设置图像路径: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 03:00:33,705 - root - DEBUG - 图像名称: 0
+2025-03-16 03:00:33,714 - root - DEBUG - 调整图像大小: D:/workspace/LabelQuick/video\0.jpg, 1300x736
+2025-03-16 03:00:33,732 - root - INFO - For numpy array image, we assume (HxWxC) format
+2025-03-16 03:00:33,864 - root - INFO - Computing image embeddings for the provided image...
+2025-03-16 03:00:41,296 - root - INFO - Image embeddings computed.
+2025-03-16 03:00:41,300 - root - DEBUG - 设置 AT 的图像
+2025-03-16 03:00:41,312 - root - DEBUG - 显示图像完成
+2025-03-16 03:00:41,312 - root - DEBUG - 设置鼠标点击事件
+2025-03-16 03:00:48,085 - root - INFO - 鼠标点击事件: 坐标=(564, 178)
+2025-03-16 03:00:48,086 - root - DEBUG - 设置点击坐标: (564, 178), 方法: 1
+2025-03-16 03:00:48,086 - root - DEBUG - 设置 AVT 的点击坐标: (564, 178), 方法: 1
+2025-03-16 03:00:48,086 - root - DEBUG - 调用 AVT.add_new_points_or_box
+2025-03-16 03:00:48,316 - root - DEBUG - AVT.add_new_points_or_box 调用成功
+2025-03-16 03:00:48,317 - root - DEBUG - 设置 AT 的点击坐标: (564, 178), 方法: 1
+2025-03-16 03:00:48,317 - root - DEBUG - 调用 AT.Create_Mask
+2025-03-16 03:00:48,387 - root - DEBUG - 调用 AT.Draw_Mask
+2025-03-16 03:00:48,412 - root - DEBUG - 设置点击事件状态: clicked_event=True, paint_event=False
+2025-03-16 03:00:58,067 - root - INFO - 视频对话框确认，标签文本: 篮球
+2025-03-16 03:00:58,068 - root - DEBUG - 添加标签到列表: 篮球
+2025-03-16 03:00:58,068 - root - DEBUG - 初始化 list_labels 列表
+2025-03-16 03:00:58,068 - root - DEBUG - 使用 YOLO 格式保存标签: 篮球
+2025-03-16 03:00:58,068 - root - DEBUG - 边界框坐标: x=560, y=177, w=20, h=22
+2025-03-16 03:00:58,068 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=0, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:00:58,068 - util.yolofile - DEBUG - 边界框: x=560, y=177, w=20, h=22
+2025-03-16 03:00:58,069 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:00:58,069 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3], 边界框=[560, 177, 580, 199]
+2025-03-16 03:00:58,069 - root - DEBUG - 添加新类别到映射: 篮球 -> 0
+2025-03-16 03:00:58,069 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\0.txt, 大小: [1300, 736, 3], 类别映射: {'篮球': 0}
+2025-03-16 03:00:58,070 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video
+2025-03-16 03:00:58,070 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:00:58,070 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:00:58,070 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:00:58,070 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:00:58,070 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:00:58,071 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\classes.txt
+2025-03-16 03:00:58,072 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(560, 177, 580, 199)
+2025-03-16 03:00:58,072 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(560, 177, 580, 199)
+2025-03-16 03:00:58,072 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.438462, 0.255435), 尺寸=(0.015385, 0.029891)
+2025-03-16 03:00:58,072 - util.yolofile - DEBUG - 写入行: 0 0.438462 0.255435 0.015385 0.029891
+2025-03-16 03:00:58,072 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:00:58,072 - root - INFO - YOLO 标签已保存: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:00:58,073 - root - DEBUG - 启用开始检测打标按钮
+2025-03-16 03:00:58,073 - root - DEBUG - 重置点击和绘制事件状态
+2025-03-16 03:00:58,073 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 03:00:58,082 - root - DEBUG - 显示 1 个点击标签和 0 个绘制标签
+2025-03-16 03:00:58,082 - root - DEBUG - 绘制点击标签 1: (560, 177) - (580, 199)
+2025-03-16 03:00:58,085 - root - DEBUG - 标签显示完成
+2025-03-16 03:00:58,086 - root - DEBUG - 显示已存在的标签
+2025-03-16 03:01:07,993 - root - INFO - 开始视频检测打标
+2025-03-16 03:01:07,994 - root - DEBUG - 禁用开始检测打标按钮
+2025-03-16 03:01:07,994 - root - DEBUG - 视频路径: D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录: D:/workspace/LabelQuick/video
+2025-03-16 03:01:07,994 - root - DEBUG - 设置 AVT 的点击坐标: (564, 178), 方法: 1
+2025-03-16 03:01:07,994 - root - DEBUG - AVT 点击坐标设置成功
+2025-03-16 03:01:07,994 - root - DEBUG - 添加点击点到模型
+2025-03-16 03:01:08,092 - root - DEBUG - 点击点添加成功
+2025-03-16 03:01:08,093 - root - DEBUG - 创建视频处理线程，点击坐标: (564, 178), 方法: 1, 文本: 篮球
+2025-03-16 03:01:08,093 - root - DEBUG - 保存路径: D:/workspace/LabelQuick/video, 格式: yolo, 类别映射: {'篮球': 0}
+2025-03-16 03:01:08,093 - root - INFO - 初始化视频处理线程
+2025-03-16 03:01:08,094 - root - DEBUG - 视频处理线程初始化完成: 视频路径=D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录=D:/workspace/LabelQuick/video, 格式=yolo
+2025-03-16 03:01:08,094 - root - DEBUG - 连接视频处理线程信号
+2025-03-16 03:01:08,094 - root - INFO - 启动视频处理线程
+2025-03-16 03:01:08,095 - root - DEBUG - 禁用其他按钮，防止重复处理
+2025-03-16 03:01:08,096 - root - INFO - 开始视频处理: 点击坐标=(564, 178), 方法=1
+2025-03-16 03:01:08,097 - root - DEBUG - 创建输出目录: D:/workspace/LabelQuick/video 和 mask 子目录: D:/workspace/LabelQuick/video\mask
+2025-03-16 03:01:08,097 - root - INFO - 开始处理视频帧，总帧数: 17

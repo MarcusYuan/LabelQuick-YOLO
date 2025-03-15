@@ -304,6 +304,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "LabelQuick"))
         self.label.setText(_translate("MainWindow", "选择保存类型"))
         self.comboBox.setItemText(0, _translate("MainWindow", "XML"))
+        self.comboBox.addItem("YOLO")
         self.label_2.setText(_translate("MainWindow", "标签箱"))
         self.label_5.setText(_translate("MainWindow", "视频操作："))
         self.pushButton.setText(_translate("MainWindow", "开始"))

@@ -1,0 +1,34 @@
+<annotation>
+	<folder>D:/workspace/LabelQuick/image</folder>
+	<filename>image6.jpg</filename>
+	<path>D:/workspace/LabelQuick/image\image6.jpg</path>
+	<size>
+		<width>1300</width>
+		<height>736</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>&#31726;&#29699;</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>795</xmin>
+			<ymin>418</ymin>
+			<xmax>26</xmax>
+			<ymax>23</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>&#31726;&#31568;</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>791</xmin>
+			<ymin>231</ymin>
+			<xmax>74</xmax>
+			<ymax>52</ymax>
+		</bndbox>
+	</object>
+</annotation>

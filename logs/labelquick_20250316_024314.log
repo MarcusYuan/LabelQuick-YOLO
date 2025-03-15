@@ -1,0 +1,72 @@
+2025-03-16 02:43:14,513 - root - INFO - LabelQuick 应用程序启动
+2025-03-16 02:43:14,748 - hydra.core.utils - DEBUG - Setting JobRuntime:name=UNKNOWN_NAME
+2025-03-16 02:43:14,748 - hydra.core.utils - DEBUG - Setting JobRuntime:name=app
+2025-03-16 02:43:18,758 - root - INFO - 初始化主界面
+2025-03-16 02:43:19,464 - root - DEBUG - UI 设置完成
+2025-03-16 02:43:19,465 - root - DEBUG - 初始化变量完成
+2025-03-16 02:43:21,557 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:43:23,736 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:43:23,751 - root - DEBUG - 初始化 Anything_TW 和 AnythingVideo_TW 完成
+2025-03-16 02:43:23,752 - root - DEBUG - 初始化定时器完成
+2025-03-16 02:43:23,752 - root - DEBUG - 开始连接信号和槽
+2025-03-16 02:43:23,752 - root - DEBUG - 信号和槽连接完成
+2025-03-16 02:43:23,753 - root - DEBUG - 初始化标签格式: xml
+2025-03-16 02:43:23,753 - root - INFO - 主界面初始化完成
+2025-03-16 02:43:41,263 - root - INFO - 选择视频: D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录: D:/workspace/LabelQuick/video
+2025-03-16 02:43:41,300 - root - DEBUG - 读取视频第一帧成功
+2025-03-16 02:43:41,322 - root - INFO - 初始化 AVT 对象
+2025-03-16 02:43:43,618 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:43:43,636 - root - DEBUG - AVT 对象初始化完成
+2025-03-16 02:43:43,637 - root - INFO - 开始从视频中提取帧
+2025-03-16 02:43:44,520 - root - INFO - 视频帧提取完成，设置视频目录: D:/workspace/LabelQuick/video
+2025-03-16 02:43:44,521 - root - DEBUG - 设置 AVT 的视频目录: D:/workspace/LabelQuick/video
+2025-03-16 02:43:44,521 - sampro.LabelVideo_TW - DEBUG - 找到 17 个帧文件
+2025-03-16 02:43:44,522 - sampro.LabelVideo_TW - DEBUG - 使用数字提取排序成功
+2025-03-16 02:43:44,522 - sampro.LabelVideo_TW - DEBUG - 排序后的前5个文件: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg']
+2025-03-16 02:43:44,545 - root - DEBUG - AVT 视频目录设置成功
+2025-03-16 02:43:44,545 - root - DEBUG - 初始化 AVT 的推理状态: D:/workspace/LabelQuick/video
+2025-03-16 02:43:53,212 - root - DEBUG - AVT 推理状态初始化成功
+2025-03-16 02:43:53,213 - root - DEBUG - 设置图像路径: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 02:43:53,213 - root - DEBUG - 图像名称: 0
+2025-03-16 02:43:53,222 - root - DEBUG - 调整图像大小: D:/workspace/LabelQuick/video\0.jpg, 1300x736
+2025-03-16 02:43:53,245 - root - INFO - For numpy array image, we assume (HxWxC) format
+2025-03-16 02:43:53,379 - root - INFO - Computing image embeddings for the provided image...
+2025-03-16 02:44:00,531 - root - INFO - Image embeddings computed.
+2025-03-16 02:44:00,535 - root - DEBUG - 设置 AT 的图像
+2025-03-16 02:44:00,547 - root - DEBUG - 显示图像完成
+2025-03-16 02:44:00,547 - root - DEBUG - 设置鼠标点击事件
+2025-03-16 02:44:08,689 - root - INFO - 鼠标点击事件: 坐标=(561, 174)
+2025-03-16 02:44:08,689 - root - DEBUG - 设置点击坐标: (561, 174), 方法: 1
+2025-03-16 02:44:08,689 - root - DEBUG - 设置 AVT 的点击坐标: (561, 174), 方法: 1
+2025-03-16 02:44:08,689 - root - DEBUG - 初始化 AVT 的推理状态: D:/workspace/LabelQuick/video
+2025-03-16 02:44:17,005 - root - DEBUG - AVT 推理状态初始化成功
+2025-03-16 02:44:17,005 - root - DEBUG - 调用 AVT.add_new_points_or_box
+2025-03-16 02:44:17,174 - root - DEBUG - AVT.add_new_points_or_box 调用成功
+2025-03-16 02:44:17,174 - root - DEBUG - 设置 AT 的点击坐标: (561, 174), 方法: 1
+2025-03-16 02:44:17,175 - root - DEBUG - 调用 AT.Create_Mask
+2025-03-16 02:44:17,246 - root - DEBUG - 调用 AT.Draw_Mask
+2025-03-16 02:44:17,272 - root - DEBUG - 设置点击事件状态: clicked_event=True, paint_event=False
+2025-03-16 02:44:17,303 - root - INFO - 鼠标点击事件: 坐标=(566, 170)
+2025-03-16 02:44:17,303 - root - DEBUG - 设置点击坐标: (566, 170), 方法: 1
+2025-03-16 02:44:17,303 - root - DEBUG - 设置 AVT 的点击坐标: (566, 170), 方法: 1
+2025-03-16 02:44:17,304 - root - DEBUG - 初始化 AVT 的推理状态: D:/workspace/LabelQuick/video
+2025-03-16 02:44:25,036 - root - DEBUG - AVT 推理状态初始化成功
+2025-03-16 02:44:25,036 - root - DEBUG - 调用 AVT.add_new_points_or_box
+2025-03-16 02:44:25,096 - root - DEBUG - AVT.add_new_points_or_box 调用成功
+2025-03-16 02:44:25,096 - root - DEBUG - 设置 AT 的点击坐标: (566, 170), 方法: 1
+2025-03-16 02:44:25,096 - root - DEBUG - 调用 AT.Create_Mask
+2025-03-16 02:44:25,193 - root - DEBUG - 调用 AT.Draw_Mask
+2025-03-16 02:44:25,201 - root - DEBUG - 设置点击事件状态: clicked_event=True, paint_event=False
+2025-03-16 02:44:25,213 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:44:25,224 - root - DEBUG - 没有标签需要显示，显示原始图像
+2025-03-16 02:44:27,241 - root - INFO - 鼠标点击事件: 坐标=(561, 182)
+2025-03-16 02:44:27,241 - root - DEBUG - 设置点击坐标: (561, 182), 方法: 1
+2025-03-16 02:44:27,241 - root - DEBUG - 设置 AVT 的点击坐标: (561, 182), 方法: 1
+2025-03-16 02:44:27,241 - root - DEBUG - 初始化 AVT 的推理状态: D:/workspace/LabelQuick/video
+2025-03-16 02:44:35,342 - root - DEBUG - AVT 推理状态初始化成功
+2025-03-16 02:44:35,343 - root - DEBUG - 调用 AVT.add_new_points_or_box
+2025-03-16 02:44:35,430 - root - DEBUG - AVT.add_new_points_or_box 调用成功
+2025-03-16 02:44:35,431 - root - DEBUG - 设置 AT 的点击坐标: (561, 182), 方法: 1
+2025-03-16 02:44:35,431 - root - DEBUG - 调用 AT.Create_Mask
+2025-03-16 02:44:35,494 - root - DEBUG - 调用 AT.Draw_Mask
+2025-03-16 02:44:35,500 - root - DEBUG - 设置点击事件状态: clicked_event=True, paint_event=False

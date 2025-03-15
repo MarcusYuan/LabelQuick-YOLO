@@ -1,0 +1,29 @@
+2025-03-16 02:35:47,567 - root - INFO - LabelQuick 应用程序启动
+2025-03-16 02:35:47,795 - hydra.core.utils - DEBUG - Setting JobRuntime:name=UNKNOWN_NAME
+2025-03-16 02:35:47,795 - hydra.core.utils - DEBUG - Setting JobRuntime:name=app
+2025-03-16 02:35:51,636 - root - INFO - 初始化主界面
+2025-03-16 02:35:52,332 - root - DEBUG - UI 设置完成
+2025-03-16 02:35:52,332 - root - DEBUG - 初始化变量完成
+2025-03-16 02:35:54,444 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:35:56,454 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:35:56,470 - root - DEBUG - 初始化 Anything_TW 和 AnythingVideo_TW 完成
+2025-03-16 02:35:56,470 - root - DEBUG - 初始化定时器完成
+2025-03-16 02:35:56,471 - root - DEBUG - 开始连接信号和槽
+2025-03-16 02:35:56,471 - root - DEBUG - 信号和槽连接完成
+2025-03-16 02:35:56,471 - root - DEBUG - 初始化标签格式: xml
+2025-03-16 02:35:56,471 - root - INFO - 主界面初始化完成
+2025-03-16 02:36:22,994 - root - INFO - 选择视频: D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录: D:/workspace/LabelQuick/video
+2025-03-16 02:36:23,031 - root - DEBUG - 读取视频第一帧成功
+2025-03-16 02:36:23,056 - root - DEBUG - 设置图像路径: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 02:36:23,056 - root - DEBUG - 图像名称: 0
+2025-03-16 02:36:23,104 - root - DEBUG - 调整图像大小: D:/workspace/LabelQuick/video\0.jpg, 1300x736
+2025-03-16 02:36:23,124 - root - INFO - For numpy array image, we assume (HxWxC) format
+2025-03-16 02:36:23,356 - root - INFO - Computing image embeddings for the provided image...
+2025-03-16 02:36:30,852 - root - INFO - Image embeddings computed.
+2025-03-16 02:36:30,856 - root - DEBUG - 设置 AT 的图像
+2025-03-16 02:36:30,867 - root - DEBUG - 显示图像完成
+2025-03-16 02:36:30,867 - root - DEBUG - 设置鼠标点击事件
+2025-03-16 02:36:33,744 - root - INFO - 鼠标点击事件: 坐标=(567, 179)
+2025-03-16 02:36:33,744 - root - DEBUG - 设置点击坐标: (567, 179), 方法: 1
+2025-03-16 02:36:33,744 - root - DEBUG - 设置 AVT 的点击坐标: (567, 179), 方法: 1
+2025-03-16 02:36:33,744 - root - DEBUG - 设置 AT 的点击坐标: (567, 179), 方法: 1

@@ -1,0 +1,499 @@
+2025-03-16 02:28:17,491 - root - INFO - LabelQuick 应用程序启动
+2025-03-16 02:28:17,755 - hydra.core.utils - DEBUG - Setting JobRuntime:name=UNKNOWN_NAME
+2025-03-16 02:28:17,756 - hydra.core.utils - DEBUG - Setting JobRuntime:name=app
+2025-03-16 02:28:21,614 - root - INFO - 初始化主界面
+2025-03-16 02:28:22,349 - root - DEBUG - UI 设置完成
+2025-03-16 02:28:22,350 - root - DEBUG - 初始化变量完成
+2025-03-16 02:28:24,450 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:28:26,526 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:28:26,540 - root - DEBUG - 初始化 Anything_TW 和 AnythingVideo_TW 完成
+2025-03-16 02:28:26,541 - root - DEBUG - 初始化定时器完成
+2025-03-16 02:28:26,541 - root - DEBUG - 开始连接信号和槽
+2025-03-16 02:28:26,541 - root - DEBUG - 信号和槽连接完成
+2025-03-16 02:28:26,541 - root - DEBUG - 初始化标签格式: xml
+2025-03-16 02:28:26,542 - root - INFO - 主界面初始化完成
+2025-03-16 02:29:07,937 - root - INFO - For numpy array image, we assume (HxWxC) format
+2025-03-16 02:29:08,135 - root - INFO - Computing image embeddings for the provided image...
+2025-03-16 02:29:15,532 - root - INFO - Image embeddings computed.
+2025-03-16 02:29:23,594 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:29:23,607 - root - DEBUG - 没有标签需要显示，显示原始图像
+2025-03-16 02:29:30,951 - root - INFO - 视频对话框确认，标签文本: 篮球
+2025-03-16 02:29:30,952 - root - DEBUG - 添加标签到列表: 篮球
+2025-03-16 02:29:30,952 - root - DEBUG - 使用 XML 格式保存标签: 篮球
+2025-03-16 02:29:30,952 - root - DEBUG - 边界框坐标: x=557, y=172, w=25, h=28
+2025-03-16 02:29:30,952 - root - DEBUG - 保存 XML 标签到: D:/workspace/LabelQuick/video\0.xml, 大小: [1300, 736, 3]
+2025-03-16 02:29:30,960 - root - INFO - XML 标签已保存: D:/workspace/LabelQuick/video\0.xml
+2025-03-16 02:29:30,960 - root - DEBUG - 启用开始检测打标按钮
+2025-03-16 02:29:30,961 - root - DEBUG - 重置点击和绘制事件状态
+2025-03-16 02:29:30,961 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 02:29:30,975 - root - DEBUG - 显示 1 个点击标签和 0 个绘制标签
+2025-03-16 02:29:30,975 - root - DEBUG - 绘制点击标签 1: (557, 172) - (582, 200)
+2025-03-16 02:29:30,977 - root - DEBUG - 标签显示完成
+2025-03-16 02:29:30,978 - root - DEBUG - 显示已存在的标签
+2025-03-16 02:29:42,165 - root - INFO - 开始视频检测打标
+2025-03-16 02:29:42,166 - root - DEBUG - 禁用开始检测打标按钮
+2025-03-16 02:29:42,166 - root - DEBUG - 视频路径: D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录: D:/workspace/LabelQuick/video
+2025-03-16 02:29:42,166 - root - DEBUG - 创建视频处理线程，点击坐标: (566, 175), 方法: 1, 文本: 篮球
+2025-03-16 02:29:42,166 - root - DEBUG - 保存路径: D:/workspace/LabelQuick/video, 格式: xml, 类别映射: {}
+2025-03-16 02:29:42,167 - root - INFO - 初始化视频处理线程
+2025-03-16 02:29:44,489 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 02:29:44,503 - root - DEBUG - 视频处理线程初始化完成: 视频路径=D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录=D:/workspace/LabelQuick/video, 格式=xml
+2025-03-16 02:29:44,503 - root - DEBUG - 连接视频处理线程信号
+2025-03-16 02:29:44,503 - root - INFO - 启动视频处理线程
+2025-03-16 02:29:44,504 - root - DEBUG - 禁用其他按钮，防止重复处理
+2025-03-16 02:29:44,505 - root - INFO - 开始视频处理: 点击坐标=(566, 175), 方法=1
+2025-03-16 02:29:44,505 - root - DEBUG - 创建输出目录: D:/workspace/LabelQuick/video 和 mask 子目录: D:/workspace/LabelQuick/video\mask
+2025-03-16 02:29:44,506 - root - INFO - 开始从视频中提取帧
+2025-03-16 02:29:45,294 - root - INFO - 视频帧提取完成，设置视频目录: D:/workspace/LabelQuick/video
+2025-03-16 02:29:45,295 - sampro.LabelVideo_TW - DEBUG - 找到 17 个帧文件
+2025-03-16 02:29:45,295 - sampro.LabelVideo_TW - DEBUG - 使用数字提取排序成功
+2025-03-16 02:29:45,296 - sampro.LabelVideo_TW - DEBUG - 排序后的前5个文件: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg']
+2025-03-16 02:29:45,319 - root - INFO - 开始视频推理
+2025-03-16 02:29:53,531 - root - INFO - 开始处理视频帧，总帧数: 17
+2025-03-16 02:29:53,532 - root - DEBUG - 处理第 1/17 帧: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 02:29:53,532 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,532 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,532 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,532 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,533 - root - ERROR - 处理第 1 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,535 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,536 - root - DEBUG - 处理第 2/17 帧: D:/workspace/LabelQuick/video\1.jpg
+2025-03-16 02:29:53,536 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,536 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,536 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,536 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,536 - root - ERROR - 处理第 2 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,537 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,538 - root - DEBUG - 处理第 3/17 帧: D:/workspace/LabelQuick/video\2.jpg
+2025-03-16 02:29:53,538 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,538 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,538 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,538 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,538 - root - ERROR - 处理第 3 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,540 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,540 - root - DEBUG - 处理第 4/17 帧: D:/workspace/LabelQuick/video\3.jpg
+2025-03-16 02:29:53,540 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,540 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,540 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,541 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,541 - root - ERROR - 处理第 4 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,541 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,542 - root - DEBUG - 处理第 5/17 帧: D:/workspace/LabelQuick/video\4.jpg
+2025-03-16 02:29:53,542 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,542 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,542 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,542 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,542 - root - ERROR - 处理第 5 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,543 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,544 - root - DEBUG - 处理第 6/17 帧: D:/workspace/LabelQuick/video\5.jpg
+2025-03-16 02:29:53,544 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,544 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,544 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,544 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,544 - root - ERROR - 处理第 6 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,545 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,545 - root - DEBUG - 处理第 7/17 帧: D:/workspace/LabelQuick/video\6.jpg
+2025-03-16 02:29:53,545 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,545 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,546 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,546 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,546 - root - ERROR - 处理第 7 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,547 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,547 - root - DEBUG - 处理第 8/17 帧: D:/workspace/LabelQuick/video\7.jpg
+2025-03-16 02:29:53,547 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,547 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,547 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,548 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,548 - root - ERROR - 处理第 8 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,549 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,549 - root - DEBUG - 处理第 9/17 帧: D:/workspace/LabelQuick/video\8.jpg
+2025-03-16 02:29:53,549 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,549 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,549 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,550 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,550 - root - ERROR - 处理第 9 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,551 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,551 - root - DEBUG - 处理第 10/17 帧: D:/workspace/LabelQuick/video\9.jpg
+2025-03-16 02:29:53,551 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,552 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,552 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,552 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,552 - root - ERROR - 处理第 10 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,553 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,553 - root - DEBUG - 处理第 11/17 帧: D:/workspace/LabelQuick/video\10.jpg
+2025-03-16 02:29:53,553 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,553 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,554 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,554 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,554 - root - ERROR - 处理第 11 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,555 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,555 - root - DEBUG - 处理第 12/17 帧: D:/workspace/LabelQuick/video\11.jpg
+2025-03-16 02:29:53,555 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,555 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,556 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,556 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,556 - root - ERROR - 处理第 12 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,557 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,557 - root - DEBUG - 处理第 13/17 帧: D:/workspace/LabelQuick/video\12.jpg
+2025-03-16 02:29:53,557 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,557 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,558 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,558 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,558 - root - ERROR - 处理第 13 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,559 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,559 - root - DEBUG - 处理第 14/17 帧: D:/workspace/LabelQuick/video\13.jpg
+2025-03-16 02:29:53,559 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,559 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,559 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,559 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,559 - root - ERROR - 处理第 14 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,560 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,560 - root - DEBUG - 处理第 15/17 帧: D:/workspace/LabelQuick/video\14.jpg
+2025-03-16 02:29:53,560 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,561 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,561 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,561 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,561 - root - ERROR - 处理第 15 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,562 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,563 - root - DEBUG - 处理第 16/17 帧: D:/workspace/LabelQuick/video\15.jpg
+2025-03-16 02:29:53,563 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,563 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,563 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,563 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,564 - root - ERROR - 处理第 16 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,565 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,565 - root - DEBUG - 处理第 17/17 帧: D:/workspace/LabelQuick/video\16.jpg
+2025-03-16 02:29:53,565 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: xml
+2025-03-16 02:29:53,565 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: xml, 文本: 篮球
+2025-03-16 02:29:53,566 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 02:29:53,566 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 02:29:53,566 - root - ERROR - 处理第 17 帧时出错: No input points or masks are provided for any object; please add inputs first.
+2025-03-16 02:29:53,567 - root - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\GUI\main.py", line 145, in run
+    processed_frame, xml_messages = self.AVT.Draw_Mask_at_frame(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\LabelVideo_TW.py", line 398, in Draw_Mask_at_frame
+    for out_frame_idx, out_obj_ids, out_mask_logits in self.predictor.propagate_in_video(self.inference_state):
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 554, in propagate_in_video
+    self.propagate_in_video_preflight(inference_state)
+  File "d:\workspace\LabelQuick\.conda\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\LabelQuick\sampro\sam2\sam2_video_predictor.py", line 485, in propagate_in_video_preflight
+    raise RuntimeError(
+RuntimeError: No input points or masks are provided for any object; please add inputs first.
+
+2025-03-16 02:29:53,567 - root - INFO - 视频处理完成，发送完成信号
+2025-03-16 02:29:53,567 - root - INFO - 视频处理完成
+2025-03-16 02:29:53,568 - root - DEBUG - 收到 0 个标签消息
+2025-03-16 02:29:53,568 - root - DEBUG - 输出目录中有 17 个图像文件
+2025-03-16 02:29:53,568 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 02:29:53,568 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,568 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\1.jpg
+2025-03-16 02:29:53,568 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,568 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\10.jpg
+2025-03-16 02:29:53,568 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,568 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\11.jpg
+2025-03-16 02:29:53,568 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,568 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\12.jpg
+2025-03-16 02:29:53,569 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,569 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\13.jpg
+2025-03-16 02:29:53,569 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,569 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\14.jpg
+2025-03-16 02:29:53,569 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,569 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\15.jpg
+2025-03-16 02:29:53,569 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,569 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\16.jpg
+2025-03-16 02:29:53,569 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,569 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\2.jpg
+2025-03-16 02:29:53,569 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,569 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\3.jpg
+2025-03-16 02:29:53,569 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,569 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\4.jpg
+2025-03-16 02:29:53,569 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,569 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\5.jpg
+2025-03-16 02:29:53,569 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,569 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\6.jpg
+2025-03-16 02:29:53,570 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,570 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\7.jpg
+2025-03-16 02:29:53,570 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,570 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\8.jpg
+2025-03-16 02:29:53,570 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,570 - root - DEBUG - 处理图像文件: D:/workspace/LabelQuick/video\9.jpg
+2025-03-16 02:29:53,570 - root - DEBUG - 找到 0 个匹配的标签消息
+2025-03-16 02:29:53,570 - root - INFO - 检测打标过程全部完成

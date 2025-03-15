@@ -1,0 +1,1775 @@
+2025-03-16 03:05:35,280 - root - INFO - LabelQuick 应用程序启动
+2025-03-16 03:05:35,533 - hydra.core.utils - DEBUG - Setting JobRuntime:name=UNKNOWN_NAME
+2025-03-16 03:05:35,533 - hydra.core.utils - DEBUG - Setting JobRuntime:name=app
+2025-03-16 03:05:39,472 - root - INFO - 初始化主界面
+2025-03-16 03:05:40,216 - root - DEBUG - UI 设置完成
+2025-03-16 03:05:40,216 - root - DEBUG - 初始化变量完成
+2025-03-16 03:05:42,300 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 03:05:44,403 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 03:05:44,421 - root - DEBUG - 初始化 Anything_TW 和 AnythingVideo_TW 完成
+2025-03-16 03:05:44,421 - root - DEBUG - 初始化定时器完成
+2025-03-16 03:05:44,422 - root - DEBUG - 开始连接信号和槽
+2025-03-16 03:05:44,423 - root - DEBUG - 信号和槽连接完成
+2025-03-16 03:05:44,423 - root - DEBUG - 初始化标签格式: xml
+2025-03-16 03:05:44,423 - root - INFO - 主界面初始化完成
+2025-03-16 03:05:49,563 - root - INFO - 标签格式已更改: xml -> yolo
+2025-03-16 03:05:49,563 - root - DEBUG - 检查 YOLO 格式的类别映射
+2025-03-16 03:05:49,563 - root - DEBUG - 类别映射为空，尝试从现有标签初始化
+2025-03-16 03:05:49,564 - root - DEBUG - 当前类别映射: {}
+2025-03-16 03:06:24,640 - root - INFO - 选择视频: D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录: D:/workspace/LabelQuick/video
+2025-03-16 03:06:24,674 - root - DEBUG - 读取视频第一帧成功
+2025-03-16 03:06:24,699 - root - INFO - 初始化 AVT 对象
+2025-03-16 03:06:27,069 - root - INFO - Loaded checkpoint sucessfully
+2025-03-16 03:06:27,087 - root - DEBUG - AVT 对象初始化完成
+2025-03-16 03:06:27,087 - root - INFO - 开始从视频中提取帧
+2025-03-16 03:06:27,957 - root - INFO - 视频帧提取完成，设置视频目录: D:/workspace/LabelQuick/video
+2025-03-16 03:06:27,957 - root - DEBUG - 设置 AVT 的视频目录: D:/workspace/LabelQuick/video
+2025-03-16 03:06:27,958 - sampro.LabelVideo_TW - DEBUG - 找到 17 个帧文件
+2025-03-16 03:06:27,958 - sampro.LabelVideo_TW - DEBUG - 使用数字提取排序成功
+2025-03-16 03:06:27,958 - sampro.LabelVideo_TW - DEBUG - 排序后的前5个文件: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg']
+2025-03-16 03:06:27,978 - root - DEBUG - AVT 视频目录设置成功
+2025-03-16 03:06:27,978 - root - DEBUG - 初始化 AVT 的推理状态: D:/workspace/LabelQuick/video
+2025-03-16 03:06:36,425 - root - DEBUG - AVT 推理状态初始化成功
+2025-03-16 03:06:36,426 - root - DEBUG - 设置图像路径: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 03:06:36,426 - root - DEBUG - 图像名称: 0
+2025-03-16 03:06:36,436 - root - DEBUG - 调整图像大小: D:/workspace/LabelQuick/video\0.jpg, 1300x736
+2025-03-16 03:06:36,455 - root - INFO - For numpy array image, we assume (HxWxC) format
+2025-03-16 03:06:36,564 - root - INFO - Computing image embeddings for the provided image...
+2025-03-16 03:06:43,705 - root - INFO - Image embeddings computed.
+2025-03-16 03:06:43,707 - root - DEBUG - 设置 AT 的图像
+2025-03-16 03:06:43,718 - root - DEBUG - 显示图像完成
+2025-03-16 03:06:43,718 - root - DEBUG - 设置鼠标点击事件
+2025-03-16 03:06:54,384 - root - INFO - 鼠标点击事件: 坐标=(564, 178)
+2025-03-16 03:06:54,384 - root - DEBUG - 设置点击坐标: (564, 178), 方法: 1
+2025-03-16 03:06:54,384 - root - DEBUG - 设置 AVT 的点击坐标: (564, 178), 方法: 1
+2025-03-16 03:06:54,384 - root - DEBUG - 调用 AVT.add_new_points_or_box
+2025-03-16 03:06:54,580 - root - DEBUG - AVT.add_new_points_or_box 调用成功
+2025-03-16 03:06:54,580 - root - DEBUG - 设置 AT 的点击坐标: (564, 178), 方法: 1
+2025-03-16 03:06:54,580 - root - DEBUG - 调用 AT.Create_Mask
+2025-03-16 03:06:54,643 - root - DEBUG - 调用 AT.Draw_Mask
+2025-03-16 03:06:54,653 - root - DEBUG - 设置点击事件状态: clicked_event=True, paint_event=False
+2025-03-16 03:07:01,736 - root - INFO - 视频对话框确认，标签文本: 篮球
+2025-03-16 03:07:01,736 - root - DEBUG - 添加标签到列表: 篮球
+2025-03-16 03:07:01,736 - root - DEBUG - 初始化 list_labels 列表
+2025-03-16 03:07:01,736 - root - DEBUG - 使用 YOLO 格式保存标签: 篮球
+2025-03-16 03:07:01,737 - root - DEBUG - 边界框坐标: x=560, y=177, w=20, h=22
+2025-03-16 03:07:01,737 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=0, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:07:01,737 - util.yolofile - DEBUG - 边界框: x=560, y=177, w=20, h=22
+2025-03-16 03:07:01,737 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:07:01,738 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3], 边界框=[560, 177, 580, 199]
+2025-03-16 03:07:01,738 - root - DEBUG - 添加新类别到映射: 篮球 -> 0
+2025-03-16 03:07:01,738 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\0.txt, 大小: [1300, 736, 3], 类别映射: {'篮球': 0}
+2025-03-16 03:07:01,738 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video
+2025-03-16 03:07:01,739 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:07:01,739 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:07:01,739 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:07:01,739 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:07:01,739 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:07:01,740 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\classes.txt
+2025-03-16 03:07:01,741 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(560, 177, 580, 199)
+2025-03-16 03:07:01,741 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(560, 177, 580, 199)
+2025-03-16 03:07:01,741 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.438462, 0.255435), 尺寸=(0.015385, 0.029891)
+2025-03-16 03:07:01,741 - util.yolofile - DEBUG - 写入行: 0 0.438462 0.255435 0.015385 0.029891
+2025-03-16 03:07:01,742 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:07:01,742 - root - INFO - YOLO 标签已保存: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:07:01,743 - root - DEBUG - 启用开始检测打标按钮
+2025-03-16 03:07:01,743 - root - DEBUG - 重置点击和绘制事件状态
+2025-03-16 03:07:01,743 - root - DEBUG - 开始显示已存在的标签和边界框
+2025-03-16 03:07:01,754 - root - DEBUG - 显示 1 个点击标签和 0 个绘制标签
+2025-03-16 03:07:01,755 - root - DEBUG - 绘制点击标签 1: (560, 177) - (580, 199)
+2025-03-16 03:07:01,757 - root - DEBUG - 标签显示完成
+2025-03-16 03:07:01,758 - root - DEBUG - 显示已存在的标签
+2025-03-16 03:07:06,625 - root - INFO - 开始视频检测打标
+2025-03-16 03:07:06,626 - root - DEBUG - 禁用开始检测打标按钮
+2025-03-16 03:07:06,626 - root - DEBUG - 视频路径: D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录: D:/workspace/LabelQuick/video
+2025-03-16 03:07:06,626 - root - DEBUG - 设置 AVT 的点击坐标: (564, 178), 方法: 1
+2025-03-16 03:07:06,626 - root - DEBUG - AVT 点击坐标设置成功
+2025-03-16 03:07:06,626 - root - DEBUG - 添加点击点到模型
+2025-03-16 03:07:06,724 - root - DEBUG - 点击点添加成功
+2025-03-16 03:07:06,724 - root - DEBUG - 创建视频处理线程，点击坐标: (564, 178), 方法: 1, 文本: 篮球
+2025-03-16 03:07:06,724 - root - DEBUG - 保存路径: D:/workspace/LabelQuick/video, 格式: yolo, 类别映射: {'篮球': 0}
+2025-03-16 03:07:06,724 - root - INFO - 初始化视频处理线程
+2025-03-16 03:07:06,725 - root - DEBUG - 视频处理线程初始化完成: 视频路径=D:/workspace/LabelQuick/video/ceshi.mp4, 输出目录=D:/workspace/LabelQuick/video, 格式=yolo
+2025-03-16 03:07:06,725 - root - DEBUG - 连接视频处理线程信号
+2025-03-16 03:07:06,725 - root - INFO - 启动视频处理线程
+2025-03-16 03:07:06,726 - root - DEBUG - 禁用其他按钮，防止重复处理
+2025-03-16 03:07:06,727 - root - INFO - 开始视频处理: 点击坐标=(564, 178), 方法=1
+2025-03-16 03:07:06,728 - root - DEBUG - 创建输出目录: D:/workspace/LabelQuick/video 和 mask 子目录: D:/workspace/LabelQuick/video\mask
+2025-03-16 03:07:06,728 - root - INFO - 开始处理视频帧，总帧数: 17
+2025-03-16 03:07:06,728 - root - DEBUG - 处理第 1/17 帧: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 03:07:06,728 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: yolo
+2025-03-16 03:07:06,728 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: yolo, 文本: 篮球
+2025-03-16 03:07:06,729 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 03:07:06,729 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 03:07:06,839 - sampro.LabelVideo_TW - DEBUG - 帧 0 的分割结果: 对象 IDs [1]
+2025-03-16 03:07:14,957 - sampro.LabelVideo_TW - DEBUG - 帧 1 的分割结果: 对象 IDs [1]
+2025-03-16 03:07:23,160 - sampro.LabelVideo_TW - DEBUG - 帧 2 的分割结果: 对象 IDs [1]
+2025-03-16 03:07:32,012 - sampro.LabelVideo_TW - DEBUG - 帧 3 的分割结果: 对象 IDs [1]
+2025-03-16 03:07:40,967 - sampro.LabelVideo_TW - DEBUG - 帧 4 的分割结果: 对象 IDs [1]
+2025-03-16 03:07:50,109 - sampro.LabelVideo_TW - DEBUG - 帧 5 的分割结果: 对象 IDs [1]
+2025-03-16 03:07:59,513 - sampro.LabelVideo_TW - DEBUG - 帧 6 的分割结果: 对象 IDs [1]
+2025-03-16 03:08:09,119 - sampro.LabelVideo_TW - DEBUG - 帧 7 的分割结果: 对象 IDs [1]
+2025-03-16 03:08:18,940 - sampro.LabelVideo_TW - DEBUG - 帧 8 的分割结果: 对象 IDs [1]
+2025-03-16 03:08:28,577 - sampro.LabelVideo_TW - DEBUG - 帧 9 的分割结果: 对象 IDs [1]
+2025-03-16 03:08:38,617 - sampro.LabelVideo_TW - DEBUG - 帧 10 的分割结果: 对象 IDs [1]
+2025-03-16 03:08:48,358 - sampro.LabelVideo_TW - DEBUG - 帧 11 的分割结果: 对象 IDs [1]
+2025-03-16 03:08:58,053 - sampro.LabelVideo_TW - DEBUG - 帧 12 的分割结果: 对象 IDs [1]
+2025-03-16 03:09:07,714 - sampro.LabelVideo_TW - DEBUG - 帧 13 的分割结果: 对象 IDs [1]
+2025-03-16 03:09:17,588 - sampro.LabelVideo_TW - DEBUG - 帧 14 的分割结果: 对象 IDs [1]
+2025-03-16 03:09:27,469 - sampro.LabelVideo_TW - DEBUG - 帧 15 的分割结果: 对象 IDs [1]
+2025-03-16 03:09:37,503 - sampro.LabelVideo_TW - DEBUG - 帧 16 的分割结果: 对象 IDs [1]
+2025-03-16 03:09:37,504 - sampro.LabelVideo_TW - DEBUG - 找到 17 个帧
+2025-03-16 03:09:37,505 - sampro.LabelVideo_TW - INFO - 开始处理 17 个帧
+2025-03-16 03:09:37,505 - sampro.LabelVideo_TW - DEBUG - 处理帧 0: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 03:09:37,519 - sampro.LabelVideo_TW - DEBUG - 帧 0 有 1 个分割对象
+2025-03-16 03:09:37,519 - sampro.LabelVideo_TW - DEBUG - 处理帧 0 的对象 1
+2025-03-16 03:09:37,520 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,520 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,529 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,532 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,533 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,533 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 313.0
+2025-03-16 03:09:37,534 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=313.0
+2025-03-16 03:09:37,534 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=560, y=176, w=20, h=23
+2025-03-16 03:09:37,534 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,535 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=560, y=176, w=20, h=23
+2025-03-16 03:09:37,535 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,543 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/0.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,543 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,543 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=0, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,543 - util.yolofile - DEBUG - 边界框: x=560, y=176, w=20, h=23
+2025-03-16 03:09:37,544 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:09:37,544 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3], 边界框=[560, 176, 580, 199]
+2025-03-16 03:09:37,544 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,544 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 1 个消息
+2025-03-16 03:09:37,544 - sampro.LabelVideo_TW - DEBUG - 处理帧 1: D:/workspace/LabelQuick/video\1.jpg
+2025-03-16 03:09:37,557 - sampro.LabelVideo_TW - DEBUG - 帧 1 有 1 个分割对象
+2025-03-16 03:09:37,557 - sampro.LabelVideo_TW - DEBUG - 处理帧 1 的对象 1
+2025-03-16 03:09:37,558 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,558 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,565 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,567 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,567 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,568 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 209.0
+2025-03-16 03:09:37,568 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=209.0
+2025-03-16 03:09:37,568 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=509, y=276, w=16, h=18
+2025-03-16 03:09:37,568 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,569 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=509, y=276, w=16, h=18
+2025-03-16 03:09:37,570 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,579 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/1.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,579 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,579 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=1, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,579 - util.yolofile - DEBUG - 边界框: x=509, y=276, w=16, h=18
+2025-03-16 03:09:37,579 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\1.txt
+2025-03-16 03:09:37,579 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\1.txt, 大小=[1300, 736, 3], 边界框=[509, 276, 525, 294]
+2025-03-16 03:09:37,580 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\1.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,580 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 2 个消息
+2025-03-16 03:09:37,580 - sampro.LabelVideo_TW - DEBUG - 处理帧 2: D:/workspace/LabelQuick/video\2.jpg
+2025-03-16 03:09:37,591 - sampro.LabelVideo_TW - DEBUG - 帧 2 有 1 个分割对象
+2025-03-16 03:09:37,591 - sampro.LabelVideo_TW - DEBUG - 处理帧 2 的对象 1
+2025-03-16 03:09:37,592 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,593 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,599 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,600 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,601 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,602 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 209.0
+2025-03-16 03:09:37,602 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=209.0
+2025-03-16 03:09:37,602 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=616, y=296, w=16, h=18
+2025-03-16 03:09:37,602 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,603 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=616, y=296, w=16, h=18
+2025-03-16 03:09:37,604 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,613 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/2.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,613 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,613 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=2, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,613 - util.yolofile - DEBUG - 边界框: x=616, y=296, w=16, h=18
+2025-03-16 03:09:37,613 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\2.txt
+2025-03-16 03:09:37,613 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\2.txt, 大小=[1300, 736, 3], 边界框=[616, 296, 632, 314]
+2025-03-16 03:09:37,613 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\2.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,613 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 3 个消息
+2025-03-16 03:09:37,613 - sampro.LabelVideo_TW - DEBUG - 处理帧 3: D:/workspace/LabelQuick/video\3.jpg
+2025-03-16 03:09:37,629 - sampro.LabelVideo_TW - DEBUG - 帧 3 有 1 个分割对象
+2025-03-16 03:09:37,630 - sampro.LabelVideo_TW - DEBUG - 处理帧 3 的对象 1
+2025-03-16 03:09:37,630 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,631 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,637 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,638 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,638 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:09:37,639 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:09:37,640 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 3
+2025-03-16 03:09:37,640 - sampro.LabelVideo_TW - DEBUG - 处理帧 4: D:/workspace/LabelQuick/video\4.jpg
+2025-03-16 03:09:37,652 - sampro.LabelVideo_TW - DEBUG - 帧 4 有 1 个分割对象
+2025-03-16 03:09:37,652 - sampro.LabelVideo_TW - DEBUG - 处理帧 4 的对象 1
+2025-03-16 03:09:37,653 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,653 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,658 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,659 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,660 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,661 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 183.5
+2025-03-16 03:09:37,661 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=183.5
+2025-03-16 03:09:37,661 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=569, y=415, w=15, h=18
+2025-03-16 03:09:37,661 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,663 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=569, y=415, w=15, h=18
+2025-03-16 03:09:37,663 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,671 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/4.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,671 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,672 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=4, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,672 - util.yolofile - DEBUG - 边界框: x=569, y=415, w=15, h=18
+2025-03-16 03:09:37,672 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\4.txt
+2025-03-16 03:09:37,672 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\4.txt, 大小=[1300, 736, 3], 边界框=[569, 415, 584, 433]
+2025-03-16 03:09:37,672 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\4.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,672 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 4 个消息
+2025-03-16 03:09:37,672 - sampro.LabelVideo_TW - DEBUG - 处理帧 5: D:/workspace/LabelQuick/video\5.jpg
+2025-03-16 03:09:37,686 - sampro.LabelVideo_TW - DEBUG - 帧 5 有 1 个分割对象
+2025-03-16 03:09:37,686 - sampro.LabelVideo_TW - DEBUG - 处理帧 5 的对象 1
+2025-03-16 03:09:37,687 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,687 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,692 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,693 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,694 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,695 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 345.5
+2025-03-16 03:09:37,695 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=345.5
+2025-03-16 03:09:37,695 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=471, y=433, w=23, h=22
+2025-03-16 03:09:37,695 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,696 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=471, y=433, w=23, h=22
+2025-03-16 03:09:37,697 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,704 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/5.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,704 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,704 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=5, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,704 - util.yolofile - DEBUG - 边界框: x=471, y=433, w=23, h=22
+2025-03-16 03:09:37,704 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\5.txt
+2025-03-16 03:09:37,704 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\5.txt, 大小=[1300, 736, 3], 边界框=[471, 433, 494, 455]
+2025-03-16 03:09:37,704 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\5.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,704 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 5 个消息
+2025-03-16 03:09:37,704 - sampro.LabelVideo_TW - DEBUG - 处理帧 6: D:/workspace/LabelQuick/video\6.jpg
+2025-03-16 03:09:37,715 - sampro.LabelVideo_TW - DEBUG - 帧 6 有 1 个分割对象
+2025-03-16 03:09:37,715 - sampro.LabelVideo_TW - DEBUG - 处理帧 6 的对象 1
+2025-03-16 03:09:37,716 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,716 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,720 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,721 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,721 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,722 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 334.5
+2025-03-16 03:09:37,722 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=334.5
+2025-03-16 03:09:37,722 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=346, y=383, w=19, h=25
+2025-03-16 03:09:37,722 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,723 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=346, y=383, w=19, h=25
+2025-03-16 03:09:37,723 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,730 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/6.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,730 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,730 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=6, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,730 - util.yolofile - DEBUG - 边界框: x=346, y=383, w=19, h=25
+2025-03-16 03:09:37,730 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\6.txt
+2025-03-16 03:09:37,730 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\6.txt, 大小=[1300, 736, 3], 边界框=[346, 383, 365, 408]
+2025-03-16 03:09:37,730 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\6.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,730 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 6 个消息
+2025-03-16 03:09:37,731 - sampro.LabelVideo_TW - DEBUG - 处理帧 7: D:/workspace/LabelQuick/video\7.jpg
+2025-03-16 03:09:37,741 - sampro.LabelVideo_TW - DEBUG - 帧 7 有 1 个分割对象
+2025-03-16 03:09:37,741 - sampro.LabelVideo_TW - DEBUG - 处理帧 7 的对象 1
+2025-03-16 03:09:37,741 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,741 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,745 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,746 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,747 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,748 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 982.5
+2025-03-16 03:09:37,748 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=982.5
+2025-03-16 03:09:37,748 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=385, y=120, w=36, h=37
+2025-03-16 03:09:37,748 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,749 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=385, y=120, w=36, h=37
+2025-03-16 03:09:37,749 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,755 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/7.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,755 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,755 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=7, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,755 - util.yolofile - DEBUG - 边界框: x=385, y=120, w=36, h=37
+2025-03-16 03:09:37,756 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\7.txt
+2025-03-16 03:09:37,756 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\7.txt, 大小=[1300, 736, 3], 边界框=[385, 120, 421, 157]
+2025-03-16 03:09:37,756 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\7.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,756 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 7 个消息
+2025-03-16 03:09:37,756 - sampro.LabelVideo_TW - DEBUG - 处理帧 8: D:/workspace/LabelQuick/video\8.jpg
+2025-03-16 03:09:37,766 - sampro.LabelVideo_TW - DEBUG - 帧 8 有 1 个分割对象
+2025-03-16 03:09:37,766 - sampro.LabelVideo_TW - DEBUG - 处理帧 8 的对象 1
+2025-03-16 03:09:37,767 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,767 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,771 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,772 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,772 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,773 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 1208.0
+2025-03-16 03:09:37,773 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=1208.0
+2025-03-16 03:09:37,773 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=651, y=118, w=40, h=40
+2025-03-16 03:09:37,773 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,774 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=651, y=118, w=40, h=40
+2025-03-16 03:09:37,775 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,781 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/8.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,781 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,782 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=8, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,782 - util.yolofile - DEBUG - 边界框: x=651, y=118, w=40, h=40
+2025-03-16 03:09:37,782 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\8.txt
+2025-03-16 03:09:37,782 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\8.txt, 大小=[1300, 736, 3], 边界框=[651, 118, 691, 158]
+2025-03-16 03:09:37,782 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\8.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,782 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 8 个消息
+2025-03-16 03:09:37,782 - sampro.LabelVideo_TW - DEBUG - 处理帧 9: D:/workspace/LabelQuick/video\9.jpg
+2025-03-16 03:09:37,793 - sampro.LabelVideo_TW - DEBUG - 帧 9 有 1 个分割对象
+2025-03-16 03:09:37,793 - sampro.LabelVideo_TW - DEBUG - 处理帧 9 的对象 1
+2025-03-16 03:09:37,794 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,794 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,798 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,799 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,800 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:09:37,800 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:09:37,801 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 9
+2025-03-16 03:09:37,801 - sampro.LabelVideo_TW - DEBUG - 处理帧 10: D:/workspace/LabelQuick/video\10.jpg
+2025-03-16 03:09:37,812 - sampro.LabelVideo_TW - DEBUG - 帧 10 有 1 个分割对象
+2025-03-16 03:09:37,813 - sampro.LabelVideo_TW - DEBUG - 处理帧 10 的对象 1
+2025-03-16 03:09:37,813 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,813 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,817 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,819 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,819 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:09:37,820 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:09:37,821 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 10
+2025-03-16 03:09:37,822 - sampro.LabelVideo_TW - DEBUG - 处理帧 11: D:/workspace/LabelQuick/video\11.jpg
+2025-03-16 03:09:37,834 - sampro.LabelVideo_TW - DEBUG - 帧 11 有 1 个分割对象
+2025-03-16 03:09:37,834 - sampro.LabelVideo_TW - DEBUG - 处理帧 11 的对象 1
+2025-03-16 03:09:37,834 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,834 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,838 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,839 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,840 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,841 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 571.5
+2025-03-16 03:09:37,841 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=571.5
+2025-03-16 03:09:37,841 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=659, y=322, w=29, h=27
+2025-03-16 03:09:37,841 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,842 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=659, y=322, w=29, h=27
+2025-03-16 03:09:37,842 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,849 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/11.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,849 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,849 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=11, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,849 - util.yolofile - DEBUG - 边界框: x=659, y=322, w=29, h=27
+2025-03-16 03:09:37,849 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\11.txt
+2025-03-16 03:09:37,849 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\11.txt, 大小=[1300, 736, 3], 边界框=[659, 322, 688, 349]
+2025-03-16 03:09:37,849 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\11.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,849 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 9 个消息
+2025-03-16 03:09:37,849 - sampro.LabelVideo_TW - DEBUG - 处理帧 12: D:/workspace/LabelQuick/video\12.jpg
+2025-03-16 03:09:37,860 - sampro.LabelVideo_TW - DEBUG - 帧 12 有 1 个分割对象
+2025-03-16 03:09:37,860 - sampro.LabelVideo_TW - DEBUG - 处理帧 12 的对象 1
+2025-03-16 03:09:37,861 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,861 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,865 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,866 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,866 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,867 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 247.5
+2025-03-16 03:09:37,867 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=247.5
+2025-03-16 03:09:37,867 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=691, y=343, w=25, h=17
+2025-03-16 03:09:37,867 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,868 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=691, y=343, w=25, h=17
+2025-03-16 03:09:37,869 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,875 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/12.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,875 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,875 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=12, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,875 - util.yolofile - DEBUG - 边界框: x=691, y=343, w=25, h=17
+2025-03-16 03:09:37,876 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\12.txt
+2025-03-16 03:09:37,876 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\12.txt, 大小=[1300, 736, 3], 边界框=[691, 343, 716, 360]
+2025-03-16 03:09:37,876 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\12.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,876 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 10 个消息
+2025-03-16 03:09:37,876 - sampro.LabelVideo_TW - DEBUG - 处理帧 13: D:/workspace/LabelQuick/video\13.jpg
+2025-03-16 03:09:37,887 - sampro.LabelVideo_TW - DEBUG - 帧 13 有 1 个分割对象
+2025-03-16 03:09:37,887 - sampro.LabelVideo_TW - DEBUG - 处理帧 13 的对象 1
+2025-03-16 03:09:37,888 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,888 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,891 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,892 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,892 - sampro.LabelVideo_TW - DEBUG - 找到 2 个轮廓
+2025-03-16 03:09:37,893 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 0.0
+2025-03-16 03:09:37,893 - sampro.LabelVideo_TW - DEBUG - 轮廓 2 面积: 406.0
+2025-03-16 03:09:37,893 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=2, 面积=406.0
+2025-03-16 03:09:37,893 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=804, y=235, w=25, h=25
+2025-03-16 03:09:37,894 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,894 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=804, y=235, w=25, h=25
+2025-03-16 03:09:37,895 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,903 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/13.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,903 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,903 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=13, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,903 - util.yolofile - DEBUG - 边界框: x=804, y=235, w=25, h=25
+2025-03-16 03:09:37,903 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\13.txt
+2025-03-16 03:09:37,903 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\13.txt, 大小=[1300, 736, 3], 边界框=[804, 235, 829, 260]
+2025-03-16 03:09:37,903 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\13.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,903 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 11 个消息
+2025-03-16 03:09:37,903 - sampro.LabelVideo_TW - DEBUG - 处理帧 14: D:/workspace/LabelQuick/video\14.jpg
+2025-03-16 03:09:37,914 - sampro.LabelVideo_TW - DEBUG - 帧 14 有 1 个分割对象
+2025-03-16 03:09:37,915 - sampro.LabelVideo_TW - DEBUG - 处理帧 14 的对象 1
+2025-03-16 03:09:37,915 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,915 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,919 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,920 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,921 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:09:37,921 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:09:37,923 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 14
+2025-03-16 03:09:37,923 - sampro.LabelVideo_TW - DEBUG - 处理帧 15: D:/workspace/LabelQuick/video\15.jpg
+2025-03-16 03:09:37,935 - sampro.LabelVideo_TW - DEBUG - 帧 15 有 1 个分割对象
+2025-03-16 03:09:37,935 - sampro.LabelVideo_TW - DEBUG - 处理帧 15 的对象 1
+2025-03-16 03:09:37,936 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,936 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,940 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,941 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,942 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,943 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 332.0
+2025-03-16 03:09:37,943 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=332.0
+2025-03-16 03:09:37,943 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=802, y=406, w=24, h=20
+2025-03-16 03:09:37,943 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,944 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=802, y=406, w=24, h=20
+2025-03-16 03:09:37,945 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,953 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/15.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,953 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,953 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=15, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,953 - util.yolofile - DEBUG - 边界框: x=802, y=406, w=24, h=20
+2025-03-16 03:09:37,953 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\15.txt
+2025-03-16 03:09:37,954 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\15.txt, 大小=[1300, 736, 3], 边界框=[802, 406, 826, 426]
+2025-03-16 03:09:37,954 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\15.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,954 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 12 个消息
+2025-03-16 03:09:37,954 - sampro.LabelVideo_TW - DEBUG - 处理帧 16: D:/workspace/LabelQuick/video\16.jpg
+2025-03-16 03:09:37,965 - sampro.LabelVideo_TW - DEBUG - 帧 16 有 1 个分割对象
+2025-03-16 03:09:37,965 - sampro.LabelVideo_TW - DEBUG - 处理帧 16 的对象 1
+2025-03-16 03:09:37,966 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:09:37,966 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:09:37,969 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:09:37,971 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:09:37,971 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:09:37,972 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 267.5
+2025-03-16 03:09:37,972 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=267.5
+2025-03-16 03:09:37,972 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=811, y=434, w=20, h=19
+2025-03-16 03:09:37,972 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:09:37,973 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=811, y=434, w=20, h=19
+2025-03-16 03:09:37,973 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:09:37,980 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/16.jpg, 大小: 1300x736.0
+2025-03-16 03:09:37,981 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:09:37,981 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=16, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:09:37,981 - util.yolofile - DEBUG - 边界框: x=811, y=434, w=20, h=19
+2025-03-16 03:09:37,981 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\16.txt
+2025-03-16 03:09:37,981 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\16.txt, 大小=[1300, 736, 3], 边界框=[811, 434, 831, 453]
+2025-03-16 03:09:37,981 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\16.txt, 大小=[1300, 736, 3]
+2025-03-16 03:09:37,981 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 13 个消息
+2025-03-16 03:09:37,981 - sampro.LabelVideo_TW - INFO - 帧处理完成，返回 13 个标签消息
+2025-03-16 03:09:37,987 - root - DEBUG - 保存 YOLO 格式标签，消息数量: 13
+2025-03-16 03:09:37,987 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\0.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:37,987 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:09:37,988 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:37,988 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:37,988 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:37,988 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\0.txt\0.txt
+2025-03-16 03:09:37,988 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:37,988 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\0.txt\\classes.txt'
+2025-03-16 03:09:37,989 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\0.txt\\classes.txt'
+
+2025-03-16 03:09:37,989 - util.yolofile - ERROR - 保存 YOLO 标签出错: [WinError 183] 当文件已存在时，无法创建该文件。: 'D:/workspace/LabelQuick/video\\0.txt'
+2025-03-16 03:09:37,990 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 84, in yolo
+    os.makedirs(os.path.dirname(txt_path), exist_ok=True)
+  File "<frozen os>", line 225, in makedirs
+FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'D:/workspace/LabelQuick/video\\0.txt'
+
+2025-03-16 03:09:37,990 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\1.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:37,990 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\1.txt
+2025-03-16 03:09:37,990 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:37,990 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:37,990 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:37,990 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\1.txt\0.txt
+2025-03-16 03:09:37,990 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:37,991 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\1.txt\\classes.txt'
+2025-03-16 03:09:37,991 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\1.txt\\classes.txt'
+
+2025-03-16 03:09:37,992 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(509, 276, 525, 294)
+2025-03-16 03:09:37,992 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(509, 276, 525, 294)
+2025-03-16 03:09:37,992 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.397692, 0.387228), 尺寸=(0.012308, 0.024457)
+2025-03-16 03:09:37,992 - util.yolofile - DEBUG - 写入行: 0 0.397692 0.387228 0.012308 0.024457
+2025-03-16 03:09:37,993 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\1.txt\0.txt
+2025-03-16 03:09:37,993 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\2.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:37,993 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\2.txt
+2025-03-16 03:09:37,993 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:37,993 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:37,993 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:37,993 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\2.txt\0.txt
+2025-03-16 03:09:37,993 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:37,993 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\2.txt\\classes.txt'
+2025-03-16 03:09:37,994 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\2.txt\\classes.txt'
+
+2025-03-16 03:09:37,995 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(616, 296, 632, 314)
+2025-03-16 03:09:37,996 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(616, 296, 632, 314)
+2025-03-16 03:09:37,996 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.480000, 0.414402), 尺寸=(0.012308, 0.024457)
+2025-03-16 03:09:37,996 - util.yolofile - DEBUG - 写入行: 0 0.480000 0.414402 0.012308 0.024457
+2025-03-16 03:09:37,996 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\2.txt\0.txt
+2025-03-16 03:09:37,996 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\4.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:37,996 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\4.txt
+2025-03-16 03:09:37,997 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:37,997 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:37,997 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:37,997 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\4.txt\0.txt
+2025-03-16 03:09:37,997 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:37,997 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\4.txt\\classes.txt'
+2025-03-16 03:09:37,997 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\4.txt\\classes.txt'
+
+2025-03-16 03:09:37,998 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(569, 415, 584, 433)
+2025-03-16 03:09:37,998 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(569, 415, 584, 433)
+2025-03-16 03:09:37,999 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.443462, 0.576087), 尺寸=(0.011538, 0.024457)
+2025-03-16 03:09:37,999 - util.yolofile - DEBUG - 写入行: 0 0.443462 0.576087 0.011538 0.024457
+2025-03-16 03:09:37,999 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\4.txt\0.txt
+2025-03-16 03:09:37,999 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\5.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:37,999 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\5.txt
+2025-03-16 03:09:37,999 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:37,999 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:37,999 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:38,000 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\5.txt\0.txt
+2025-03-16 03:09:38,000 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:38,000 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\5.txt\\classes.txt'
+2025-03-16 03:09:38,000 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\5.txt\\classes.txt'
+
+2025-03-16 03:09:38,001 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(471, 433, 494, 455)
+2025-03-16 03:09:38,002 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(471, 433, 494, 455)
+2025-03-16 03:09:38,002 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.371154, 0.603261), 尺寸=(0.017692, 0.029891)
+2025-03-16 03:09:38,002 - util.yolofile - DEBUG - 写入行: 0 0.371154 0.603261 0.017692 0.029891
+2025-03-16 03:09:38,002 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\5.txt\0.txt
+2025-03-16 03:09:38,002 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\6.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,002 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\6.txt
+2025-03-16 03:09:38,003 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,003 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:38,003 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:38,003 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\6.txt\0.txt
+2025-03-16 03:09:38,003 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:38,003 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\6.txt\\classes.txt'
+2025-03-16 03:09:38,003 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\6.txt\\classes.txt'
+
+2025-03-16 03:09:38,004 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(346, 383, 365, 408)
+2025-03-16 03:09:38,004 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(346, 383, 365, 408)
+2025-03-16 03:09:38,005 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.273462, 0.537364), 尺寸=(0.014615, 0.033967)
+2025-03-16 03:09:38,005 - util.yolofile - DEBUG - 写入行: 0 0.273462 0.537364 0.014615 0.033967
+2025-03-16 03:09:38,005 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\6.txt\0.txt
+2025-03-16 03:09:38,005 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\7.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,005 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\7.txt
+2025-03-16 03:09:38,005 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,005 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:38,005 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:38,005 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\7.txt\0.txt
+2025-03-16 03:09:38,006 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:38,006 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\7.txt\\classes.txt'
+2025-03-16 03:09:38,006 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\7.txt\\classes.txt'
+
+2025-03-16 03:09:38,007 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(385, 120, 421, 157)
+2025-03-16 03:09:38,007 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(385, 120, 421, 157)
+2025-03-16 03:09:38,007 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.310000, 0.188179), 尺寸=(0.027692, 0.050272)
+2025-03-16 03:09:38,007 - util.yolofile - DEBUG - 写入行: 0 0.310000 0.188179 0.027692 0.050272
+2025-03-16 03:09:38,008 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\7.txt\0.txt
+2025-03-16 03:09:38,008 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\8.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,008 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\8.txt
+2025-03-16 03:09:38,008 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,008 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:38,008 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:38,008 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\8.txt\0.txt
+2025-03-16 03:09:38,008 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:38,009 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\8.txt\\classes.txt'
+2025-03-16 03:09:38,010 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\8.txt\\classes.txt'
+
+2025-03-16 03:09:38,011 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(651, 118, 691, 158)
+2025-03-16 03:09:38,011 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(651, 118, 691, 158)
+2025-03-16 03:09:38,011 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.516154, 0.187500), 尺寸=(0.030769, 0.054348)
+2025-03-16 03:09:38,011 - util.yolofile - DEBUG - 写入行: 0 0.516154 0.187500 0.030769 0.054348
+2025-03-16 03:09:38,011 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\8.txt\0.txt
+2025-03-16 03:09:38,012 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\11.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,012 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\11.txt
+2025-03-16 03:09:38,012 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,012 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:38,012 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:38,012 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\11.txt\0.txt
+2025-03-16 03:09:38,012 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:38,012 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\11.txt\\classes.txt'
+2025-03-16 03:09:38,013 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\11.txt\\classes.txt'
+
+2025-03-16 03:09:38,014 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(659, 322, 688, 349)
+2025-03-16 03:09:38,014 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(659, 322, 688, 349)
+2025-03-16 03:09:38,014 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.518077, 0.455842), 尺寸=(0.022308, 0.036685)
+2025-03-16 03:09:38,014 - util.yolofile - DEBUG - 写入行: 0 0.518077 0.455842 0.022308 0.036685
+2025-03-16 03:09:38,014 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\11.txt\0.txt
+2025-03-16 03:09:38,014 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\12.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,014 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\12.txt
+2025-03-16 03:09:38,014 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,014 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:38,014 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:38,014 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\12.txt\0.txt
+2025-03-16 03:09:38,014 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:38,015 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\12.txt\\classes.txt'
+2025-03-16 03:09:38,015 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\12.txt\\classes.txt'
+
+2025-03-16 03:09:38,016 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(691, 343, 716, 360)
+2025-03-16 03:09:38,016 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(691, 343, 716, 360)
+2025-03-16 03:09:38,016 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.541154, 0.477582), 尺寸=(0.019231, 0.023098)
+2025-03-16 03:09:38,016 - util.yolofile - DEBUG - 写入行: 0 0.541154 0.477582 0.019231 0.023098
+2025-03-16 03:09:38,016 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\12.txt\0.txt
+2025-03-16 03:09:38,016 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\13.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,016 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\13.txt
+2025-03-16 03:09:38,016 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,017 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:38,017 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:38,017 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\13.txt\0.txt
+2025-03-16 03:09:38,017 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:38,017 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\13.txt\\classes.txt'
+2025-03-16 03:09:38,017 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\13.txt\\classes.txt'
+
+2025-03-16 03:09:38,018 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(804, 235, 829, 260)
+2025-03-16 03:09:38,018 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(804, 235, 829, 260)
+2025-03-16 03:09:38,018 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.628077, 0.336277), 尺寸=(0.019231, 0.033967)
+2025-03-16 03:09:38,018 - util.yolofile - DEBUG - 写入行: 0 0.628077 0.336277 0.019231 0.033967
+2025-03-16 03:09:38,019 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\13.txt\0.txt
+2025-03-16 03:09:38,019 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\15.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,019 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\15.txt
+2025-03-16 03:09:38,020 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,020 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:38,020 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:38,020 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\15.txt\0.txt
+2025-03-16 03:09:38,020 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:38,020 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\15.txt\\classes.txt'
+2025-03-16 03:09:38,020 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\15.txt\\classes.txt'
+
+2025-03-16 03:09:38,021 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(802, 406, 826, 426)
+2025-03-16 03:09:38,021 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(802, 406, 826, 426)
+2025-03-16 03:09:38,021 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.626154, 0.565217), 尺寸=(0.018462, 0.027174)
+2025-03-16 03:09:38,021 - util.yolofile - DEBUG - 写入行: 0 0.626154 0.565217 0.018462 0.027174
+2025-03-16 03:09:38,021 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\15.txt\0.txt
+2025-03-16 03:09:38,022 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\16.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,022 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\0.jpg, 保存路径=D:/workspace/LabelQuick/video\16.txt
+2025-03-16 03:09:38,022 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:09:38,022 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:09:38,022 - util.yolofile - DEBUG - 图像名称: 0
+2025-03-16 03:09:38,022 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\16.txt\0.txt
+2025-03-16 03:09:38,022 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:09:38,022 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\16.txt\\classes.txt'
+2025-03-16 03:09:38,023 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\16.txt\\classes.txt'
+
+2025-03-16 03:09:38,024 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(811, 434, 831, 453)
+2025-03-16 03:09:38,024 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(811, 434, 831, 453)
+2025-03-16 03:09:38,024 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.631538, 0.602582), 尺寸=(0.015385, 0.025815)
+2025-03-16 03:09:38,024 - util.yolofile - DEBUG - 写入行: 0 0.631538 0.602582 0.015385 0.025815
+2025-03-16 03:09:38,024 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\16.txt\0.txt
+2025-03-16 03:09:38,024 - root - DEBUG - 发送处理后的帧到 UI
+2025-03-16 03:09:38,024 - root - DEBUG - 处理第 2/17 帧: D:/workspace/LabelQuick/video\1.jpg
+2025-03-16 03:09:38,024 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: yolo
+2025-03-16 03:09:38,024 - root - WARNING - 接收到空帧
+2025-03-16 03:09:38,025 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: yolo, 文本: 篮球
+2025-03-16 03:09:38,025 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 03:09:38,025 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 03:09:38,028 - sampro.LabelVideo_TW - DEBUG - 帧 0 的分割结果: 对象 IDs [1]
+2025-03-16 03:09:46,809 - sampro.LabelVideo_TW - DEBUG - 帧 1 的分割结果: 对象 IDs [1]
+2025-03-16 03:09:55,642 - sampro.LabelVideo_TW - DEBUG - 帧 2 的分割结果: 对象 IDs [1]
+2025-03-16 03:10:04,714 - sampro.LabelVideo_TW - DEBUG - 帧 3 的分割结果: 对象 IDs [1]
+2025-03-16 03:10:14,098 - sampro.LabelVideo_TW - DEBUG - 帧 4 的分割结果: 对象 IDs [1]
+2025-03-16 03:10:23,380 - sampro.LabelVideo_TW - DEBUG - 帧 5 的分割结果: 对象 IDs [1]
+2025-03-16 03:10:33,369 - sampro.LabelVideo_TW - DEBUG - 帧 6 的分割结果: 对象 IDs [1]
+2025-03-16 03:10:43,141 - sampro.LabelVideo_TW - DEBUG - 帧 7 的分割结果: 对象 IDs [1]
+2025-03-16 03:10:52,935 - sampro.LabelVideo_TW - DEBUG - 帧 8 的分割结果: 对象 IDs [1]
+2025-03-16 03:11:02,878 - sampro.LabelVideo_TW - DEBUG - 帧 9 的分割结果: 对象 IDs [1]
+2025-03-16 03:11:12,589 - sampro.LabelVideo_TW - DEBUG - 帧 10 的分割结果: 对象 IDs [1]
+2025-03-16 03:11:22,688 - sampro.LabelVideo_TW - DEBUG - 帧 11 的分割结果: 对象 IDs [1]
+2025-03-16 03:11:32,945 - sampro.LabelVideo_TW - DEBUG - 帧 12 的分割结果: 对象 IDs [1]
+2025-03-16 03:11:42,775 - sampro.LabelVideo_TW - DEBUG - 帧 13 的分割结果: 对象 IDs [1]
+2025-03-16 03:11:52,570 - sampro.LabelVideo_TW - DEBUG - 帧 14 的分割结果: 对象 IDs [1]
+2025-03-16 03:12:02,316 - sampro.LabelVideo_TW - DEBUG - 帧 15 的分割结果: 对象 IDs [1]
+2025-03-16 03:12:12,189 - sampro.LabelVideo_TW - DEBUG - 帧 16 的分割结果: 对象 IDs [1]
+2025-03-16 03:12:12,190 - sampro.LabelVideo_TW - DEBUG - 找到 17 个帧
+2025-03-16 03:12:12,190 - sampro.LabelVideo_TW - INFO - 开始处理 17 个帧
+2025-03-16 03:12:12,191 - sampro.LabelVideo_TW - DEBUG - 处理帧 0: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 03:12:12,205 - sampro.LabelVideo_TW - DEBUG - 帧 0 有 1 个分割对象
+2025-03-16 03:12:12,205 - sampro.LabelVideo_TW - DEBUG - 处理帧 0 的对象 1
+2025-03-16 03:12:12,206 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,206 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,210 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,212 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,212 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,213 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 313.0
+2025-03-16 03:12:12,213 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=313.0
+2025-03-16 03:12:12,213 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=560, y=176, w=20, h=23
+2025-03-16 03:12:12,214 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,215 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=560, y=176, w=20, h=23
+2025-03-16 03:12:12,215 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,223 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/0.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,223 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,223 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=0, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,223 - util.yolofile - DEBUG - 边界框: x=560, y=176, w=20, h=23
+2025-03-16 03:12:12,223 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:12:12,223 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3], 边界框=[560, 176, 580, 199]
+2025-03-16 03:12:12,224 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,224 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 1 个消息
+2025-03-16 03:12:12,224 - sampro.LabelVideo_TW - DEBUG - 处理帧 1: D:/workspace/LabelQuick/video\1.jpg
+2025-03-16 03:12:12,238 - sampro.LabelVideo_TW - DEBUG - 帧 1 有 1 个分割对象
+2025-03-16 03:12:12,238 - sampro.LabelVideo_TW - DEBUG - 处理帧 1 的对象 1
+2025-03-16 03:12:12,239 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,239 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,244 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,246 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,246 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,247 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 209.0
+2025-03-16 03:12:12,247 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=209.0
+2025-03-16 03:12:12,247 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=509, y=276, w=16, h=18
+2025-03-16 03:12:12,248 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,249 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=509, y=276, w=16, h=18
+2025-03-16 03:12:12,249 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,257 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/1.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,257 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,257 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=1, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,257 - util.yolofile - DEBUG - 边界框: x=509, y=276, w=16, h=18
+2025-03-16 03:12:12,258 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\1.txt
+2025-03-16 03:12:12,258 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\1.txt, 大小=[1300, 736, 3], 边界框=[509, 276, 525, 294]
+2025-03-16 03:12:12,258 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\1.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,258 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 2 个消息
+2025-03-16 03:12:12,258 - sampro.LabelVideo_TW - DEBUG - 处理帧 2: D:/workspace/LabelQuick/video\2.jpg
+2025-03-16 03:12:12,272 - sampro.LabelVideo_TW - DEBUG - 帧 2 有 1 个分割对象
+2025-03-16 03:12:12,272 - sampro.LabelVideo_TW - DEBUG - 处理帧 2 的对象 1
+2025-03-16 03:12:12,273 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,273 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,279 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,280 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,281 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,282 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 209.0
+2025-03-16 03:12:12,282 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=209.0
+2025-03-16 03:12:12,282 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=616, y=296, w=16, h=18
+2025-03-16 03:12:12,283 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,284 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=616, y=296, w=16, h=18
+2025-03-16 03:12:12,285 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,293 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/2.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,293 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,293 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=2, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,293 - util.yolofile - DEBUG - 边界框: x=616, y=296, w=16, h=18
+2025-03-16 03:12:12,293 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\2.txt
+2025-03-16 03:12:12,294 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\2.txt, 大小=[1300, 736, 3], 边界框=[616, 296, 632, 314]
+2025-03-16 03:12:12,294 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\2.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,294 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 3 个消息
+2025-03-16 03:12:12,294 - sampro.LabelVideo_TW - DEBUG - 处理帧 3: D:/workspace/LabelQuick/video\3.jpg
+2025-03-16 03:12:12,309 - sampro.LabelVideo_TW - DEBUG - 帧 3 有 1 个分割对象
+2025-03-16 03:12:12,309 - sampro.LabelVideo_TW - DEBUG - 处理帧 3 的对象 1
+2025-03-16 03:12:12,310 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,310 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,316 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,318 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,318 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:12:12,319 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:12:12,320 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 3
+2025-03-16 03:12:12,320 - sampro.LabelVideo_TW - DEBUG - 处理帧 4: D:/workspace/LabelQuick/video\4.jpg
+2025-03-16 03:12:12,335 - sampro.LabelVideo_TW - DEBUG - 帧 4 有 1 个分割对象
+2025-03-16 03:12:12,335 - sampro.LabelVideo_TW - DEBUG - 处理帧 4 的对象 1
+2025-03-16 03:12:12,336 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,336 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,340 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,341 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,341 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,342 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 183.5
+2025-03-16 03:12:12,342 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=183.5
+2025-03-16 03:12:12,342 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=569, y=415, w=15, h=18
+2025-03-16 03:12:12,343 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,343 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=569, y=415, w=15, h=18
+2025-03-16 03:12:12,344 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,352 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/4.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,353 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,353 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=4, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,353 - util.yolofile - DEBUG - 边界框: x=569, y=415, w=15, h=18
+2025-03-16 03:12:12,353 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\4.txt
+2025-03-16 03:12:12,353 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\4.txt, 大小=[1300, 736, 3], 边界框=[569, 415, 584, 433]
+2025-03-16 03:12:12,353 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\4.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,353 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 4 个消息
+2025-03-16 03:12:12,353 - sampro.LabelVideo_TW - DEBUG - 处理帧 5: D:/workspace/LabelQuick/video\5.jpg
+2025-03-16 03:12:12,367 - sampro.LabelVideo_TW - DEBUG - 帧 5 有 1 个分割对象
+2025-03-16 03:12:12,367 - sampro.LabelVideo_TW - DEBUG - 处理帧 5 的对象 1
+2025-03-16 03:12:12,368 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,368 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,374 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,375 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,376 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,377 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 345.5
+2025-03-16 03:12:12,377 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=345.5
+2025-03-16 03:12:12,377 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=471, y=433, w=23, h=22
+2025-03-16 03:12:12,377 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,378 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=471, y=433, w=23, h=22
+2025-03-16 03:12:12,379 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,386 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/5.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,386 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,386 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=5, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,386 - util.yolofile - DEBUG - 边界框: x=471, y=433, w=23, h=22
+2025-03-16 03:12:12,387 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\5.txt
+2025-03-16 03:12:12,387 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\5.txt, 大小=[1300, 736, 3], 边界框=[471, 433, 494, 455]
+2025-03-16 03:12:12,387 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\5.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,387 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 5 个消息
+2025-03-16 03:12:12,387 - sampro.LabelVideo_TW - DEBUG - 处理帧 6: D:/workspace/LabelQuick/video\6.jpg
+2025-03-16 03:12:12,398 - sampro.LabelVideo_TW - DEBUG - 帧 6 有 1 个分割对象
+2025-03-16 03:12:12,398 - sampro.LabelVideo_TW - DEBUG - 处理帧 6 的对象 1
+2025-03-16 03:12:12,399 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,399 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,403 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,404 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,405 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,405 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 334.5
+2025-03-16 03:12:12,406 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=334.5
+2025-03-16 03:12:12,406 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=346, y=383, w=19, h=25
+2025-03-16 03:12:12,406 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,406 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=346, y=383, w=19, h=25
+2025-03-16 03:12:12,407 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,415 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/6.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,415 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,415 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=6, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,415 - util.yolofile - DEBUG - 边界框: x=346, y=383, w=19, h=25
+2025-03-16 03:12:12,415 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\6.txt
+2025-03-16 03:12:12,415 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\6.txt, 大小=[1300, 736, 3], 边界框=[346, 383, 365, 408]
+2025-03-16 03:12:12,415 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\6.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,415 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 6 个消息
+2025-03-16 03:12:12,416 - sampro.LabelVideo_TW - DEBUG - 处理帧 7: D:/workspace/LabelQuick/video\7.jpg
+2025-03-16 03:12:12,426 - sampro.LabelVideo_TW - DEBUG - 帧 7 有 1 个分割对象
+2025-03-16 03:12:12,426 - sampro.LabelVideo_TW - DEBUG - 处理帧 7 的对象 1
+2025-03-16 03:12:12,427 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,427 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,431 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,432 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,433 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,433 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 982.5
+2025-03-16 03:12:12,433 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=982.5
+2025-03-16 03:12:12,434 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=385, y=120, w=36, h=37
+2025-03-16 03:12:12,434 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,434 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=385, y=120, w=36, h=37
+2025-03-16 03:12:12,435 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,441 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/7.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,442 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,442 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=7, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,442 - util.yolofile - DEBUG - 边界框: x=385, y=120, w=36, h=37
+2025-03-16 03:12:12,442 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\7.txt
+2025-03-16 03:12:12,442 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\7.txt, 大小=[1300, 736, 3], 边界框=[385, 120, 421, 157]
+2025-03-16 03:12:12,442 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\7.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,442 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 7 个消息
+2025-03-16 03:12:12,442 - sampro.LabelVideo_TW - DEBUG - 处理帧 8: D:/workspace/LabelQuick/video\8.jpg
+2025-03-16 03:12:12,452 - sampro.LabelVideo_TW - DEBUG - 帧 8 有 1 个分割对象
+2025-03-16 03:12:12,452 - sampro.LabelVideo_TW - DEBUG - 处理帧 8 的对象 1
+2025-03-16 03:12:12,454 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,454 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,457 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,459 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,459 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,460 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 1208.0
+2025-03-16 03:12:12,460 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=1208.0
+2025-03-16 03:12:12,460 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=651, y=118, w=40, h=40
+2025-03-16 03:12:12,460 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,461 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=651, y=118, w=40, h=40
+2025-03-16 03:12:12,461 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,469 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/8.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,469 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,469 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=8, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,469 - util.yolofile - DEBUG - 边界框: x=651, y=118, w=40, h=40
+2025-03-16 03:12:12,469 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\8.txt
+2025-03-16 03:12:12,469 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\8.txt, 大小=[1300, 736, 3], 边界框=[651, 118, 691, 158]
+2025-03-16 03:12:12,469 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\8.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,469 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 8 个消息
+2025-03-16 03:12:12,469 - sampro.LabelVideo_TW - DEBUG - 处理帧 9: D:/workspace/LabelQuick/video\9.jpg
+2025-03-16 03:12:12,480 - sampro.LabelVideo_TW - DEBUG - 帧 9 有 1 个分割对象
+2025-03-16 03:12:12,480 - sampro.LabelVideo_TW - DEBUG - 处理帧 9 的对象 1
+2025-03-16 03:12:12,480 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,481 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,486 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,487 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,487 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:12:12,488 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:12:12,489 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 9
+2025-03-16 03:12:12,489 - sampro.LabelVideo_TW - DEBUG - 处理帧 10: D:/workspace/LabelQuick/video\10.jpg
+2025-03-16 03:12:12,501 - sampro.LabelVideo_TW - DEBUG - 帧 10 有 1 个分割对象
+2025-03-16 03:12:12,501 - sampro.LabelVideo_TW - DEBUG - 处理帧 10 的对象 1
+2025-03-16 03:12:12,502 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,502 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,505 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,507 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,507 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:12:12,508 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:12:12,508 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 10
+2025-03-16 03:12:12,509 - sampro.LabelVideo_TW - DEBUG - 处理帧 11: D:/workspace/LabelQuick/video\11.jpg
+2025-03-16 03:12:12,520 - sampro.LabelVideo_TW - DEBUG - 帧 11 有 1 个分割对象
+2025-03-16 03:12:12,521 - sampro.LabelVideo_TW - DEBUG - 处理帧 11 的对象 1
+2025-03-16 03:12:12,521 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,521 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,525 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,526 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,526 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,527 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 571.5
+2025-03-16 03:12:12,527 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=571.5
+2025-03-16 03:12:12,527 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=659, y=322, w=29, h=27
+2025-03-16 03:12:12,527 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,528 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=659, y=322, w=29, h=27
+2025-03-16 03:12:12,529 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,536 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/11.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,537 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,537 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=11, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,537 - util.yolofile - DEBUG - 边界框: x=659, y=322, w=29, h=27
+2025-03-16 03:12:12,537 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\11.txt
+2025-03-16 03:12:12,537 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\11.txt, 大小=[1300, 736, 3], 边界框=[659, 322, 688, 349]
+2025-03-16 03:12:12,537 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\11.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,537 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 9 个消息
+2025-03-16 03:12:12,537 - sampro.LabelVideo_TW - DEBUG - 处理帧 12: D:/workspace/LabelQuick/video\12.jpg
+2025-03-16 03:12:12,548 - sampro.LabelVideo_TW - DEBUG - 帧 12 有 1 个分割对象
+2025-03-16 03:12:12,548 - sampro.LabelVideo_TW - DEBUG - 处理帧 12 的对象 1
+2025-03-16 03:12:12,549 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,549 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,553 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,554 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,554 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,555 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 247.5
+2025-03-16 03:12:12,555 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=247.5
+2025-03-16 03:12:12,555 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=691, y=343, w=25, h=17
+2025-03-16 03:12:12,555 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,556 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=691, y=343, w=25, h=17
+2025-03-16 03:12:12,556 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,563 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/12.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,563 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,563 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=12, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,563 - util.yolofile - DEBUG - 边界框: x=691, y=343, w=25, h=17
+2025-03-16 03:12:12,563 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\12.txt
+2025-03-16 03:12:12,563 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\12.txt, 大小=[1300, 736, 3], 边界框=[691, 343, 716, 360]
+2025-03-16 03:12:12,563 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\12.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,563 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 10 个消息
+2025-03-16 03:12:12,563 - sampro.LabelVideo_TW - DEBUG - 处理帧 13: D:/workspace/LabelQuick/video\13.jpg
+2025-03-16 03:12:12,575 - sampro.LabelVideo_TW - DEBUG - 帧 13 有 1 个分割对象
+2025-03-16 03:12:12,575 - sampro.LabelVideo_TW - DEBUG - 处理帧 13 的对象 1
+2025-03-16 03:12:12,575 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,575 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,579 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,580 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,581 - sampro.LabelVideo_TW - DEBUG - 找到 2 个轮廓
+2025-03-16 03:12:12,582 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 0.0
+2025-03-16 03:12:12,582 - sampro.LabelVideo_TW - DEBUG - 轮廓 2 面积: 406.0
+2025-03-16 03:12:12,582 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=2, 面积=406.0
+2025-03-16 03:12:12,582 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=804, y=235, w=25, h=25
+2025-03-16 03:12:12,582 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,583 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=804, y=235, w=25, h=25
+2025-03-16 03:12:12,583 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,590 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/13.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,590 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,590 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=13, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,590 - util.yolofile - DEBUG - 边界框: x=804, y=235, w=25, h=25
+2025-03-16 03:12:12,590 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\13.txt
+2025-03-16 03:12:12,590 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\13.txt, 大小=[1300, 736, 3], 边界框=[804, 235, 829, 260]
+2025-03-16 03:12:12,590 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\13.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,590 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 11 个消息
+2025-03-16 03:12:12,590 - sampro.LabelVideo_TW - DEBUG - 处理帧 14: D:/workspace/LabelQuick/video\14.jpg
+2025-03-16 03:12:12,601 - sampro.LabelVideo_TW - DEBUG - 帧 14 有 1 个分割对象
+2025-03-16 03:12:12,601 - sampro.LabelVideo_TW - DEBUG - 处理帧 14 的对象 1
+2025-03-16 03:12:12,602 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,602 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,605 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,606 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,607 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:12:12,608 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:12:12,609 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 14
+2025-03-16 03:12:12,609 - sampro.LabelVideo_TW - DEBUG - 处理帧 15: D:/workspace/LabelQuick/video\15.jpg
+2025-03-16 03:12:12,620 - sampro.LabelVideo_TW - DEBUG - 帧 15 有 1 个分割对象
+2025-03-16 03:12:12,620 - sampro.LabelVideo_TW - DEBUG - 处理帧 15 的对象 1
+2025-03-16 03:12:12,621 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,621 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,625 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,626 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,626 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,627 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 332.0
+2025-03-16 03:12:12,627 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=332.0
+2025-03-16 03:12:12,627 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=802, y=406, w=24, h=20
+2025-03-16 03:12:12,627 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,628 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=802, y=406, w=24, h=20
+2025-03-16 03:12:12,629 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,637 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/15.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,637 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,637 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=15, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,637 - util.yolofile - DEBUG - 边界框: x=802, y=406, w=24, h=20
+2025-03-16 03:12:12,637 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\15.txt
+2025-03-16 03:12:12,637 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\15.txt, 大小=[1300, 736, 3], 边界框=[802, 406, 826, 426]
+2025-03-16 03:12:12,637 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\15.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,637 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 12 个消息
+2025-03-16 03:12:12,637 - sampro.LabelVideo_TW - DEBUG - 处理帧 16: D:/workspace/LabelQuick/video\16.jpg
+2025-03-16 03:12:12,648 - sampro.LabelVideo_TW - DEBUG - 帧 16 有 1 个分割对象
+2025-03-16 03:12:12,648 - sampro.LabelVideo_TW - DEBUG - 处理帧 16 的对象 1
+2025-03-16 03:12:12,649 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:12:12,649 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:12:12,653 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:12:12,654 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:12:12,654 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:12:12,655 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 267.5
+2025-03-16 03:12:12,655 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=267.5
+2025-03-16 03:12:12,655 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=811, y=434, w=20, h=19
+2025-03-16 03:12:12,656 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:12:12,656 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=811, y=434, w=20, h=19
+2025-03-16 03:12:12,657 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:12:12,663 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/16.jpg, 大小: 1300x736.0
+2025-03-16 03:12:12,663 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:12:12,663 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=16, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:12:12,663 - util.yolofile - DEBUG - 边界框: x=811, y=434, w=20, h=19
+2025-03-16 03:12:12,664 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\16.txt
+2025-03-16 03:12:12,664 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\16.txt, 大小=[1300, 736, 3], 边界框=[811, 434, 831, 453]
+2025-03-16 03:12:12,664 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\16.txt, 大小=[1300, 736, 3]
+2025-03-16 03:12:12,664 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 13 个消息
+2025-03-16 03:12:12,664 - sampro.LabelVideo_TW - INFO - 帧处理完成，返回 13 个标签消息
+2025-03-16 03:12:12,671 - root - DEBUG - 保存 YOLO 格式标签，消息数量: 13
+2025-03-16 03:12:12,671 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\0.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,671 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:12:12,672 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,672 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,672 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,672 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\0.txt\1.txt
+2025-03-16 03:12:12,672 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,672 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\0.txt\\classes.txt'
+2025-03-16 03:12:12,672 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\0.txt\\classes.txt'
+
+2025-03-16 03:12:12,673 - util.yolofile - ERROR - 保存 YOLO 标签出错: [WinError 183] 当文件已存在时，无法创建该文件。: 'D:/workspace/LabelQuick/video\\0.txt'
+2025-03-16 03:12:12,673 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 84, in yolo
+    os.makedirs(os.path.dirname(txt_path), exist_ok=True)
+  File "<frozen os>", line 225, in makedirs
+FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'D:/workspace/LabelQuick/video\\0.txt'
+
+2025-03-16 03:12:12,674 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\1.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,674 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\1.txt
+2025-03-16 03:12:12,674 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,674 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,674 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,674 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\1.txt\1.txt
+2025-03-16 03:12:12,674 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,675 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\1.txt\classes.txt
+2025-03-16 03:12:12,676 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(509, 276, 525, 294)
+2025-03-16 03:12:12,676 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(509, 276, 525, 294)
+2025-03-16 03:12:12,676 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.397692, 0.387228), 尺寸=(0.012308, 0.024457)
+2025-03-16 03:12:12,676 - util.yolofile - DEBUG - 写入行: 0 0.397692 0.387228 0.012308 0.024457
+2025-03-16 03:12:12,676 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\1.txt\1.txt
+2025-03-16 03:12:12,677 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\2.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,677 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\2.txt
+2025-03-16 03:12:12,677 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,677 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,677 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,677 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\2.txt\1.txt
+2025-03-16 03:12:12,677 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,678 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\2.txt\classes.txt
+2025-03-16 03:12:12,679 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(616, 296, 632, 314)
+2025-03-16 03:12:12,679 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(616, 296, 632, 314)
+2025-03-16 03:12:12,679 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.480000, 0.414402), 尺寸=(0.012308, 0.024457)
+2025-03-16 03:12:12,679 - util.yolofile - DEBUG - 写入行: 0 0.480000 0.414402 0.012308 0.024457
+2025-03-16 03:12:12,680 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\2.txt\1.txt
+2025-03-16 03:12:12,680 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\4.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,680 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\4.txt
+2025-03-16 03:12:12,680 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,680 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,680 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,680 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\4.txt\1.txt
+2025-03-16 03:12:12,680 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,681 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\4.txt\classes.txt
+2025-03-16 03:12:12,681 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(569, 415, 584, 433)
+2025-03-16 03:12:12,681 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(569, 415, 584, 433)
+2025-03-16 03:12:12,681 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.443462, 0.576087), 尺寸=(0.011538, 0.024457)
+2025-03-16 03:12:12,681 - util.yolofile - DEBUG - 写入行: 0 0.443462 0.576087 0.011538 0.024457
+2025-03-16 03:12:12,681 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\4.txt\1.txt
+2025-03-16 03:12:12,682 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\5.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,682 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\5.txt
+2025-03-16 03:12:12,682 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,682 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,682 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,682 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\5.txt\1.txt
+2025-03-16 03:12:12,682 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,683 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\5.txt\classes.txt
+2025-03-16 03:12:12,683 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(471, 433, 494, 455)
+2025-03-16 03:12:12,684 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(471, 433, 494, 455)
+2025-03-16 03:12:12,684 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.371154, 0.603261), 尺寸=(0.017692, 0.029891)
+2025-03-16 03:12:12,684 - util.yolofile - DEBUG - 写入行: 0 0.371154 0.603261 0.017692 0.029891
+2025-03-16 03:12:12,684 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\5.txt\1.txt
+2025-03-16 03:12:12,684 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\6.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,684 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\6.txt
+2025-03-16 03:12:12,684 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,684 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,684 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,684 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\6.txt\1.txt
+2025-03-16 03:12:12,685 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,685 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\6.txt\classes.txt
+2025-03-16 03:12:12,685 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(346, 383, 365, 408)
+2025-03-16 03:12:12,686 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(346, 383, 365, 408)
+2025-03-16 03:12:12,686 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.273462, 0.537364), 尺寸=(0.014615, 0.033967)
+2025-03-16 03:12:12,686 - util.yolofile - DEBUG - 写入行: 0 0.273462 0.537364 0.014615 0.033967
+2025-03-16 03:12:12,686 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\6.txt\1.txt
+2025-03-16 03:12:12,686 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\7.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,686 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\7.txt
+2025-03-16 03:12:12,686 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,686 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,686 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,686 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\7.txt\1.txt
+2025-03-16 03:12:12,686 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,687 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\7.txt\classes.txt
+2025-03-16 03:12:12,688 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(385, 120, 421, 157)
+2025-03-16 03:12:12,688 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(385, 120, 421, 157)
+2025-03-16 03:12:12,688 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.310000, 0.188179), 尺寸=(0.027692, 0.050272)
+2025-03-16 03:12:12,688 - util.yolofile - DEBUG - 写入行: 0 0.310000 0.188179 0.027692 0.050272
+2025-03-16 03:12:12,688 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\7.txt\1.txt
+2025-03-16 03:12:12,688 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\8.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,688 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\8.txt
+2025-03-16 03:12:12,688 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,688 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,688 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,688 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\8.txt\1.txt
+2025-03-16 03:12:12,688 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,689 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\8.txt\classes.txt
+2025-03-16 03:12:12,689 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(651, 118, 691, 158)
+2025-03-16 03:12:12,689 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(651, 118, 691, 158)
+2025-03-16 03:12:12,690 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.516154, 0.187500), 尺寸=(0.030769, 0.054348)
+2025-03-16 03:12:12,690 - util.yolofile - DEBUG - 写入行: 0 0.516154 0.187500 0.030769 0.054348
+2025-03-16 03:12:12,690 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\8.txt\1.txt
+2025-03-16 03:12:12,690 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\11.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,691 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\11.txt
+2025-03-16 03:12:12,691 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,691 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,691 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,691 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\11.txt\1.txt
+2025-03-16 03:12:12,691 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,692 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\11.txt\classes.txt
+2025-03-16 03:12:12,693 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(659, 322, 688, 349)
+2025-03-16 03:12:12,693 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(659, 322, 688, 349)
+2025-03-16 03:12:12,693 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.518077, 0.455842), 尺寸=(0.022308, 0.036685)
+2025-03-16 03:12:12,693 - util.yolofile - DEBUG - 写入行: 0 0.518077 0.455842 0.022308 0.036685
+2025-03-16 03:12:12,693 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\11.txt\1.txt
+2025-03-16 03:12:12,693 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\12.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,693 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\12.txt
+2025-03-16 03:12:12,693 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,693 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,694 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,694 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\12.txt\1.txt
+2025-03-16 03:12:12,694 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,694 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\12.txt\classes.txt
+2025-03-16 03:12:12,695 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(691, 343, 716, 360)
+2025-03-16 03:12:12,695 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(691, 343, 716, 360)
+2025-03-16 03:12:12,695 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.541154, 0.477582), 尺寸=(0.019231, 0.023098)
+2025-03-16 03:12:12,695 - util.yolofile - DEBUG - 写入行: 0 0.541154 0.477582 0.019231 0.023098
+2025-03-16 03:12:12,696 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\12.txt\1.txt
+2025-03-16 03:12:12,696 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\13.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,696 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\13.txt
+2025-03-16 03:12:12,696 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,696 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,696 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,696 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\13.txt\1.txt
+2025-03-16 03:12:12,697 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,697 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\13.txt\classes.txt
+2025-03-16 03:12:12,698 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(804, 235, 829, 260)
+2025-03-16 03:12:12,698 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(804, 235, 829, 260)
+2025-03-16 03:12:12,698 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.628077, 0.336277), 尺寸=(0.019231, 0.033967)
+2025-03-16 03:12:12,698 - util.yolofile - DEBUG - 写入行: 0 0.628077 0.336277 0.019231 0.033967
+2025-03-16 03:12:12,698 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\13.txt\1.txt
+2025-03-16 03:12:12,699 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\15.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,699 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\15.txt
+2025-03-16 03:12:12,699 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,699 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,699 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,699 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\15.txt\1.txt
+2025-03-16 03:12:12,699 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,699 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\15.txt\classes.txt
+2025-03-16 03:12:12,700 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(802, 406, 826, 426)
+2025-03-16 03:12:12,700 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(802, 406, 826, 426)
+2025-03-16 03:12:12,700 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.626154, 0.565217), 尺寸=(0.018462, 0.027174)
+2025-03-16 03:12:12,700 - util.yolofile - DEBUG - 写入行: 0 0.626154 0.565217 0.018462 0.027174
+2025-03-16 03:12:12,700 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\15.txt\1.txt
+2025-03-16 03:12:12,700 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\16.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,701 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\1.jpg, 保存路径=D:/workspace/LabelQuick/video\16.txt
+2025-03-16 03:12:12,701 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:12:12,701 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:12:12,701 - util.yolofile - DEBUG - 图像名称: 1
+2025-03-16 03:12:12,701 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\16.txt\1.txt
+2025-03-16 03:12:12,701 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:12:12,701 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\16.txt\classes.txt
+2025-03-16 03:12:12,702 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(811, 434, 831, 453)
+2025-03-16 03:12:12,702 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(811, 434, 831, 453)
+2025-03-16 03:12:12,702 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.631538, 0.602582), 尺寸=(0.015385, 0.025815)
+2025-03-16 03:12:12,702 - util.yolofile - DEBUG - 写入行: 0 0.631538 0.602582 0.015385 0.025815
+2025-03-16 03:12:12,702 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\16.txt\1.txt
+2025-03-16 03:12:12,702 - root - DEBUG - 发送处理后的帧到 UI
+2025-03-16 03:12:12,702 - root - DEBUG - 处理第 3/17 帧: D:/workspace/LabelQuick/video\2.jpg
+2025-03-16 03:12:12,702 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: yolo
+2025-03-16 03:12:12,703 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: yolo, 文本: 篮球
+2025-03-16 03:12:12,703 - root - WARNING - 接收到空帧
+2025-03-16 03:12:12,703 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 03:12:12,703 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 03:12:12,706 - sampro.LabelVideo_TW - DEBUG - 帧 0 的分割结果: 对象 IDs [1]
+2025-03-16 03:12:21,429 - sampro.LabelVideo_TW - DEBUG - 帧 1 的分割结果: 对象 IDs [1]
+2025-03-16 03:12:30,377 - sampro.LabelVideo_TW - DEBUG - 帧 2 的分割结果: 对象 IDs [1]
+2025-03-16 03:12:39,408 - sampro.LabelVideo_TW - DEBUG - 帧 3 的分割结果: 对象 IDs [1]
+2025-03-16 03:12:48,682 - sampro.LabelVideo_TW - DEBUG - 帧 4 的分割结果: 对象 IDs [1]
+2025-03-16 03:12:58,242 - sampro.LabelVideo_TW - DEBUG - 帧 5 的分割结果: 对象 IDs [1]
+2025-03-16 03:13:07,899 - sampro.LabelVideo_TW - DEBUG - 帧 6 的分割结果: 对象 IDs [1]
+2025-03-16 03:13:17,689 - sampro.LabelVideo_TW - DEBUG - 帧 7 的分割结果: 对象 IDs [1]
+2025-03-16 03:13:27,524 - sampro.LabelVideo_TW - DEBUG - 帧 8 的分割结果: 对象 IDs [1]
+2025-03-16 03:13:37,955 - sampro.LabelVideo_TW - DEBUG - 帧 9 的分割结果: 对象 IDs [1]
+2025-03-16 03:13:47,834 - sampro.LabelVideo_TW - DEBUG - 帧 10 的分割结果: 对象 IDs [1]
+2025-03-16 03:13:57,626 - sampro.LabelVideo_TW - DEBUG - 帧 11 的分割结果: 对象 IDs [1]
+2025-03-16 03:14:07,570 - sampro.LabelVideo_TW - DEBUG - 帧 12 的分割结果: 对象 IDs [1]
+2025-03-16 03:14:17,456 - sampro.LabelVideo_TW - DEBUG - 帧 13 的分割结果: 对象 IDs [1]
+2025-03-16 03:14:27,506 - sampro.LabelVideo_TW - DEBUG - 帧 14 的分割结果: 对象 IDs [1]
+2025-03-16 03:14:37,865 - sampro.LabelVideo_TW - DEBUG - 帧 15 的分割结果: 对象 IDs [1]
+2025-03-16 03:14:47,667 - sampro.LabelVideo_TW - DEBUG - 帧 16 的分割结果: 对象 IDs [1]
+2025-03-16 03:14:47,668 - sampro.LabelVideo_TW - DEBUG - 找到 17 个帧
+2025-03-16 03:14:47,668 - sampro.LabelVideo_TW - INFO - 开始处理 17 个帧
+2025-03-16 03:14:47,668 - sampro.LabelVideo_TW - DEBUG - 处理帧 0: D:/workspace/LabelQuick/video\0.jpg
+2025-03-16 03:14:47,681 - sampro.LabelVideo_TW - DEBUG - 帧 0 有 1 个分割对象
+2025-03-16 03:14:47,681 - sampro.LabelVideo_TW - DEBUG - 处理帧 0 的对象 1
+2025-03-16 03:14:47,682 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,682 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,689 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,691 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,691 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:47,692 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 313.0
+2025-03-16 03:14:47,692 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=313.0
+2025-03-16 03:14:47,692 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=560, y=176, w=20, h=23
+2025-03-16 03:14:47,693 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:47,694 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=560, y=176, w=20, h=23
+2025-03-16 03:14:47,694 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:47,703 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/0.jpg, 大小: 1300x736.0
+2025-03-16 03:14:47,703 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:47,703 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=0, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:47,703 - util.yolofile - DEBUG - 边界框: x=560, y=176, w=20, h=23
+2025-03-16 03:14:47,704 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:14:47,704 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3], 边界框=[560, 176, 580, 199]
+2025-03-16 03:14:47,704 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\0.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:47,704 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 1 个消息
+2025-03-16 03:14:47,704 - sampro.LabelVideo_TW - DEBUG - 处理帧 1: D:/workspace/LabelQuick/video\1.jpg
+2025-03-16 03:14:47,717 - sampro.LabelVideo_TW - DEBUG - 帧 1 有 1 个分割对象
+2025-03-16 03:14:47,717 - sampro.LabelVideo_TW - DEBUG - 处理帧 1 的对象 1
+2025-03-16 03:14:47,718 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,718 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,722 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,724 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,725 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:47,726 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 209.0
+2025-03-16 03:14:47,726 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=209.0
+2025-03-16 03:14:47,726 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=509, y=276, w=16, h=18
+2025-03-16 03:14:47,726 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:47,727 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=509, y=276, w=16, h=18
+2025-03-16 03:14:47,728 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:47,736 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/1.jpg, 大小: 1300x736.0
+2025-03-16 03:14:47,736 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:47,736 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=1, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:47,736 - util.yolofile - DEBUG - 边界框: x=509, y=276, w=16, h=18
+2025-03-16 03:14:47,736 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\1.txt
+2025-03-16 03:14:47,736 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\1.txt, 大小=[1300, 736, 3], 边界框=[509, 276, 525, 294]
+2025-03-16 03:14:47,736 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\1.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:47,736 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 2 个消息
+2025-03-16 03:14:47,736 - sampro.LabelVideo_TW - DEBUG - 处理帧 2: D:/workspace/LabelQuick/video\2.jpg
+2025-03-16 03:14:47,748 - sampro.LabelVideo_TW - DEBUG - 帧 2 有 1 个分割对象
+2025-03-16 03:14:47,748 - sampro.LabelVideo_TW - DEBUG - 处理帧 2 的对象 1
+2025-03-16 03:14:47,748 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,748 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,754 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,756 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,756 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:47,757 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 209.0
+2025-03-16 03:14:47,757 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=209.0
+2025-03-16 03:14:47,757 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=616, y=296, w=16, h=18
+2025-03-16 03:14:47,758 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:47,759 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=616, y=296, w=16, h=18
+2025-03-16 03:14:47,759 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:47,767 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/2.jpg, 大小: 1300x736.0
+2025-03-16 03:14:47,768 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:47,768 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=2, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:47,768 - util.yolofile - DEBUG - 边界框: x=616, y=296, w=16, h=18
+2025-03-16 03:14:47,768 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\2.txt
+2025-03-16 03:14:47,768 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\2.txt, 大小=[1300, 736, 3], 边界框=[616, 296, 632, 314]
+2025-03-16 03:14:47,768 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\2.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:47,768 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 3 个消息
+2025-03-16 03:14:47,769 - sampro.LabelVideo_TW - DEBUG - 处理帧 3: D:/workspace/LabelQuick/video\3.jpg
+2025-03-16 03:14:47,783 - sampro.LabelVideo_TW - DEBUG - 帧 3 有 1 个分割对象
+2025-03-16 03:14:47,783 - sampro.LabelVideo_TW - DEBUG - 处理帧 3 的对象 1
+2025-03-16 03:14:47,783 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,784 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,788 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,789 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,790 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:14:47,790 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:14:47,791 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 3
+2025-03-16 03:14:47,791 - sampro.LabelVideo_TW - DEBUG - 处理帧 4: D:/workspace/LabelQuick/video\4.jpg
+2025-03-16 03:14:47,802 - sampro.LabelVideo_TW - DEBUG - 帧 4 有 1 个分割对象
+2025-03-16 03:14:47,802 - sampro.LabelVideo_TW - DEBUG - 处理帧 4 的对象 1
+2025-03-16 03:14:47,803 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,803 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,807 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,809 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,809 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:47,810 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 183.5
+2025-03-16 03:14:47,810 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=183.5
+2025-03-16 03:14:47,810 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=569, y=415, w=15, h=18
+2025-03-16 03:14:47,810 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:47,811 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=569, y=415, w=15, h=18
+2025-03-16 03:14:47,812 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:47,820 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/4.jpg, 大小: 1300x736.0
+2025-03-16 03:14:47,820 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:47,820 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=4, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:47,820 - util.yolofile - DEBUG - 边界框: x=569, y=415, w=15, h=18
+2025-03-16 03:14:47,821 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\4.txt
+2025-03-16 03:14:47,821 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\4.txt, 大小=[1300, 736, 3], 边界框=[569, 415, 584, 433]
+2025-03-16 03:14:47,821 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\4.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:47,821 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 4 个消息
+2025-03-16 03:14:47,821 - sampro.LabelVideo_TW - DEBUG - 处理帧 5: D:/workspace/LabelQuick/video\5.jpg
+2025-03-16 03:14:47,834 - sampro.LabelVideo_TW - DEBUG - 帧 5 有 1 个分割对象
+2025-03-16 03:14:47,834 - sampro.LabelVideo_TW - DEBUG - 处理帧 5 的对象 1
+2025-03-16 03:14:47,835 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,835 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,840 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,841 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,842 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:47,843 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 345.5
+2025-03-16 03:14:47,843 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=345.5
+2025-03-16 03:14:47,843 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=471, y=433, w=23, h=22
+2025-03-16 03:14:47,843 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:47,844 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=471, y=433, w=23, h=22
+2025-03-16 03:14:47,845 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:47,852 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/5.jpg, 大小: 1300x736.0
+2025-03-16 03:14:47,853 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:47,853 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=5, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:47,853 - util.yolofile - DEBUG - 边界框: x=471, y=433, w=23, h=22
+2025-03-16 03:14:47,853 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\5.txt
+2025-03-16 03:14:47,853 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\5.txt, 大小=[1300, 736, 3], 边界框=[471, 433, 494, 455]
+2025-03-16 03:14:47,853 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\5.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:47,853 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 5 个消息
+2025-03-16 03:14:47,853 - sampro.LabelVideo_TW - DEBUG - 处理帧 6: D:/workspace/LabelQuick/video\6.jpg
+2025-03-16 03:14:47,863 - sampro.LabelVideo_TW - DEBUG - 帧 6 有 1 个分割对象
+2025-03-16 03:14:47,863 - sampro.LabelVideo_TW - DEBUG - 处理帧 6 的对象 1
+2025-03-16 03:14:47,864 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,864 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,869 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,870 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,870 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:47,871 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 334.5
+2025-03-16 03:14:47,871 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=334.5
+2025-03-16 03:14:47,871 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=346, y=383, w=19, h=25
+2025-03-16 03:14:47,871 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:47,872 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=346, y=383, w=19, h=25
+2025-03-16 03:14:47,873 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:47,879 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/6.jpg, 大小: 1300x736.0
+2025-03-16 03:14:47,879 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:47,879 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=6, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:47,879 - util.yolofile - DEBUG - 边界框: x=346, y=383, w=19, h=25
+2025-03-16 03:14:47,879 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\6.txt
+2025-03-16 03:14:47,879 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\6.txt, 大小=[1300, 736, 3], 边界框=[346, 383, 365, 408]
+2025-03-16 03:14:47,879 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\6.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:47,880 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 6 个消息
+2025-03-16 03:14:47,880 - sampro.LabelVideo_TW - DEBUG - 处理帧 7: D:/workspace/LabelQuick/video\7.jpg
+2025-03-16 03:14:47,890 - sampro.LabelVideo_TW - DEBUG - 帧 7 有 1 个分割对象
+2025-03-16 03:14:47,890 - sampro.LabelVideo_TW - DEBUG - 处理帧 7 的对象 1
+2025-03-16 03:14:47,890 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,890 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,894 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,895 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,895 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:47,896 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 982.5
+2025-03-16 03:14:47,896 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=982.5
+2025-03-16 03:14:47,896 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=385, y=120, w=36, h=37
+2025-03-16 03:14:47,896 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:47,897 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=385, y=120, w=36, h=37
+2025-03-16 03:14:47,898 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:47,904 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/7.jpg, 大小: 1300x736.0
+2025-03-16 03:14:47,905 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:47,905 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=7, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:47,905 - util.yolofile - DEBUG - 边界框: x=385, y=120, w=36, h=37
+2025-03-16 03:14:47,905 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\7.txt
+2025-03-16 03:14:47,905 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\7.txt, 大小=[1300, 736, 3], 边界框=[385, 120, 421, 157]
+2025-03-16 03:14:47,905 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\7.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:47,905 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 7 个消息
+2025-03-16 03:14:47,905 - sampro.LabelVideo_TW - DEBUG - 处理帧 8: D:/workspace/LabelQuick/video\8.jpg
+2025-03-16 03:14:47,915 - sampro.LabelVideo_TW - DEBUG - 帧 8 有 1 个分割对象
+2025-03-16 03:14:47,916 - sampro.LabelVideo_TW - DEBUG - 处理帧 8 的对象 1
+2025-03-16 03:14:47,916 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,916 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,920 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,922 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,922 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:47,923 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 1208.0
+2025-03-16 03:14:47,923 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=1208.0
+2025-03-16 03:14:47,923 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=651, y=118, w=40, h=40
+2025-03-16 03:14:47,923 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:47,924 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=651, y=118, w=40, h=40
+2025-03-16 03:14:47,924 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:47,930 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/8.jpg, 大小: 1300x736.0
+2025-03-16 03:14:47,930 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:47,930 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=8, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:47,930 - util.yolofile - DEBUG - 边界框: x=651, y=118, w=40, h=40
+2025-03-16 03:14:47,931 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\8.txt
+2025-03-16 03:14:47,931 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\8.txt, 大小=[1300, 736, 3], 边界框=[651, 118, 691, 158]
+2025-03-16 03:14:47,931 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\8.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:47,931 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 8 个消息
+2025-03-16 03:14:47,931 - sampro.LabelVideo_TW - DEBUG - 处理帧 9: D:/workspace/LabelQuick/video\9.jpg
+2025-03-16 03:14:47,942 - sampro.LabelVideo_TW - DEBUG - 帧 9 有 1 个分割对象
+2025-03-16 03:14:47,942 - sampro.LabelVideo_TW - DEBUG - 处理帧 9 的对象 1
+2025-03-16 03:14:47,943 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,943 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,946 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,948 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,948 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:14:47,949 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:14:47,950 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 9
+2025-03-16 03:14:47,950 - sampro.LabelVideo_TW - DEBUG - 处理帧 10: D:/workspace/LabelQuick/video\10.jpg
+2025-03-16 03:14:47,961 - sampro.LabelVideo_TW - DEBUG - 帧 10 有 1 个分割对象
+2025-03-16 03:14:47,961 - sampro.LabelVideo_TW - DEBUG - 处理帧 10 的对象 1
+2025-03-16 03:14:47,961 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,961 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,965 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,967 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,967 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:14:47,968 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:14:47,969 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 10
+2025-03-16 03:14:47,969 - sampro.LabelVideo_TW - DEBUG - 处理帧 11: D:/workspace/LabelQuick/video\11.jpg
+2025-03-16 03:14:47,979 - sampro.LabelVideo_TW - DEBUG - 帧 11 有 1 个分割对象
+2025-03-16 03:14:47,980 - sampro.LabelVideo_TW - DEBUG - 处理帧 11 的对象 1
+2025-03-16 03:14:47,980 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:47,980 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:47,984 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:47,985 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:47,985 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:47,986 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 571.5
+2025-03-16 03:14:47,986 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=571.5
+2025-03-16 03:14:47,986 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=659, y=322, w=29, h=27
+2025-03-16 03:14:47,986 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:47,987 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=659, y=322, w=29, h=27
+2025-03-16 03:14:47,988 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:47,994 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/11.jpg, 大小: 1300x736.0
+2025-03-16 03:14:47,995 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:47,995 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=11, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:47,995 - util.yolofile - DEBUG - 边界框: x=659, y=322, w=29, h=27
+2025-03-16 03:14:47,995 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\11.txt
+2025-03-16 03:14:47,995 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\11.txt, 大小=[1300, 736, 3], 边界框=[659, 322, 688, 349]
+2025-03-16 03:14:47,995 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\11.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:47,995 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 9 个消息
+2025-03-16 03:14:47,995 - sampro.LabelVideo_TW - DEBUG - 处理帧 12: D:/workspace/LabelQuick/video\12.jpg
+2025-03-16 03:14:48,006 - sampro.LabelVideo_TW - DEBUG - 帧 12 有 1 个分割对象
+2025-03-16 03:14:48,006 - sampro.LabelVideo_TW - DEBUG - 处理帧 12 的对象 1
+2025-03-16 03:14:48,007 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:48,007 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:48,011 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:48,012 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:48,012 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:48,013 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 247.5
+2025-03-16 03:14:48,013 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=247.5
+2025-03-16 03:14:48,013 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=691, y=343, w=25, h=17
+2025-03-16 03:14:48,013 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:48,014 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=691, y=343, w=25, h=17
+2025-03-16 03:14:48,015 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:48,022 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/12.jpg, 大小: 1300x736.0
+2025-03-16 03:14:48,022 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:48,022 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=12, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:48,022 - util.yolofile - DEBUG - 边界框: x=691, y=343, w=25, h=17
+2025-03-16 03:14:48,022 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\12.txt
+2025-03-16 03:14:48,022 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\12.txt, 大小=[1300, 736, 3], 边界框=[691, 343, 716, 360]
+2025-03-16 03:14:48,022 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\12.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:48,022 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 10 个消息
+2025-03-16 03:14:48,022 - sampro.LabelVideo_TW - DEBUG - 处理帧 13: D:/workspace/LabelQuick/video\13.jpg
+2025-03-16 03:14:48,033 - sampro.LabelVideo_TW - DEBUG - 帧 13 有 1 个分割对象
+2025-03-16 03:14:48,033 - sampro.LabelVideo_TW - DEBUG - 处理帧 13 的对象 1
+2025-03-16 03:14:48,034 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:48,034 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:48,037 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:48,039 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:48,039 - sampro.LabelVideo_TW - DEBUG - 找到 2 个轮廓
+2025-03-16 03:14:48,040 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 0.0
+2025-03-16 03:14:48,040 - sampro.LabelVideo_TW - DEBUG - 轮廓 2 面积: 406.0
+2025-03-16 03:14:48,040 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=2, 面积=406.0
+2025-03-16 03:14:48,040 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=804, y=235, w=25, h=25
+2025-03-16 03:14:48,040 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:48,041 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=804, y=235, w=25, h=25
+2025-03-16 03:14:48,042 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:48,049 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/13.jpg, 大小: 1300x736.0
+2025-03-16 03:14:48,049 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:48,049 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=13, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:48,049 - util.yolofile - DEBUG - 边界框: x=804, y=235, w=25, h=25
+2025-03-16 03:14:48,049 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\13.txt
+2025-03-16 03:14:48,049 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\13.txt, 大小=[1300, 736, 3], 边界框=[804, 235, 829, 260]
+2025-03-16 03:14:48,049 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\13.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:48,049 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 11 个消息
+2025-03-16 03:14:48,049 - sampro.LabelVideo_TW - DEBUG - 处理帧 14: D:/workspace/LabelQuick/video\14.jpg
+2025-03-16 03:14:48,060 - sampro.LabelVideo_TW - DEBUG - 帧 14 有 1 个分割对象
+2025-03-16 03:14:48,060 - sampro.LabelVideo_TW - DEBUG - 处理帧 14 的对象 1
+2025-03-16 03:14:48,061 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:48,061 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:48,064 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:48,066 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:48,066 - sampro.LabelVideo_TW - DEBUG - 找到 0 个轮廓
+2025-03-16 03:14:48,066 - sampro.LabelVideo_TW - WARNING - 未找到有效轮廓
+2025-03-16 03:14:48,067 - sampro.LabelVideo_TW - WARNING - Warning: Draw_Mask returned unexpected format at frame 14
+2025-03-16 03:14:48,068 - sampro.LabelVideo_TW - DEBUG - 处理帧 15: D:/workspace/LabelQuick/video\15.jpg
+2025-03-16 03:14:48,078 - sampro.LabelVideo_TW - DEBUG - 帧 15 有 1 个分割对象
+2025-03-16 03:14:48,079 - sampro.LabelVideo_TW - DEBUG - 处理帧 15 的对象 1
+2025-03-16 03:14:48,079 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:48,079 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:48,083 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:48,084 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:48,085 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:48,085 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 332.0
+2025-03-16 03:14:48,085 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=332.0
+2025-03-16 03:14:48,086 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=802, y=406, w=24, h=20
+2025-03-16 03:14:48,086 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:48,086 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=802, y=406, w=24, h=20
+2025-03-16 03:14:48,087 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:48,094 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/15.jpg, 大小: 1300x736.0
+2025-03-16 03:14:48,094 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:48,094 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=15, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:48,094 - util.yolofile - DEBUG - 边界框: x=802, y=406, w=24, h=20
+2025-03-16 03:14:48,095 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\15.txt
+2025-03-16 03:14:48,095 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\15.txt, 大小=[1300, 736, 3], 边界框=[802, 406, 826, 426]
+2025-03-16 03:14:48,095 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\15.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:48,095 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 12 个消息
+2025-03-16 03:14:48,095 - sampro.LabelVideo_TW - DEBUG - 处理帧 16: D:/workspace/LabelQuick/video\16.jpg
+2025-03-16 03:14:48,106 - sampro.LabelVideo_TW - DEBUG - 帧 16 有 1 个分割对象
+2025-03-16 03:14:48,106 - sampro.LabelVideo_TW - DEBUG - 处理帧 16 的对象 1
+2025-03-16 03:14:48,107 - sampro.LabelVideo_TW - DEBUG - 绘制掩码，对象 ID: 1
+2025-03-16 03:14:48,107 - sampro.LabelVideo_TW - DEBUG - 掩码形状: (736, 1300, 1)
+2025-03-16 03:14:48,110 - sampro.LabelVideo_TW - DEBUG - 创建彩色掩码完成
+2025-03-16 03:14:48,112 - sampro.LabelVideo_TW - DEBUG - 叠加掩码到原始帧完成
+2025-03-16 03:14:48,112 - sampro.LabelVideo_TW - DEBUG - 找到 1 个轮廓
+2025-03-16 03:14:48,113 - sampro.LabelVideo_TW - DEBUG - 轮廓 1 面积: 267.5
+2025-03-16 03:14:48,113 - sampro.LabelVideo_TW - DEBUG - 更新最大轮廓: 索引=1, 面积=267.5
+2025-03-16 03:14:48,113 - sampro.LabelVideo_TW - DEBUG - 最大轮廓边界框: x=811, y=434, w=20, h=19
+2025-03-16 03:14:48,113 - sampro.LabelVideo_TW - DEBUG - 绘制边界框和轮廓完成
+2025-03-16 03:14:48,114 - sampro.LabelVideo_TW - DEBUG - 绘制掩码成功，边界框: x=811, y=434, w=20, h=19
+2025-03-16 03:14:48,114 - sampro.LabelVideo_TW - DEBUG - 保存处理后的帧图像
+2025-03-16 03:14:48,122 - sampro.LabelVideo_TW - DEBUG - 保存调整后的图像到: D:/workspace/LabelQuick/video\mask/16.jpg, 大小: 1300x736.0
+2025-03-16 03:14:48,122 - sampro.LabelVideo_TW - DEBUG - 创建 YOLO 格式标签，文本: 篮球
+2025-03-16 03:14:48,122 - util.yolofile - DEBUG - 创建 YOLO 标签信息: 图像=16, 尺寸=1300x736, 文本=篮球
+2025-03-16 03:14:48,122 - util.yolofile - DEBUG - 边界框: x=811, y=434, w=20, h=19
+2025-03-16 03:14:48,122 - util.yolofile - DEBUG - YOLO 标签文件路径: D:/workspace/LabelQuick/video\16.txt
+2025-03-16 03:14:48,122 - util.yolofile - DEBUG - YOLO 标签信息已创建: 路径=D:/workspace/LabelQuick/video\16.txt, 大小=[1300, 736, 3], 边界框=[811, 434, 831, 453]
+2025-03-16 03:14:48,122 - sampro.LabelVideo_TW - DEBUG - YOLO 标签信息: 路径=D:/workspace/LabelQuick/video\16.txt, 大小=[1300, 736, 3]
+2025-03-16 03:14:48,122 - sampro.LabelVideo_TW - DEBUG - 添加标签消息到列表，当前共 13 个消息
+2025-03-16 03:14:48,122 - sampro.LabelVideo_TW - INFO - 帧处理完成，返回 13 个标签消息
+2025-03-16 03:14:48,130 - root - DEBUG - 保存 YOLO 格式标签，消息数量: 13
+2025-03-16 03:14:48,130 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\0.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,130 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\0.txt
+2025-03-16 03:14:48,130 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,130 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,130 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,130 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\0.txt\2.txt
+2025-03-16 03:14:48,130 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,130 - util.yolofile - ERROR - 保存类别映射出错: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\0.txt\\classes.txt'
+2025-03-16 03:14:48,131 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 72, in yolo
+    with open(classes_path, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/workspace/LabelQuick/video\\0.txt\\classes.txt'
+
+2025-03-16 03:14:48,132 - util.yolofile - ERROR - 保存 YOLO 标签出错: [WinError 183] 当文件已存在时，无法创建该文件。: 'D:/workspace/LabelQuick/video\\0.txt'
+2025-03-16 03:14:48,132 - util.yolofile - ERROR - Traceback (most recent call last):
+  File "D:\workspace\LabelQuick\util\yolofile.py", line 84, in yolo
+    os.makedirs(os.path.dirname(txt_path), exist_ok=True)
+  File "<frozen os>", line 225, in makedirs
+FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'D:/workspace/LabelQuick/video\\0.txt'
+
+2025-03-16 03:14:48,133 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\1.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,133 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\1.txt
+2025-03-16 03:14:48,133 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,133 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,133 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,133 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\1.txt\2.txt
+2025-03-16 03:14:48,133 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,133 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\1.txt\classes.txt
+2025-03-16 03:14:48,134 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(509, 276, 525, 294)
+2025-03-16 03:14:48,134 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(509, 276, 525, 294)
+2025-03-16 03:14:48,134 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.397692, 0.387228), 尺寸=(0.012308, 0.024457)
+2025-03-16 03:14:48,134 - util.yolofile - DEBUG - 写入行: 0 0.397692 0.387228 0.012308 0.024457
+2025-03-16 03:14:48,134 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\1.txt\2.txt
+2025-03-16 03:14:48,135 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\2.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,135 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\2.txt
+2025-03-16 03:14:48,135 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,135 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,135 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,135 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\2.txt\2.txt
+2025-03-16 03:14:48,135 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,135 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\2.txt\classes.txt
+2025-03-16 03:14:48,136 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(616, 296, 632, 314)
+2025-03-16 03:14:48,136 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(616, 296, 632, 314)
+2025-03-16 03:14:48,136 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.480000, 0.414402), 尺寸=(0.012308, 0.024457)
+2025-03-16 03:14:48,136 - util.yolofile - DEBUG - 写入行: 0 0.480000 0.414402 0.012308 0.024457
+2025-03-16 03:14:48,136 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\2.txt\2.txt
+2025-03-16 03:14:48,136 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\4.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,137 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\4.txt
+2025-03-16 03:14:48,137 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,137 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,137 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,137 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\4.txt\2.txt
+2025-03-16 03:14:48,137 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,138 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\4.txt\classes.txt
+2025-03-16 03:14:48,138 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(569, 415, 584, 433)
+2025-03-16 03:14:48,139 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(569, 415, 584, 433)
+2025-03-16 03:14:48,139 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.443462, 0.576087), 尺寸=(0.011538, 0.024457)
+2025-03-16 03:14:48,139 - util.yolofile - DEBUG - 写入行: 0 0.443462 0.576087 0.011538 0.024457
+2025-03-16 03:14:48,139 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\4.txt\2.txt
+2025-03-16 03:14:48,139 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\5.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,139 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\5.txt
+2025-03-16 03:14:48,139 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,139 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,139 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,139 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\5.txt\2.txt
+2025-03-16 03:14:48,139 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,140 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\5.txt\classes.txt
+2025-03-16 03:14:48,140 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(471, 433, 494, 455)
+2025-03-16 03:14:48,140 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(471, 433, 494, 455)
+2025-03-16 03:14:48,141 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.371154, 0.603261), 尺寸=(0.017692, 0.029891)
+2025-03-16 03:14:48,141 - util.yolofile - DEBUG - 写入行: 0 0.371154 0.603261 0.017692 0.029891
+2025-03-16 03:14:48,141 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\5.txt\2.txt
+2025-03-16 03:14:48,141 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\6.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,141 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\6.txt
+2025-03-16 03:14:48,141 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,141 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,141 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,142 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\6.txt\2.txt
+2025-03-16 03:14:48,142 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,142 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\6.txt\classes.txt
+2025-03-16 03:14:48,143 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(346, 383, 365, 408)
+2025-03-16 03:14:48,143 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(346, 383, 365, 408)
+2025-03-16 03:14:48,143 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.273462, 0.537364), 尺寸=(0.014615, 0.033967)
+2025-03-16 03:14:48,143 - util.yolofile - DEBUG - 写入行: 0 0.273462 0.537364 0.014615 0.033967
+2025-03-16 03:14:48,143 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\6.txt\2.txt
+2025-03-16 03:14:48,143 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\7.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,143 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\7.txt
+2025-03-16 03:14:48,143 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,143 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,144 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,144 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\7.txt\2.txt
+2025-03-16 03:14:48,144 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,145 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\7.txt\classes.txt
+2025-03-16 03:14:48,145 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(385, 120, 421, 157)
+2025-03-16 03:14:48,145 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(385, 120, 421, 157)
+2025-03-16 03:14:48,145 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.310000, 0.188179), 尺寸=(0.027692, 0.050272)
+2025-03-16 03:14:48,145 - util.yolofile - DEBUG - 写入行: 0 0.310000 0.188179 0.027692 0.050272
+2025-03-16 03:14:48,145 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\7.txt\2.txt
+2025-03-16 03:14:48,146 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\8.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,146 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\8.txt
+2025-03-16 03:14:48,146 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,146 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,146 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,146 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\8.txt\2.txt
+2025-03-16 03:14:48,146 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,146 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\8.txt\classes.txt
+2025-03-16 03:14:48,147 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(651, 118, 691, 158)
+2025-03-16 03:14:48,147 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(651, 118, 691, 158)
+2025-03-16 03:14:48,147 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.516154, 0.187500), 尺寸=(0.030769, 0.054348)
+2025-03-16 03:14:48,147 - util.yolofile - DEBUG - 写入行: 0 0.516154 0.187500 0.030769 0.054348
+2025-03-16 03:14:48,147 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\8.txt\2.txt
+2025-03-16 03:14:48,147 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\11.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,147 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\11.txt
+2025-03-16 03:14:48,148 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,148 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,148 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,148 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\11.txt\2.txt
+2025-03-16 03:14:48,148 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,149 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\11.txt\classes.txt
+2025-03-16 03:14:48,149 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(659, 322, 688, 349)
+2025-03-16 03:14:48,149 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(659, 322, 688, 349)
+2025-03-16 03:14:48,149 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.518077, 0.455842), 尺寸=(0.022308, 0.036685)
+2025-03-16 03:14:48,149 - util.yolofile - DEBUG - 写入行: 0 0.518077 0.455842 0.022308 0.036685
+2025-03-16 03:14:48,150 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\11.txt\2.txt
+2025-03-16 03:14:48,150 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\12.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,150 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\12.txt
+2025-03-16 03:14:48,151 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,151 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,151 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,151 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\12.txt\2.txt
+2025-03-16 03:14:48,151 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,151 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\12.txt\classes.txt
+2025-03-16 03:14:48,152 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(691, 343, 716, 360)
+2025-03-16 03:14:48,152 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(691, 343, 716, 360)
+2025-03-16 03:14:48,152 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.541154, 0.477582), 尺寸=(0.019231, 0.023098)
+2025-03-16 03:14:48,152 - util.yolofile - DEBUG - 写入行: 0 0.541154 0.477582 0.019231 0.023098
+2025-03-16 03:14:48,152 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\12.txt\2.txt
+2025-03-16 03:14:48,152 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\13.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,152 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\13.txt
+2025-03-16 03:14:48,152 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,152 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,152 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,152 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\13.txt\2.txt
+2025-03-16 03:14:48,152 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,153 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\13.txt\classes.txt
+2025-03-16 03:14:48,153 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(804, 235, 829, 260)
+2025-03-16 03:14:48,153 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(804, 235, 829, 260)
+2025-03-16 03:14:48,153 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.628077, 0.336277), 尺寸=(0.019231, 0.033967)
+2025-03-16 03:14:48,153 - util.yolofile - DEBUG - 写入行: 0 0.628077 0.336277 0.019231 0.033967
+2025-03-16 03:14:48,153 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\13.txt\2.txt
+2025-03-16 03:14:48,154 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\15.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,154 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\15.txt
+2025-03-16 03:14:48,155 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,155 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,155 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,155 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\15.txt\2.txt
+2025-03-16 03:14:48,155 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,155 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\15.txt\classes.txt
+2025-03-16 03:14:48,156 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(802, 406, 826, 426)
+2025-03-16 03:14:48,156 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(802, 406, 826, 426)
+2025-03-16 03:14:48,156 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.626154, 0.565217), 尺寸=(0.018462, 0.027174)
+2025-03-16 03:14:48,156 - util.yolofile - DEBUG - 写入行: 0 0.626154 0.565217 0.018462 0.027174
+2025-03-16 03:14:48,156 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\15.txt\2.txt
+2025-03-16 03:14:48,156 - root - DEBUG - 保存 YOLO 标签到: D:/workspace/LabelQuick/video\16.txt, 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,156 - util.yolofile - INFO - 保存 YOLO 格式标签: 图像=D:/workspace/LabelQuick/video\2.jpg, 保存路径=D:/workspace/LabelQuick/video\16.txt
+2025-03-16 03:14:48,156 - util.yolofile - DEBUG - 类别映射: {'篮球': 0}
+2025-03-16 03:14:48,157 - util.yolofile - DEBUG - 标签数量: 1
+2025-03-16 03:14:48,157 - util.yolofile - DEBUG - 图像名称: 2
+2025-03-16 03:14:48,157 - util.yolofile - DEBUG - 标签文件路径: D:/workspace/LabelQuick/video\16.txt\2.txt
+2025-03-16 03:14:48,157 - util.yolofile - DEBUG - 图像尺寸: 1300x736
+2025-03-16 03:14:48,157 - util.yolofile - INFO - 类别映射已保存到: D:/workspace/LabelQuick/video\16.txt\classes.txt
+2025-03-16 03:14:48,157 - util.yolofile - DEBUG - 标签 1: 类别=篮球(ID=0), 边界框=(811, 434, 831, 453)
+2025-03-16 03:14:48,157 - util.yolofile - DEBUG - 转换坐标到 YOLO 格式: 图像尺寸=(1300, 736), 边界框=(811, 434, 831, 453)
+2025-03-16 03:14:48,158 - util.yolofile - DEBUG - YOLO 格式坐标: 中心点=(0.631538, 0.602582), 尺寸=(0.015385, 0.025815)
+2025-03-16 03:14:48,158 - util.yolofile - DEBUG - 写入行: 0 0.631538 0.602582 0.015385 0.025815
+2025-03-16 03:14:48,158 - util.yolofile - INFO - YOLO 标签已保存到: D:/workspace/LabelQuick/video\16.txt\2.txt
+2025-03-16 03:14:48,158 - root - DEBUG - 发送处理后的帧到 UI
+2025-03-16 03:14:48,158 - root - DEBUG - 处理第 4/17 帧: D:/workspace/LabelQuick/video\3.jpg
+2025-03-16 03:14:48,158 - root - DEBUG - 调用 Draw_Mask_at_frame 处理帧，格式: yolo
+2025-03-16 03:14:48,158 - sampro.LabelVideo_TW - INFO - 开始绘制轮廓，格式: yolo, 文本: 篮球
+2025-03-16 03:14:48,158 - root - WARNING - 接收到空帧
+2025-03-16 03:14:48,158 - sampro.LabelVideo_TW - DEBUG - 起始帧: 0, 返回帧: False, 保存图像路径: D:/workspace/LabelQuick/video\mask, 保存标签路径: D:/workspace/LabelQuick/video
+2025-03-16 03:14:48,158 - sampro.LabelVideo_TW - DEBUG - 开始在视频中传播分割结果
+2025-03-16 03:14:48,161 - sampro.LabelVideo_TW - DEBUG - 帧 0 的分割结果: 对象 IDs [1]
+2025-03-16 03:14:57,246 - sampro.LabelVideo_TW - DEBUG - 帧 1 的分割结果: 对象 IDs [1]
+2025-03-16 03:15:09,341 - sampro.LabelVideo_TW - DEBUG - 帧 2 的分割结果: 对象 IDs [1]
+2025-03-16 03:15:21,340 - sampro.LabelVideo_TW - DEBUG - 帧 3 的分割结果: 对象 IDs [1]
