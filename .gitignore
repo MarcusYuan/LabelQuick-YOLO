@@ -1,10 +1,18 @@
-# Python
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Python临时文件
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -16,43 +24,38 @@ lib64/
 parts/
 sdist/
 var/
+wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 
-# 临时文件
-Temp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
-.recommenders
-
 # 日志文件
-logs/
 *.log
+logs/
 
-# 运行时生成的文件
-*.exe
-*.dll
-*.out
-*.app
-
-# 模型文件
+# 模型文件 - 忽略所有checkpoints目录中的文件
 sampro/checkpoints/*.pt
 sampro/checkpoints/*.pth
 sampro/checkpoints/*.onnx
 sampro/checkpoints/*.bin
-sampro/checkpoints/*.weights
+sampro/checkpoints/*.model
+# 忽略整个checkpoints目录
+sampro/checkpoints/
 
-# 其他
-.DS_Store
+# Temp目录
+Temp/
+
+# 环境文件
 .env
 .venv
+env/
 venv/
 ENV/
+env.bak/
+venv.bak/
+
+# IDE相关
 .idea/
-.vscode/ 
+.vscode/
+*.sublime-project
+*.sublime-workspace 
