@@ -28,6 +28,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+# 明确忽略所有.pyc文件
+**/*.pyc
 
 # 日志文件
 *.log
